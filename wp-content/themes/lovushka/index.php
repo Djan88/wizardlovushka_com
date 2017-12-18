@@ -42,7 +42,7 @@
             <?php } else { ?>
               <div class="col-md-1 col-md-offset-2 col-sm-1 col-sm-offset-2 col-xs-1">
                 <div class="col-md-1 col-md-offset-2 col-sm-1 col-sm-offset-2 col-xs-1">
-                <div class="set disabled" data-toggle="modal" data-target="#set">
+                <div class="set_disabled" data-toggle="modal" data-target="#set">
                   <i class="fa fa-sliders" aria-hidden="true"></i>
                 </div>
               </div>

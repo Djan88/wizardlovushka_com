@@ -147,7 +147,7 @@ header h1.heading
     border-radius: 6px;
     padding: 5px;
 }
-.set, .manual
+.set, .manual, .set_disabled
 {
     background: #FDA009;
     border-radius: 50%;
