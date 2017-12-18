@@ -159,7 +159,7 @@
             $ratio =($cur_data - $regtime) - $year_val;
             $ratioten = ($cur_data - $regtime) - $year_val + 864000;
           ?>
-          <?php if ($ratioten > 0) { ?>
+          <?php if ($ratioten < 0) { ?>
             <div class="ratioten" data-ratio="<?php echo $ratioten;?>"></div>
           <?php } ?>
         </div>
