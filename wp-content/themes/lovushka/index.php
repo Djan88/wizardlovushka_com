@@ -16,7 +16,7 @@
         {
           display: none;
         }
-        html
+        html.mdl-js
         {
           margin-top: 0!important;
         }
