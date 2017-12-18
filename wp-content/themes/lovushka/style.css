@@ -107,7 +107,9 @@ header h1.heading
 }
 .top-header 
 {
+    z-index: 999;
     background: #000;
+    position: relative;
     color: #fff;
 }
 .lovushka 
