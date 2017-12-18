@@ -66,7 +66,14 @@
           ?>
           <?php if ($ratioten > 0) { ?>
             <div class="ratioten" data-ratio="<?php echo $ratioten;?>"></div>
-            <div>ДОступ истек</div>
+            <div class="container">
+              <div class="row">
+                <div class="col-xs-6 col-xs-offset-2">
+                  <h3>Срок действия лицензии истек</h3>
+                  <p>Для продления лицензии напишите на <a href="mailto:info@chikurov.com">info@chikurov.com</a></p>
+                </div>
+              </div>
+            </div>
           <?php } else { ?>
             <div class="container">
               <div class="row">
@@ -172,7 +179,7 @@
     <?php } else { ?>
       <div class="container">
         <div class="row">
-          <div class="col-md-6">
+          <div class="col-xs-6 col-xs-offset-2">
             <div class="login__form">
                 <form name="loginform" id="loginform" action="<?php echo esc_url( site_url( 'wp-login.php', 'login_post' ) ); ?>" method="post">
                     <p>
