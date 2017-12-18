@@ -249,7 +249,7 @@
     <div class="container">
       <div class="row">
         <div class="col-md-12">
-          <div class="pull-left" style="padding-top: 10px;">
+          <div class="pull-left" style="padding-top: 7px;">
             <a href="/">WizardLovushka</a> | v 1.0 | &copy; <a href="http://www.chikurov.com" target="_blank">Юрий Чикуров</a> | 2018
           </div>
           <?php if(is_user_logged_in()){ ?>
