@@ -204,7 +204,7 @@ footer.footer
 {
     color: #000;
 }
-.set_disabled .popover
+.popover
 {
     left: -43px;
     width: 150px;
