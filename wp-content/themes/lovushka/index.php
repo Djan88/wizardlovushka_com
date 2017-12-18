@@ -75,7 +75,7 @@
       <?php if(current_user_can('subscriber')){ ?>
         <div>Доступ запрещен</div>
       <!-- Если зашел участник или администратор -->
-      <?php } elseif(current_user_can('contributor') || current_user_can('administrator')) { ?>
+      <?php } elseif(current_user_can('contributor') || current_user_can('administrator') || current_user_can('editor')) { ?>
         <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
         <div class="reg_block">
           <?php 
