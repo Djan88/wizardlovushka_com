@@ -32,11 +32,23 @@
             <div class="col-md-6 col-md-offset-2 col-sm-6 col-sm-offset-2 col-xs-9">
               <a href="/" class="logo"><img src="<?php bloginfo('template_url'); ?>/img/logo.png" alt=""></a>
             </div>
-            <div class="col-md-1 col-md-offset-2 col-sm-1 col-sm-offset-2 col-xs-1">
-              <div class="set" data-toggle="modal" data-target="#set">
-                <i class="fa fa-sliders" aria-hidden="true"></i>
+            <?php if(is_user_logged_in()){ ?>
+              <?php if(current_user_can('autor')){ ?>
+              <div class="col-md-1 col-md-offset-2 col-sm-1 col-sm-offset-2 col-xs-1">
+                <div class="set" data-toggle="modal" data-target="#set">
+                  <i class="fa fa-sliders" aria-hidden="true"></i>
+                </div>
               </div>
-            </div>
+            <?php } else { ?>
+              <div class="col-md-1 col-md-offset-2 col-sm-1 col-sm-offset-2 col-xs-1">
+                <div class="col-md-1 col-md-offset-2 col-sm-1 col-sm-offset-2 col-xs-1">
+                <div class="set disabled" data-toggle="modal" data-target="#set">
+                  <i class="fa fa-sliders" aria-hidden="true"></i>
+                </div>
+              </div>
+              </div>
+            <?php } ?>
+          <?php } ?>
           </div>
         </div>
       </div>
