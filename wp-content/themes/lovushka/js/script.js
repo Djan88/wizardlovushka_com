@@ -136,5 +136,5 @@ jQuery(document).ready(function () {
     jQuery('.protocol').css('height', jQuery('.protocol').css('width'));
     jQuery('.protocol svg').css('height', jQuery('.protocol svg').css('width'));
   });
-  $('.set_disabled').tooltip();
+  $('.set_disabled').popover();
 });
