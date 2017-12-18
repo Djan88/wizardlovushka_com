@@ -249,7 +249,7 @@
     <div class="container">
       <div class="row">
         <div class="col-md-12">
-          <p>&copy; <a href="http://www.chikurov.com" target="_blank">Юрий Чикуров.</a> 2018</p>
+          <p><a href="/">WizardLovushka</a> | v 1.0 | &copy; <a href="http://www.chikurov.com" target="_blank">Юрий Чикуров.</a> 2018</p>
         </div>
       </div>
     </div>
