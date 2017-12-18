@@ -33,7 +33,7 @@
               <a href="/" class="logo"><img src="<?php bloginfo('template_url'); ?>/img/logo.png" alt=""></a>
             </div>
             <?php if(is_user_logged_in()){ ?>
-              <?php if(current_user_can('autor')){ ?>
+              <?php if(current_user_can('editor')){ ?>
               <div class="col-md-1 col-md-offset-2 col-sm-1 col-sm-offset-2 col-xs-1">
                 <div class="set" data-toggle="modal" data-target="#set">
                   <i class="fa fa-sliders" aria-hidden="true"></i>
