@@ -339,7 +339,7 @@
           <b>12. </b>Вспомните переживания угрозы вашей жизни - например, как вы захлебывались или не могли вдохнуть, падали или травмировались, попадали в аварию, испытывали физическое насилие над собой или ваши родители грозились отдать вас в детский дом
         </div>
         <div class="modal-footer">
-          <button class="btn btn-primary set_acept" data-dismiss="modal">Закрыть</button>
+          <button class="btn btn-primary" data-dismiss="modal">Закрыть</button>
         </div>
       </div>
     </div>
