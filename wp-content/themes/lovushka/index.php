@@ -179,7 +179,7 @@
     <?php } else { ?>
       <div class="container">
         <div class="row">
-          <div class="col-xs-6 col-xs-offset-3">
+          <div class="col-lg-6 col-lg-offset-3">
             <div class="login__form">
                 <form name="loginform" id="loginform" action="<?php echo esc_url( site_url( 'wp-login.php', 'login_post' ) ); ?>" method="post">
                     <p>
