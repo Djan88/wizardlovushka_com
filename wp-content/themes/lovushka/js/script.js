@@ -28,9 +28,9 @@ jQuery(document).ready(function () {
  // Быстрее 
   jQuery('.speed_faster').on('click', function(event) {
     if (paused == false) {
-      rotat_per_sec += 1;
+      rotat_per_sec += 2;
     } else {
-      rotat_per_sec += 1;
+      rotat_per_sec += 2;
       paused = false;
       jQuery('.fa-play').removeClass('fa-play').addClass('fa-pause');
       jQuery('.speed_control').removeClass('hidden');
@@ -50,14 +50,14 @@ jQuery(document).ready(function () {
   // Медленнее
   jQuery('.speed_slover').on('click', function(event) {
     if (paused == false) {
-      rotat_per_sec -= 1;
+      rotat_per_sec -= 2;
       if (rotat_per_sec <= 1) {
-        rotat_per_sec = 1;
+        rotat_per_sec = 2;
       }
     } else {
-      rotat_per_sec -= 1;
+      rotat_per_sec -= 2;
       if (rotat_per_sec <= 1) {
-        rotat_per_sec = 1;
+        rotat_per_sec = 2;
       }
       paused = false;
       jQuery('.fa-play').removeClass('fa-play').addClass('fa-pause');
