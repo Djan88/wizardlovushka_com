@@ -16,6 +16,10 @@
         {
           display: none;
         }
+        html
+        {
+          margin-top: 0!important;
+        }
       </style>
     <?php } ?>
   <?php } ?>
