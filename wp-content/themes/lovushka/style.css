@@ -200,6 +200,14 @@ footer.footer
   font-size: 15px;
   padding-top: 5px;
 }
+.popover 
+{
+    color: #000;
+}
+#popover523922 
+{
+    max-width: 200px;
+}
 footer.footer a
 {
   color: #fff;
