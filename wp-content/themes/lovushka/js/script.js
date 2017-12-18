@@ -99,6 +99,8 @@ jQuery(document).ready(function () {
     console.log(paused);
     if (paused == false) {
       jQuery('.fa-pause').removeClass('fa-pause').addClass('fa-play');
+      jQuery('.start_prot').addClass('hidden');
+      jQuery('.stop_prot').removeClass('hidden');
       paused = true;
       clearInterval(phaseOne);
     } else {
