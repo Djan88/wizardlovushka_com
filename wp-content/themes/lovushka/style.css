@@ -206,7 +206,8 @@ footer.footer
 }
 .set_disabled .popover
 {
-    max-width: 200px;
+    left: -43px;
+    width: 150px;
 }
 footer.footer a
 {
