@@ -249,7 +249,15 @@
     <div class="container">
       <div class="row">
         <div class="col-md-12">
-          <p><a href="/">WizardLovushka</a> | v 1.0 | &copy; <a href="http://www.chikurov.com" target="_blank">Юрий Чикуров</a> | 2018</p>
+          <p>
+            <a href="/">WizardLovushka</a> | v 1.0 | &copy; <a href="http://www.chikurov.com" target="_blank">Юрий Чикуров</a> | 2018
+            <?php if(is_user_logged_in()){ ?>
+            <div class="pull-right">
+              <a class="btn btn_sm btn_warning wings_door_closed" href="<?php echo home_url(); ?>/wp-login.php?action=logout&amp;_wpnonce=a6cad512ba">Выйти</a>
+            </div>
+            <div class="clearfix"></div>
+            <?php } ?>
+          </p>
         </div>
       </div>
     </div>
