@@ -122,6 +122,7 @@ header h1.heading
 {
     max-width: 90%;
     background: #fff;
+    overflow: hidden;
     position: relative;
     margin: auto;
     border-radius: 50%;
@@ -294,7 +295,7 @@ footer.footer a
     user-select: none;
 }
 @media (max-width: 991px) {
-    .set, .manual 
+    .set, .manual, .set_disabled
     {
         width: 30px;
         height: 30px;
@@ -304,7 +305,7 @@ footer.footer a
     }
 }
 @media (max-width: 715px) {
-    .set, .manual 
+    .set, .manual, .set_disabled
     {
         width: 25px;
         height: 25px;

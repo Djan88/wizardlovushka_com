@@ -9,6 +9,16 @@
   <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/font-awesome.min.css">
   <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/bootstrap.min.css">
   <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/style.css">
+  <?php if(is_user_logged_in()){ ?>
+    <?php if(!current_user_can('administrator')){ ?>
+      <style>
+        #wpadminbar
+        {
+          display: none;
+        }
+      </style>
+    <?php } ?>
+  <?php } ?>
   <!--[if lt IE 9]>
       <script src="js/html5shiv.js"></script>
       <script src="js/respond.min.js"></script>
