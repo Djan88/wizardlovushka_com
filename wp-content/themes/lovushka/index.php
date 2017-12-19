@@ -162,7 +162,6 @@
                 <div class="col-md-6 col-md-offset-3">
                   <div class="btn-group speed_control">
                     <button type="button" class="btn btn-default btn-lg manual" data-toggle="modal" data-target="#manual"><i class="fa fa-file-text" aria-hidden="true"></i> Правила</button>
-                  </div>
                   <?php if(is_user_logged_in()){ ?>
                     <?php if(current_user_can('administrator')){ ?>
                       <button type="button" class="btn btn-default btn-lg set" data-toggle="modal" data-target="#set"><i class="fa fa-sliders" aria-hidden="true"></i> Пересмотр личной истории</button>
@@ -170,6 +169,7 @@
                       <button type="button" class="btn btn-default btn-lg set_disabled" data-toggle="popover" data-placement="bottom" data-original-title="Пересмотр личной истории" data-content='«Пересмотр личной истории» доступен в расширенной лицензии'><i class="fa fa-sliders" aria-hidden="true"></i> Пересмотр личной истории</button>
                     <?php } ?>
                   <?php } ?>
+                  </div>
                 </div>
               </div>
               <!-- <div class="row">
