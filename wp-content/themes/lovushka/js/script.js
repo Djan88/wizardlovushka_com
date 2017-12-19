@@ -38,7 +38,7 @@ jQuery(document).ready(function () {
     console.log(quest_count);
   });
 //Отмена выбора
-jQuery('.clear_prot').on('click', function(event) {
+jQuery('.clear_prot, .stop_prot, .stop').on('click', function(event) {
   quest_count = 0;
   jQuery('.question').removeClass('active').addClass('noactive').removeClass('hidden');
   jQuery('.clear_prot').addClass('hidden');
@@ -101,6 +101,7 @@ jQuery('.clear_prot').on('click', function(event) {
 // Запуск протокола
   jQuery('.start_prot').on('click', function(event) {
     paused = false;
+    jQuery('.clear_prot').addClass('hidden');
     jQuery('.fa-play').removeClass('fa-play').addClass('fa-pause');
     jQuery('.speed_control').removeClass('hidden');
     $('#result').modal('hide');
