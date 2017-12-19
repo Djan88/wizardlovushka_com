@@ -181,7 +181,7 @@
                   </div>
                 </div>
               </div>
-              <div class="row">
+              <!-- <div class="row">
                 <div class="col-md-4 col-md-offset-4">
                   <div class="color_control">
                     <div class="color_item color_item_yl" data-color="#FDE30A"></div>
@@ -195,7 +195,7 @@
                     <div class="color_item color_item_wh" data-color="#ffffff"></div>
                   </div>
                 </div>
-              </div>
+              </div> -->
             </div>
           <?php } ?>
         </div>

@@ -38,7 +38,7 @@ jQuery(document).ready(function () {
         if (count_animation <= 360){                                                                         //120
           jQuery('.protocol').css('transform', 'rotate('+cur_animation_val+'deg)');
           count_animation += 0.5;
-          cur_animation_val += rotat_per_sec;
+          cur_animation_val -= rotat_per_sec;
           console.log(rotat_per_sec);
         } else {
             clearInterval(phaseOne);
@@ -66,7 +66,7 @@ jQuery(document).ready(function () {
         if (count_animation <= 360){                                                                         //120
           jQuery('.protocol').css('transform', 'rotate('+cur_animation_val+'deg)');
           count_animation += 0.5;
-          cur_animation_val += rotat_per_sec;
+          cur_animation_val -= rotat_per_sec;
           console.log(rotat_per_sec);
         } else {
             clearInterval(phaseOne);
@@ -86,7 +86,7 @@ jQuery(document).ready(function () {
       if (count_animation <= 360){                                                                         //120
         jQuery('.protocol').css('transform', 'rotate('+cur_animation_val+'deg)');
         count_animation += 0.5;
-        cur_animation_val += rotat_per_sec;
+        cur_animation_val -= rotat_per_sec;
         console.log(rotat_per_sec);
       } else {
           clearInterval(phaseOne);
@@ -110,7 +110,7 @@ jQuery(document).ready(function () {
         if (count_animation <= 360){                                                                         //120
           jQuery('.protocol').css('transform', 'rotate('+cur_animation_val+'deg)');
           count_animation += 0.5;
-          cur_animation_val += rotat_per_sec;
+          cur_animation_val -= rotat_per_sec;
           console.log(rotat_per_sec);
         } else {
             clearInterval(phaseOne);
@@ -128,9 +128,9 @@ jQuery(document).ready(function () {
     jQuery('.stop_prot').addClass('hidden');
   });
   // Смена цвета
-  jQuery('.color_item').on('click', function(event) {
-    jQuery('.protocol').css('background', jQuery(this).data('color'));
-  });
+  // jQuery('.color_item').on('click', function(event) {
+  //   jQuery('.protocol').css('background', jQuery(this).data('color'));
+  // });
   // Подгон ширины
   jQuery('.protocol').css('height', jQuery('.protocol').css('width'));
   jQuery('.protocol svg').css('height', jQuery('.protocol svg').css('width'));
