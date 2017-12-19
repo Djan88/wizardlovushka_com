@@ -156,7 +156,7 @@
                   <div class="btn-group speed_control">
                     <button type="button" class="btn btn-default btn-lg speed_slover"><i class="fa fa-backward" aria-hidden="true"></i></button>
                     <button type="button" class="btn btn-default btn-lg play"><i class="fa fa-play" aria-hidden="true"></i></button>
-                    <button type="button" class="btn btn-default stop_prot"><i class="fa fa-stop" aria-hidden="true"></i></button>
+                    <button type="button" class="btn btn-default btn-lg stop_prot"><i class="fa fa-stop" aria-hidden="true"></i></button>
                     <button type="button" class="btn btn-default btn-lg speed_faster"><i class="fa fa-forward" aria-hidden="true"></i></button>
                   </div>
                 </div>
