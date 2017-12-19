@@ -27,6 +27,7 @@ jQuery(document).ready(function () {
     } else if (quest_count >= 2) {
       jQuery('.noactive').addClass('hidden');
       jQuery('.clear_prot').removeClass('hidden');
+      quest_count += 1;
     } else {
       jQuery(this).addClass('active');
       jQuery(this).removeClass('noactive');
