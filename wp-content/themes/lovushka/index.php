@@ -39,7 +39,7 @@
       <div class="row">
         <div class="header_area col-md-12">
           <div class="row">
-            <div class="col-md-6 col-md-offset-2 col-sm-6 col-sm-offset-2 col-xs-9">
+            <div class="col-md-6 col-md-offset-3 col-sm-6 col-sm-offset-3 col-xs-12">
               <a href="/" class="logo"><img src="<?php bloginfo('template_url'); ?>/img/logo.png" alt=""></a>
             </div>
           </div>
