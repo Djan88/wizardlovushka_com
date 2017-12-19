@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en"> 
+<html id="html" lang="en"> 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,9 +16,10 @@
         {
           display: none;
         }
-        html.mdl-js
+        html.mdl-js#html
         {
           margin-top: 0!important;
+          padding-top: 0!important; 
         }
       </style>
     <?php } ?>
