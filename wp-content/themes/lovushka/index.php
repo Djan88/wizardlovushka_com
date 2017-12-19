@@ -167,7 +167,8 @@
                     <?php if(current_user_can('administrator')){ ?>
                       <button type="button" class="btn btn-default set" data-toggle="modal" data-target="#set"><i class="fa fa-sliders" aria-hidden="true"></i> Продвинутый режим</button>
                     <?php } else { ?>
-                      <button type="button" class="btn btn-default disabled set_disabled" data-toggle="popover" data-placement="top" data-original-title="Пересмотр личной истории" data-content='«Пересмотр личной истории» доступен в расширенной лицензии'><i class="fa fa-sliders" aria-hidden="true"></i> Продвинутый режим</button>
+                      <!-- <button type="button" class="btn btn-default disabled set_disabled" data-toggle="popover" data-placement="top" data-original-title="Пересмотр личной истории" data-content='«Пересмотр личной истории» доступен в расширенной лицензии'><i class="fa fa-sliders" aria-hidden="true"></i> Продвинутый режим</button> -->
+                      <button type="button" class="btn btn-default disabled set_disabled" data-toggle="popover" data-placement="top" data-original-title="Пересмотр личной истории" data-content='Продвинутый режим скоро станет доступен для пользователей расширенной лицензии'><i class="fa fa-sliders" aria-hidden="true"></i> Продвинутый режим</button>
                     <?php } ?>
                   <?php } ?>
                   </div>
@@ -282,8 +283,8 @@
             <button type="button" class="btn btn-default question">Обиды и унижения</button>
           </div>
           <div class="runed hidden">
-            <h2>Сессия еще выполняется!</h2>
-            <h3>Перед началом новой сессии необходимо остановить выполнение текущей</h3>
+            <h3>Сессия еще выполняется!</h3>
+            <h4>Перед началом новой сессии необходимо остановить выполнение текущей</h4>
             <button class="btn btn-primary btn-lg stop_prot">Остановить</button>
           </div>
         </div>
