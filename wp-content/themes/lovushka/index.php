@@ -268,17 +268,24 @@
           <h4 class="modal-title" id="myModalLabel">Вопросы для диагностики личной истории:</h4>
         </div>
         <div class="modal-body text-centered">
-          <button type="button" class="btn btn-default question">Злость на кого-либо, на ситуацию или на себя</button>
-          <button type="button" class="btn btn-default question">Сложности в общении и в любых делах</button>
-          <button type="button" class="btn btn-default question">Чувство вины</button>
-          <button type="button" class="btn btn-default question">Самоограничения и заниженная самооценка</button>
-          <button type="button" class="btn btn-default question">Необходимость прислушиваться к чужому мнению</button>
-          <button type="button" class="btn btn-default question">Наличие в жизни того, с чем сложно смириться</button>
-          <button type="button" class="btn btn-default question">Беспокойство, суета, страхи</button>
-          <button type="button" class="btn btn-default question">Желания и правила жизни</button>
-          <button type="button" class="btn btn-default question">Дилеммы касательно предметов и отношений</button>
-          <button type="button" class="btn btn-default question">Неосуществлённые мечты</button>
-          <button type="button" class="btn btn-default question">Обиды и унижения</button>
+          <div class="questions">
+            <button type="button" class="btn btn-default question">Злость на кого-либо, на ситуацию или на себя</button>
+            <button type="button" class="btn btn-default question">Сложности в общении и в любых делах</button>
+            <button type="button" class="btn btn-default question">Чувство вины</button>
+            <button type="button" class="btn btn-default question">Самоограничения и заниженная самооценка</button>
+            <button type="button" class="btn btn-default question">Необходимость прислушиваться к чужому мнению</button>
+            <button type="button" class="btn btn-default question">Наличие в жизни того, с чем сложно смириться</button>
+            <button type="button" class="btn btn-default question">Беспокойство, суета, страхи</button>
+            <button type="button" class="btn btn-default question">Желания и правила жизни</button>
+            <button type="button" class="btn btn-default question">Дилеммы касательно предметов и отношений</button>
+            <button type="button" class="btn btn-default question">Неосуществлённые мечты</button>
+            <button type="button" class="btn btn-default question">Обиды и унижения</button>
+          </div>
+          <div class="runed hidden">
+            <h2>Сессия еще выполняется!</h2>
+            <h3>Перед началом новой сессии необходимо остановить выполнение текущей</h3>
+            <button class="btn btn-primary btn-lg stop_prot">Остановить</button>
+          </div>
         </div>
         <div class="modal-footer">
           <button class="btn btn-primary set_acept">Применить настройки</button>
@@ -301,7 +308,6 @@
           <div class="row text-centered">
             <div class="col-md-12">
               <button class="btn btn-primary start_prot">Запустить программу</button>
-              <button class="btn btn-primary stop_prot hidden">Остановить выполнение</button>
             </div>
           </div>
         </div>

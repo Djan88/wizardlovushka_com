@@ -80,8 +80,8 @@ jQuery(document).ready(function () {
     jQuery('.fa-play').removeClass('fa-play').addClass('fa-pause');
     jQuery('.speed_control').removeClass('hidden');
     $('#result').modal('hide');
-    jQuery('.start_prot').addClass('hidden');
-    jQuery('.stop_prot').removeClass('hidden');
+    jQuery('.questions').addClass('hidden');
+    jQuery('.runed').removeClass('hidden');
     phaseOne = setInterval(function(){
       if (count_animation <= 360){                                                                         //120
         jQuery('.protocol').css('transform', 'rotate('+cur_animation_val+'deg)');
@@ -128,8 +128,8 @@ jQuery(document).ready(function () {
     rotat_per_sec = 1.5;
     cur_animation_val = 0;
     clearInterval(phaseOne);
-    jQuery('.start_prot').removeClass('hidden');
-    jQuery('.stop_prot').addClass('hidden');
+    jQuery('.questions').removeClass('hidden');
+    jQuery('.runed').addClass('hidden');
   });
   // Смена цвета
   // jQuery('.color_item').on('click', function(event) {
