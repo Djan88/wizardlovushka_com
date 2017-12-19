@@ -22,16 +22,19 @@ jQuery(document).ready(function () {
   console.log(instructions);
 // Клик по вопросу
   jQuery('.question').on('click', function(event) {
+    // Если клик по уже выбранному пункту
     if (jQuery(this).hasClass('active')) {
-      jQuery(this).removeClass('active');
-    } else if (quest_count >= 2) {
-      jQuery('.noactive').addClass('hidden');
-      jQuery('.clear_prot').removeClass('hidden');
+      // jQuery(this).removeClass('active');
+    } else { 
       quest_count += 1;
-    } else {
-      jQuery(this).addClass('active');
-      jQuery(this).removeClass('noactive');
-      quest_count += 1;
+      // Если выбрано 2 пункта
+      if (quest_count >= 2) {
+        jQuery('.noactive').addClass('hidden');
+        jQuery('.clear_prot').removeClass('hidden');
+      } else {
+        jQuery(this).addClass('active');
+        jQuery(this).removeClass('noactive');
+      }
     }
     console.log(quest_count);
   });
