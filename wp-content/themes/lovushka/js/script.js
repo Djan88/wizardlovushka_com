@@ -27,13 +27,12 @@ jQuery(document).ready(function () {
       // jQuery(this).removeClass('active');
     } else { 
       quest_count += 1;
+      jQuery(this).addClass('active');
+      jQuery(this).removeClass('noactive');
       // Если выбрано 2 пункта
       if (quest_count >= 2) {
         jQuery('.noactive').addClass('hidden');
         jQuery('.clear_prot').removeClass('hidden');
-      } else {
-        jQuery(this).addClass('active');
-        jQuery(this).removeClass('noactive');
       }
     }
     console.log(quest_count);
