@@ -41,7 +41,7 @@ jQuery(document).ready(function () {
 //Отмена выбора
 jQuery('.clear_prot').on('click', function(event) {
   quest_count = 0;
-  jQuery('.question').removeClass('active');
+  jQuery('.question').removeClass('active').addClass('noactive').removeClass('hidden');
   jQuery('.clear_prot').addClass('hidden');
 });
 
