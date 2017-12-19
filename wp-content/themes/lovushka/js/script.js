@@ -26,6 +26,7 @@ jQuery(document).ready(function () {
       jQuery(this).removeClass('active');
     } else if (quest_count >= 2) {
       jQuery('.noactive').addClass('hidden');
+      jQuery('.clear_prot').removeClass('hidden');
     } else {
       jQuery(this).addClass('active');
       jQuery(this).removeClass('noactive');
