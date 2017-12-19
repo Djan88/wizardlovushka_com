@@ -104,8 +104,8 @@ jQuery(document).ready(function () {
     } else {
       paused = false;
       jQuery('.fa-play').removeClass('fa-play').addClass('fa-pause');
-      jQuery('.start_prot').addClass('hidden');
-      jQuery('.stop_prot').removeClass('hidden');
+      jQuery('.questions').addClass('hidden');
+      jQuery('.runed').removeClass('hidden');
       phaseOne = setInterval(function(){
         if (count_animation <= 360){                                                                         //120
           jQuery('.protocol').css('transform', 'rotate('+cur_animation_val+'deg)');
