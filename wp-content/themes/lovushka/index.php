@@ -297,6 +297,9 @@
           </div>
         </div>
         <div class="modal-footer">
+          <div class="pull-left">
+            <button class="btn btn-warning clear_prot">Отменить выбор</button>
+          </div>
           <button class="btn btn-primary set_acept">Применить настройки</button>
         </div>
       </div>
@@ -316,9 +319,6 @@
           <b>4. </b>Вспомните, как вы переживали по поводу мнения о вас других людей, либо вам навязывали чужое мнение и заставляли вас поступать помимо вашей воли и желания
           <div class="row text-centered">
             <div class="col-md-12">
-              <div class="pull-left">
-                <button class="btn btn-warning clear_prot">Отменить выбор</button>
-              </div>
               <button class="btn btn-primary start_prot">Запустить программу</button>
             </div>
           </div>
