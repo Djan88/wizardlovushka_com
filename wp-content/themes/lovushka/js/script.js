@@ -120,7 +120,7 @@ jQuery(document).ready(function () {
     }
   });
   // Остановка протокола
-  jQuery('.stop_prot').on('click', function(event) {
+  jQuery('.stop_prot, .stop').on('click', function(event) {
     jQuery('.fa-pause').removeClass('fa-pause').addClass('fa-play');
     jQuery('.question').removeClass('active');
     paused = true;
