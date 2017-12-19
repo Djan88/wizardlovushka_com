@@ -298,7 +298,7 @@
         </div>
         <div class="modal-footer">
           <div class="pull-left">
-            <button class="btn btn-warning clear_prot">Отменить выбор</button>
+            <button class="btn btn-warning clear_prot hidden">Отменить выбор</button>
           </div>
           <button class="btn btn-primary set_acept">Применить настройки</button>
         </div>

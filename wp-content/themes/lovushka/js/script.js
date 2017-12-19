@@ -39,6 +39,7 @@ jQuery(document).ready(function () {
 jQuery('.clear_prot').on('click', function(event) {
   quest_count = 0;
   jQuery('.question').removeClass('active');
+  jQuery('.clear_prot').addClass('hidden');
 });
 
 // Инструктаж перед стартом
