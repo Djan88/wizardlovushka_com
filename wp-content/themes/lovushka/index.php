@@ -26,6 +26,14 @@
         margin-top: 0!important;
         padding-top: 0!important; 
       }
+
+      html { margin-top: 0 !important; }
+      * html body { margin-top: 0 !important; }
+      @media screen and ( max-width: 782px ) {
+        html { margin-top: 0 !important; }
+        * html body { margin-top: 0 !important; }
+      }
+
     </style>
   <?php } ?>
 <?php } ?>
