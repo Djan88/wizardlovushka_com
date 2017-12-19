@@ -278,17 +278,17 @@
         </div>
         <div class="modal-body text-centered">
           <div class="questions">
-            <button type="button" class="btn btn-default question">Злость на кого-либо, на ситуацию или на себя</button>
-            <button type="button" class="btn btn-default question">Сложности в общении и в любых делах</button>
-            <button type="button" class="btn btn-default question">Чувство вины</button>
-            <button type="button" class="btn btn-default question">Самоограничения и заниженная самооценка</button>
-            <button type="button" class="btn btn-default question">Необходимость прислушиваться к чужому мнению</button>
-            <button type="button" class="btn btn-default question">Наличие в жизни того, с чем сложно смириться</button>
-            <button type="button" class="btn btn-default question">Беспокойство, суета, страхи</button>
-            <button type="button" class="btn btn-default question">Желания и правила жизни</button>
-            <button type="button" class="btn btn-default question">Дилеммы касательно предметов и отношений</button>
-            <button type="button" class="btn btn-default question">Неосуществлённые мечты</button>
-            <button type="button" class="btn btn-default question">Обиды и унижения</button>
+            <button type="button" class="btn btn-default question" data-quest_one = "2" data-quest_two = "5" data-choiced="">Злость на кого-либо, на ситуацию или на себя</button>
+            <button type="button" class="btn btn-default question" data-quest_one = "5" data-quest_two = "2" data-choiced="">Сложности в общении и в любых делах</button>
+            <button type="button" class="btn btn-default question" data-quest_one = "7" data-quest_two = "12" data-choiced="">Чувство вины</button>
+            <button type="button" class="btn btn-default question" data-quest_one = "3" data-quest_two = "6" data-choiced="">Самоограничения и заниженная самооценка</button>
+            <button type="button" class="btn btn-default question" data-quest_one = "4" data-quest_two = "1" data-choiced="">Необходимость прислушиваться к чужому мнению</button>
+            <button type="button" class="btn btn-default question" data-quest_one = "6" data-quest_two = "3" data-choiced="">Наличие в жизни того, с чем сложно смириться</button>
+            <button type="button" class="btn btn-default question" data-quest_one = "1" data-quest_two = "4" data-choiced="">Беспокойство, суета, страхи</button>
+            <button type="button" class="btn btn-default question" data-quest_one = "8" data-quest_two = "12" data-choiced="">Желания и правила жизни</button>
+            <button type="button" class="btn btn-default question" data-quest_one = "9" data-quest_two = "12" data-choiced="">Дилеммы касательно предметов и отношений</button>
+            <button type="button" class="btn btn-default question" data-quest_one = "10" data-quest_two = "12" data-choiced="">Неосуществлённые мечты</button>
+            <button type="button" class="btn btn-default question" data-quest_one = "11" data-quest_two = "12" data-choiced="">Обиды и унижения</button>
           </div>
           <div class="runed hidden">
             <h3>Сессия еще выполняется!</h3>
