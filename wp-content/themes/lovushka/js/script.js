@@ -32,6 +32,7 @@ jQuery(document).ready(function () {
       jQuery(this).removeClass('noactive');
       quest_count += 1;
     }
+    console.log(quest_count);
   });
 //Отмена выбора
 jQuery('.clear_prot').on('click', function(event) {
