@@ -166,7 +166,7 @@
                     <?php if(current_user_can('administrator')){ ?>
                       <button type="button" class="btn btn-default btn-lg set" data-toggle="modal" data-target="#set"><i class="fa fa-sliders" aria-hidden="true"></i> Пересмотр личной истории</button>
                     <?php } else { ?>
-                      <button type="button" class="btn btn-default btn-lg set_disabled" data-toggle="popover" data-placement="top" data-original-title="Пересмотр личной истории" data-content='«Пересмотр личной истории» доступен в расширенной лицензии'><i class="fa fa-sliders" aria-hidden="true"></i> Пересмотр личной истории</button>
+                      <button type="button" class="btn btn-default btn-lg disabled set_disabled" data-toggle="popover" data-placement="top" data-original-title="Пересмотр личной истории" data-content='«Пересмотр личной истории» доступен в расширенной лицензии'><i class="fa fa-sliders" aria-hidden="true"></i> Пересмотр личной истории</button>
                     <?php } ?>
                   <?php } ?>
                   </div>
