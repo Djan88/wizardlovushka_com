@@ -308,24 +308,24 @@ footer.footer a
     user-select: none;
 }
 @media (max-width: 991px) {
-    .set, .manual, .set_disabled
+    /*.set, .manual, .set_disabled
     {
         width: 30px;
         height: 30px;
         padding-top: 5px;
         font-size: 15px;
         margin-top: 4px;
-    }
+    }*/
 }
 @media (max-width: 715px) {
-    .set, .manual, .set_disabled
+    /*.set, .manual, .set_disabled
     {
         width: 25px;
         height: 25px;
         padding-top: 4px;
         font-size: 13px;
         margin-top: 4px;
-    }
+    }*/
 }
 @media (max-width: 500px) {
     .logo img {
