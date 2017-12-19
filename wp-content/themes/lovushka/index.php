@@ -9,26 +9,26 @@
   <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/font-awesome.min.css">
   <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/bootstrap.min.css">
   <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/style.css">
-  <?php if(is_user_logged_in()){ ?>
-    <?php if(!current_user_can('administrator')){ ?>
-      <style>
-        #wpadminbar
-        {
-          display: none;
-        }
-        html.mdl-js#html
-        {
-          margin-top: 0!important;
-          padding-top: 0!important; 
-        }
-      </style>
-    <?php } ?>
-  <?php } ?>
   <!--[if lt IE 9]>
       <script src="js/html5shiv.js"></script>
       <script src="js/respond.min.js"></script>
     <![endif]-->
 <?php wp_head(); ?>
+<?php if(is_user_logged_in()){ ?>
+  <?php if(!current_user_can('administrator')){ ?>
+    <style>
+      #wpadminbar
+      {
+        display: none;
+      }
+      html.mdl-js#html
+      {
+        margin-top: 0!important;
+        padding-top: 0!important; 
+      }
+    </style>
+  <?php } ?>
+<?php } ?>
 </head>
 <body>
   
