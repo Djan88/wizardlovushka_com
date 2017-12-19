@@ -160,7 +160,7 @@
                     <button type="button" class="btn btn-default btn-lg speed_faster"><i class="fa fa-forward" aria-hidden="true"></i></button>
                   </div>
                 </div>
-                <div class="col-md-6 col-md-offset-3 col-sm-8 col-md-offset-2 col-xs-12">
+                <div class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2 col-xs-12">
                   <div class="btn-group speed_control">
                     <button type="button" class="btn btn-default manual" data-toggle="modal" data-target="#manual"><i class="fa fa-file-text" aria-hidden="true"></i> Правила</button>
                   <?php if(is_user_logged_in()){ ?>
