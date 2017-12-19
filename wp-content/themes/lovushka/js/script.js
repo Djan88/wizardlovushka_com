@@ -4,6 +4,7 @@ jQuery(document).ready(function () {
       count_animation = 0,
       rotat_per_sec = 1.5;
       rotateVal = 0,
+      quest_count = 0,
       instructions = {
         "1": 'Вспомните ситуацию в которой вы волновались, суетились, боялись того, что может случиться.',
         "2": 'Вспомните ситуацию, где вы злились на кого-то либо на себя.',
@@ -21,13 +22,22 @@ jQuery(document).ready(function () {
   console.log(instructions);
 // Клик по вопросу
   jQuery('.question').on('click', function(event) {
-    jQuery(this).toggleClass('active');
     if (jQuery(this).hasClass('active')) {
-
+      jQuery(this).removeClass('active');
+    } else if (quest_count >= 2) {
+      jQuery('.noactive').addClass('hidden');
     } else {
-      
+      jQuery(this).addClass('active');
+      jQuery(this).removeClass('noactive');
+      quest_count += 1;
     }
   });
+//Отмена выбора
+jQuery('.clear_prot').on('click', function(event) {
+  quest_count = 0;
+  jQuery('.question').removeClass('active');
+});
+
 // Инструктаж перед стартом
   jQuery('.set_acept').on('click', function(event) {
     $('#set').modal('hide');
