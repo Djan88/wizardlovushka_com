@@ -126,6 +126,7 @@ jQuery(document).ready(function () {
     paused = true;
     jQuery('.protocol').css('transform', 'rotate(0deg)');
     rotat_per_sec = 1.5;
+    cur_animation_val = 0;
     clearInterval(phaseOne);
     jQuery('.start_prot').removeClass('hidden');
     jQuery('.stop_prot').addClass('hidden');
