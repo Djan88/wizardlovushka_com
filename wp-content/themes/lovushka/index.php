@@ -39,31 +39,9 @@
       <div class="row">
         <div class="header_area col-md-12">
           <div class="row">
-            <div class="col-xs-1">
-              <div class="manual" data-toggle="modal" data-target="#manual">
-                <i class="fa fa-file-text" aria-hidden="true"></i>
-              </div>
-            </div>
             <div class="col-md-6 col-md-offset-2 col-sm-6 col-sm-offset-2 col-xs-9">
               <a href="/" class="logo"><img src="<?php bloginfo('template_url'); ?>/img/logo.png" alt=""></a>
             </div>
-            <?php if(is_user_logged_in()){ ?>
-              <?php if(current_user_can('administrator')){ ?>
-              <div class="col-md-1 col-md-offset-2 col-sm-1 col-sm-offset-2 col-xs-1">
-                <div class="set" data-toggle="modal" data-target="#set">
-                  <i class="fa fa-sliders" aria-hidden="true"></i>
-                </div>
-              </div>
-            <?php } else { ?>
-              <div class="col-md-1 col-md-offset-2 col-sm-1 col-sm-offset-2 col-xs-1">
-                <div class="col-md-1 col-md-offset-2 col-sm-1 col-sm-offset-2 col-xs-1">
-                <div class="set_disabled" data-toggle="popover" data-placement="bottom" data-original-title="Пересмотр личной истории" data-content='«Пересмотр личной истории» доступен в расширенной лицензии'>
-                  <i class="fa fa-sliders" aria-hidden="true"></i>
-                </div>
-              </div>
-              </div>
-            <?php } ?>
-          <?php } ?>
           </div>
         </div>
       </div>
@@ -180,6 +158,18 @@
                     <button type="button" class="btn btn-default btn-lg play"><i class="fa fa-play" aria-hidden="true"></i></button>
                     <button type="button" class="btn btn-default btn-lg speed_faster"><i class="fa fa-forward" aria-hidden="true"></i></button>
                   </div>
+                </div>
+                <div class="col-md-6 col-md-offset-3">
+                  <div class="btn-group speed_control">
+                    <button type="button" class="btn btn-default btn-lg manual" data-toggle="modal" data-target="#manual"><i class="fa fa-file-text" aria-hidden="true"></i> Правила</button>
+                  </div>
+                  <?php if(is_user_logged_in()){ ?>
+                    <?php if(current_user_can('administrator')){ ?>
+                      <button type="button" class="btn btn-default btn-lg set" data-toggle="modal" data-target="#set"><i class="fa fa-sliders" aria-hidden="true"></i> Пересмотр личной истории</button>
+                    <?php } else { ?>
+                      <button type="button" class="btn btn-default btn-lg set_disabled" data-toggle="popover" data-placement="bottom" data-original-title="Пересмотр личной истории" data-content='«Пересмотр личной истории» доступен в расширенной лицензии'><i class="fa fa-sliders" aria-hidden="true"></i> Пересмотр личной истории</button>
+                    <?php } ?>
+                  <?php } ?>
                 </div>
               </div>
               <!-- <div class="row">
@@ -300,7 +290,7 @@
       <div class="modal-content">
         <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-          <h4 class="modal-title" id="myModalLabel">Инструкции</h4>
+          <h4 class="modal-title" id="myModalLabel">Правила пользования</h4>
         </div>
         <div class="modal-text">
           <b>1. </b>Вспомните ситуацию в которой вы волновались, суетились, боялись того, что может случиться<br>
