@@ -122,7 +122,10 @@ jQuery(document).ready(function () {
   // Остановка протокола
   jQuery('.stop_prot').on('click', function(event) {
     jQuery('.fa-pause').removeClass('fa-pause').addClass('fa-play');
+    jQuery('.question').removeClass('active');
     paused = true;
+    jQuery('.protocol').css('transform', 'rotate(0deg)');
+    rotat_per_sec = 1.5;
     clearInterval(phaseOne);
     jQuery('.start_prot').removeClass('hidden');
     jQuery('.stop_prot').addClass('hidden');

@@ -156,17 +156,18 @@
                   <div class="btn-group speed_control">
                     <button type="button" class="btn btn-default btn-lg speed_slover"><i class="fa fa-backward" aria-hidden="true"></i></button>
                     <button type="button" class="btn btn-default btn-lg play"><i class="fa fa-play" aria-hidden="true"></i></button>
+                    <button type="button" class="btn btn-default stop_prot"><i class="fa fa-stop" aria-hidden="true"></i></button>
                     <button type="button" class="btn btn-default btn-lg speed_faster"><i class="fa fa-forward" aria-hidden="true"></i></button>
                   </div>
                 </div>
                 <div class="col-md-6 col-md-offset-3">
                   <div class="btn-group speed_control">
-                    <button type="button" class="btn btn-default btn-sm manual" data-toggle="modal" data-target="#manual"><i class="fa fa-file-text" aria-hidden="true"></i> Правила</button>
+                    <button type="button" class="btn btn-default manual" data-toggle="modal" data-target="#manual"><i class="fa fa-file-text" aria-hidden="true"></i> Правила</button>
                   <?php if(is_user_logged_in()){ ?>
                     <?php if(current_user_can('administrator')){ ?>
-                      <button type="button" class="btn btn-default btn-sm set" data-toggle="modal" data-target="#set"><i class="fa fa-sliders" aria-hidden="true"></i> Пересмотр личной истории</button>
+                      <button type="button" class="btn btn-default set" data-toggle="modal" data-target="#set"><i class="fa fa-sliders" aria-hidden="true"></i> Продвинутый режим</button>
                     <?php } else { ?>
-                      <button type="button" class="btn btn-default btn-sm disabled set_disabled" data-toggle="popover" data-placement="top" data-original-title="Пересмотр личной истории" data-content='«Пересмотр личной истории» доступен в расширенной лицензии'><i class="fa fa-sliders" aria-hidden="true"></i> Пересмотр личной истории</button>
+                      <button type="button" class="btn btn-default disabled set_disabled" data-toggle="popover" data-placement="top" data-original-title="Пересмотр личной истории" data-content='«Пересмотр личной истории» доступен в расширенной лицензии'><i class="fa fa-sliders" aria-hidden="true"></i> Продвинутый режим</button>
                     <?php } ?>
                   <?php } ?>
                   </div>
