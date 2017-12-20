@@ -5,7 +5,7 @@ jQuery(document).ready(function () {
       rotat_per_sec = 1.5;
       rotateVal = 0,
       quest_count = 0,
-      instruction_one,
+      instruction_one = undefined,
       instruction_two,
       instruction_three,
       instruction_four,
