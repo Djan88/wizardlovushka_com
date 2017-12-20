@@ -141,9 +141,11 @@ jQuery('.clear_prot, .stop_prot, .stop').on('click', function(event) {
       }, 500);
     }
   });
-// Запуск протокола
+// Запуск расширенного протокола
   jQuery('.start_prot').on('click', function(event) {
     paused = false;
+    jQuery('.instr').text(instruction_one);
+    jQuery('.instruction_block').addClass('hidden');
     jQuery('.clear_prot').addClass('hidden');
     jQuery('.fa-play').removeClass('fa-play').addClass('fa-pause');
     jQuery('.speed_control').removeClass('hidden');
