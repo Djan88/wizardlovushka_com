@@ -186,7 +186,9 @@
                     <div class="col-md-8 col-md-offset-2 col-sm-12 col-xs-12">
                       <div class="alert alert-warning ">
                         <span class="instr">Вспомните переживания угрозы вашей жизни - например, как вы захлебывались или не могли вдохнуть, падали или травмировались, попадали в аварию, испытывали физическое насилие над собой или ваши родители грозились отдать вас в детский дом.</span>
-                        <button type="button" class="btn btn-primary next_instr">Далее <i class="fa fa-chevron-right" aria-hidden="true"></i></button>
+                        <div>
+                          <button type="button" class="btn btn-primary next_instr">Далее <i class="fa fa-chevron-right" aria-hidden="true"></i></button>
+                        </div>
                       </div>
                     </div>
                   <?php } ?>
