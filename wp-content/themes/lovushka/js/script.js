@@ -6,9 +6,9 @@ jQuery(document).ready(function () {
       rotateVal = 0,
       quest_count = 0,
       instruction_one = undefined,
-      instruction_two,
-      instruction_three,
-      instruction_four,
+      instruction_two = undefined,
+      instruction_three = undefined,
+      instruction_four = undefined,
       instructions = {
         "1": 'Вспомните ситуацию в которой вы волновались, суетились, боялись того, что может случиться.',
         "2": 'Вспомните ситуацию, где вы злились на кого-то либо на себя.',
