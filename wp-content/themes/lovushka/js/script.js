@@ -28,11 +28,26 @@ jQuery(document).ready(function () {
   jQuery('.question').on('click', function(event) {
     // Если клик по уже выбранному пункту
     if (jQuery(this).hasClass('active')) {
-      // jQuery(this).removeClass('active');
+      quest_count -= 1;
+      jQuery(this).removeClass('active').addClass('noactive');
+      jQuery('.noactive').removeClass('hidden');
+      jQuery('.clear_prot').removeClass('hidden');
+      if (quest_count == 1) {
+        instruction_one = instruction_three;
+        instruction_two = instruction_four;
+        instruction_three = undefined;
+        instruction_four = undefined;
+      } else if (quest_count == 0) {
+        instruction_one = undefined;
+        instruction_two = undefined;
+        instruction_three = undefined;
+        instruction_four = undefined;
+      }
     } else { 
       quest_count += 1;
       jQuery(this).addClass('active');
       jQuery(this).removeClass('noactive');
+      jQuery('.clear_prot').removeClass('hidden');
       if (quest_count == 1) {
         instruction_one = instructions[jQuery(this).data('quest_one')];
         instruction_two = instructions[jQuery(this).data('quest_two')];
@@ -43,7 +58,6 @@ jQuery(document).ready(function () {
       // Если выбрано 2 пункта
       if (quest_count >= 2) {
         jQuery('.noactive').addClass('hidden');
-        jQuery('.clear_prot').removeClass('hidden');
       }
     }
     console.log('count= '+quest_count);
