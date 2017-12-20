@@ -172,11 +172,11 @@ jQuery('.clear_prot, .stop_prot, .stop').on('click', function(event) {
 // Переключение инструкций
 jQuery('.instruction_block').on('click', function(event) {
   cur_instruction += 1;
-  if (cur_instruction = 2 && instruction_two) {
+  if (cur_instruction == 2 && instruction_two) {
     jQuery('.instr').text(instruction_two);
-  } else if (cur_instruction = 3 && instruction_three) {
+  } else if (cur_instruction == 3 && instruction_three) {
     jQuery('.instr').text(instruction_three);
-  } else if (cur_instruction = 4 && instruction_four) {
+  } else if (cur_instruction == 4 && instruction_four) {
     jQuery('.instr').text(instruction_three);
     jQuery('.close_instr').removeClass('hidden');
     jQuery('.next_instr').addClass('hidden');
