@@ -168,6 +168,7 @@
                         <span class="instr"></span>
                         <div>
                           <button type="button" class="btn btn-primary next_instr">Далее <i class="fa fa-chevron-right" aria-hidden="true"></i></button>
+                          <button type="button" class="btn btn-primary hidden close_instr">Закрыть</button>
                         </div>
                       </div>
                     </div>

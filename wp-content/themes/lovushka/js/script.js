@@ -86,6 +86,8 @@ jQuery('.clear_prot, .stop_prot, .stop').on('click', function(event) {
   instruction_four = undefined;
   cur_instruction = 1;
   jQuery('.instruction_block').addClass('hidden');
+  jQuery('.close_instr').addClass('hidden');
+  jQuery('.next_instr').removeClass('hidden');
   jQuery('.question').removeClass('active').addClass('noactive').removeClass('hidden');
   jQuery('.clear_prot').addClass('hidden');
 });
@@ -171,14 +173,24 @@ jQuery('.clear_prot, .stop_prot, .stop').on('click', function(event) {
 jQuery('.instruction_block').on('click', function(event) {
   cur_instruction += 1;
   if (cur_instruction = 2 && instruction_two) {
-    jQuery('.instr').animate({
-      color: 'transparent'
-    }, 500, function() {
-      jQuery('.instr').text(instruction_two);
-    });
-    jQuery('.instr').css('color', '#8a6d3b');
+    jQuery('.instr').text(instruction_two);
+  } else if (cur_instruction = 3 && instruction_three) {
+    jQuery('.instr').text(instruction_three);
+  } else if (cur_instruction = 4 && instruction_four) {
+    jQuery('.instr').text(instruction_three);
+    jQuery('.close_instr').removeClass('hidden');
+    jQuery('.next_instr').addClass('hidden');
+  } else {
+    jQuery('.close_instr').removeClass('hidden');
+    jQuery('.next_instr').addClass('hidden');
   }
 });
+//Закрытие окна инструкций
+  jQuery('.close_instr').on('click', function(event) {
+    jQuery('.instruction_block').addClass('hidden');
+    jQuery('.close_instr').addClass('hidden');
+    jQuery('.next_instr').removeClass('hidden');
+  });
   // Пауза/Пуск
   jQuery('.play').on('click', function(event) {
     console.log(paused);
@@ -221,6 +233,8 @@ jQuery('.instruction_block').on('click', function(event) {
     instruction_three = undefined;
     instruction_four = undefined;
     cur_instruction = 1;
+    jQuery('.close_instr').addClass('hidden');
+    jQuery('.next_instr').removeClass('hidden');
     jQuery('.instruction_block').addClass('hidden');
   });
 
