@@ -33,9 +33,10 @@ jQuery(document).ready(function () {
       jQuery(this).removeClass('active').addClass('noactive');
       jQuery('.noactive').removeClass('hidden');
       jQuery('.clear_prot').removeClass('hidden');
+      jQuery('.set_acept').removeClass('hidden');
       if (quest_count == 0) {
         jQuery('.clear_prot').addClass('hidden');
-        jQuery('.clear_prot').addClass('hidden');
+        jQuery('.set_acept').addClass('hidden');
       }
       if (quest_count == 1) {
         if (instruction_three) {
@@ -57,7 +58,7 @@ jQuery(document).ready(function () {
       jQuery(this).addClass('active');
       jQuery(this).removeClass('noactive');
       jQuery('.clear_prot').removeClass('hidden');
-      jQuery('.clear_prot').removeClass('hidden');
+      jQuery('.set_acept').removeClass('hidden');
       if (quest_count == 1) {
         instruction_one = instructions[jQuery(this).data('quest_one')];
         instruction_two = instructions[jQuery(this).data('quest_two')];
