@@ -179,10 +179,12 @@ header h1.heading
     background: #fff;
     border-radius: 7px;
     border: 2px solid #000;
-}
-.ring
-{
     margin-bottom: 20px;
+}
+.instruction_block
+{
+    border-radius: 7px;
+    border: 2px solid #000;
 }
 .text-centered
 {
@@ -315,12 +317,25 @@ footer.footer a
     background: #fff;
     box-shadow: none;
 }
+
+.ring
+{
+    margin-bottom: 20px;
+    -webkit-transition: all 0.4s linear;
+       -moz-transition: all 0.4s linear;
+            transition: all 0.4s linear;
+}
 .instr
 {
     color: #8a6d3b;
+    font-size: 15px;
     -webkit-transition: all 0.2s linear;
        -moz-transition: all 0.2s linear;
             transition: all 0.2s linear;
+}
+.next_instr 
+{
+    margin-top: 5px;
 }
 @media (max-width: 991px) {
     /*.set, .manual, .set_disabled
