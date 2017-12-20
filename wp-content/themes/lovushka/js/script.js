@@ -5,6 +5,10 @@ jQuery(document).ready(function () {
       rotat_per_sec = 1.5;
       rotateVal = 0,
       quest_count = 0,
+      instruction_one,
+      instruction_two,
+      instruction_three,
+      instruction_four,
       instructions = {
         "1": 'Вспомните ситуацию в которой вы волновались, суетились, боялись того, что может случиться.',
         "2": 'Вспомните ситуацию, где вы злились на кого-то либо на себя.',
@@ -29,13 +33,24 @@ jQuery(document).ready(function () {
       quest_count += 1;
       jQuery(this).addClass('active');
       jQuery(this).removeClass('noactive');
+      if (quest_count == 1) {
+        instruction_one = instructions[jQuery(this).data('quest_one')];
+        instruction_two = instructions[jQuery(this).data('quest_two')];
+      } else if (quest_count == 2) {
+        instruction_three = instructions[jQuery(this).data('quest_one')];
+        instruction_four = instructions[jQuery(this).data('quest_two')];
+      }
       // Если выбрано 2 пункта
       if (quest_count >= 2) {
         jQuery('.noactive').addClass('hidden');
         jQuery('.clear_prot').removeClass('hidden');
       }
     }
-    console.log(quest_count);
+    console.log('count= 'quest_count);
+    console.log('one= 'instruction_one);
+    console.log('two= 'instruction_two);
+    console.log('three= 'instruction_three);
+    console.log('four= 'instruction_four);
   });
 //Отмена выбора
 jQuery('.clear_prot, .stop_prot, .stop').on('click', function(event) {
@@ -59,7 +74,7 @@ jQuery('.clear_prot, .stop_prot, .stop').on('click', function(event) {
       jQuery('.fa-play').removeClass('fa-play').addClass('fa-pause');
       jQuery('.speed_control').removeClass('hidden');
       phaseOne = setInterval(function(){
-        if (count_animation <= 360){                                                                         //120
+        if (count_animation <= 1200){                                                                         //120
           jQuery('.protocol').css('transform', 'rotate('+cur_animation_val+'deg)');
           count_animation += 0.5;
           cur_animation_val -= rotat_per_sec;
@@ -87,7 +102,7 @@ jQuery('.clear_prot, .stop_prot, .stop').on('click', function(event) {
       jQuery('.fa-play').removeClass('fa-play').addClass('fa-pause');
       jQuery('.speed_control').removeClass('hidden');
       phaseOne = setInterval(function(){
-        if (count_animation <= 360){                                                                         //120
+        if (count_animation <= 1200){                                                                         //120
           jQuery('.protocol').css('transform', 'rotate('+cur_animation_val+'deg)');
           count_animation += 0.5;
           cur_animation_val -= rotat_per_sec;
@@ -108,7 +123,7 @@ jQuery('.clear_prot, .stop_prot, .stop').on('click', function(event) {
     jQuery('.questions').addClass('hidden');
     jQuery('.runed').removeClass('hidden');
     phaseOne = setInterval(function(){
-      if (count_animation <= 360){                                                                         //120
+      if (count_animation <= 1200){                                                                         //120
         jQuery('.protocol').css('transform', 'rotate('+cur_animation_val+'deg)');
         count_animation += 0.5;
         cur_animation_val -= rotat_per_sec;
@@ -132,7 +147,7 @@ jQuery('.clear_prot, .stop_prot, .stop').on('click', function(event) {
       jQuery('.questions').addClass('hidden');
       jQuery('.runed').removeClass('hidden');
       phaseOne = setInterval(function(){
-        if (count_animation <= 360){                                                                         //120
+        if (count_animation <= 1200){                                                                         //120
           jQuery('.protocol').css('transform', 'rotate('+cur_animation_val+'deg)');
           count_animation += 0.5;
           cur_animation_val -= rotat_per_sec;
