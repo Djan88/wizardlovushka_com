@@ -172,6 +172,7 @@ jQuery('.clear_prot, .stop_prot, .stop').on('click', function(event) {
 // Переключение инструкций
 jQuery('.instruction_block').on('click', function(event) {
   cur_instruction += 1;
+  console.log(cur_instruction);
   if (cur_instruction == 2 && instruction_two) {
     jQuery('.instr').text(instruction_two);
     if (instruction_three == undefined) {
