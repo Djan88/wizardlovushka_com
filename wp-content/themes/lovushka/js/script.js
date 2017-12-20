@@ -33,8 +33,12 @@ jQuery(document).ready(function () {
       jQuery('.noactive').removeClass('hidden');
       jQuery('.clear_prot').removeClass('hidden');
       if (quest_count == 1) {
-        instruction_one = instruction_three;
-        instruction_two = instruction_four;
+        if (instruction_three) {
+          instruction_one = instruction_three;
+        }
+        if (instruction_four) {
+          instruction_two = instruction_four;
+        }
         instruction_three = undefined;
         instruction_four = undefined;
       } else if (quest_count == 0) {
