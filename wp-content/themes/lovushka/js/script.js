@@ -54,6 +54,12 @@ jQuery(document).ready(function () {
       } else if (quest_count == 2) {
         instruction_three = instructions[jQuery(this).data('quest_one')];
         instruction_four = instructions[jQuery(this).data('quest_two')];
+        if (instruction_three == instruction_one || instruction_three == instruction_two) {
+          instruction_three = undefined;
+        }
+        if (instruction_four == instruction_one || instruction_four == instruction_two) {
+          instruction_four = undefined;
+        }
       }
       // Если выбрано 2 пункта
       if (quest_count >= 2) {
@@ -69,6 +75,10 @@ jQuery(document).ready(function () {
 //Отмена выбора
 jQuery('.clear_prot, .stop_prot, .stop').on('click', function(event) {
   quest_count = 0;
+  instruction_one = undefined;
+  instruction_two = undefined;
+  instruction_three = undefined;
+  instruction_four = undefined;
   jQuery('.question').removeClass('active').addClass('noactive').removeClass('hidden');
   jQuery('.clear_prot').addClass('hidden');
 });
