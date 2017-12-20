@@ -315,7 +315,7 @@
           <div class="pull-left">
             <button class="btn btn-warning clear_prot hidden">Отменить выбор</button>
           </div>
-          <button class="btn btn-primary set_acept hiden">Применить настройки</button>
+          <button class="btn btn-primary set_acept hidden">Применить настройки</button>
         </div>
       </div>
     </div>
