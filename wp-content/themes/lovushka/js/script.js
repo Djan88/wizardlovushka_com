@@ -174,8 +174,16 @@ jQuery('.instruction_block').on('click', function(event) {
   cur_instruction += 1;
   if (cur_instruction == 2 && instruction_two) {
     jQuery('.instr').text(instruction_two);
+    if (instruction_three == undefined) {
+      jQuery('.close_instr').removeClass('hidden');
+    jQuery('.next_instr').addClass('hidden');
+    }
   } else if (cur_instruction == 3 && instruction_three) {
     jQuery('.instr').text(instruction_three);
+    if (instruction_four == undefined) {
+      jQuery('.close_instr').removeClass('hidden');
+    jQuery('.next_instr').addClass('hidden');
+    }
   } else if (cur_instruction == 4 && instruction_four) {
     jQuery('.instr').text(instruction_three);
     jQuery('.close_instr').removeClass('hidden');
@@ -190,6 +198,7 @@ jQuery('.instruction_block').on('click', function(event) {
     jQuery('.instruction_block').addClass('hidden');
     jQuery('.close_instr').addClass('hidden');
     jQuery('.next_instr').removeClass('hidden');
+    cur_instruction = 1;
   });
   // Пауза/Пуск
   jQuery('.play').on('click', function(event) {
