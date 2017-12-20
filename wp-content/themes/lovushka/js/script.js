@@ -186,7 +186,7 @@ jQuery('.instruction_block').on('click', function(event) {
     jQuery('.next_instr').addClass('hidden');
     }
   } else if (cur_instruction == 4 && instruction_four) {
-    jQuery('.instr').text(instruction_three);
+    jQuery('.instr').text(instruction_four);
     jQuery('.close_instr').removeClass('hidden');
     jQuery('.next_instr').addClass('hidden');
   } else {
