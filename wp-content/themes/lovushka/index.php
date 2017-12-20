@@ -181,6 +181,16 @@
                   <?php } ?>
                   </div>
                 </div>
+                <?php if(is_user_logged_in()){ ?>
+                  <?php if(current_user_can('administrator')){ ?>
+                    <div class="col-md-8 col-md-offset-2 col-sm-12 col-xs-12">
+                      <div class="alert alert-warning ">
+                        <span class="instr">Вспомните переживания угрозы вашей жизни - например, как вы захлебывались или не могли вдохнуть, падали или травмировались, попадали в аварию, испытывали физическое насилие над собой или ваши родители грозились отдать вас в детский дом.</span>
+                        <button type="button" class="btn btn-primary next_instr">Далее <i class="fa fa-chevron-right" aria-hidden="true"></i></button>
+                      </div>
+                    </div>
+                  <?php } ?>
+                <?php } ?>
               </div>
               <!-- <div class="row">
                 <div class="col-md-4 col-md-offset-4">
