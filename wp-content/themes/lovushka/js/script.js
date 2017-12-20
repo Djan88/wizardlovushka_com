@@ -89,8 +89,8 @@ jQuery('.clear_prot, .stop_prot, .stop').on('click', function(event) {
 
 // Инструктаж перед стартом
   jQuery('.set_acept').on('click', function(event) {
-    $('#set').modal('hide');
-    $('#result').modal('show');
+    jQuery('#set').modal('hide');
+    jQuery('#result').modal('show');
   });
  // Быстрее 
   jQuery('.speed_faster').on('click', function(event) {
@@ -147,7 +147,7 @@ jQuery('.clear_prot, .stop_prot, .stop').on('click', function(event) {
     jQuery('.clear_prot').addClass('hidden');
     jQuery('.fa-play').removeClass('fa-play').addClass('fa-pause');
     jQuery('.speed_control').removeClass('hidden');
-    $('#result').modal('hide');
+    jQuery('#result').modal('hide');
     jQuery('.questions').addClass('hidden');
     jQuery('.runed').removeClass('hidden');
     phaseOne = setInterval(function(){
@@ -210,5 +210,5 @@ jQuery('.clear_prot, .stop_prot, .stop').on('click', function(event) {
     jQuery('.protocol').css('height', jQuery('.protocol').css('width'));
     jQuery('.protocol svg').css('height', jQuery('.protocol svg').css('width'));
   });
-  $('.set_disabled').popover();
+  jQuery('.set_disabled').popover();
 });
