@@ -176,10 +176,13 @@ header h1.heading
 }
 .speed_control
 {
-    margin-top: 20px;
     background: #fff;
     border-radius: 7px;
     border: 2px solid #000;
+}
+.ring
+{
+    margin-bottom: 20px;
 }
 .text-centered
 {

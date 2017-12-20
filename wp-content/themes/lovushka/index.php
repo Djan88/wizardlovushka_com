@@ -90,7 +90,7 @@
           <?php } else { ?>
             <div class="container">
               <div class="row">
-                <div class="col-md-8 col-md-offset-2">
+                <div class="col-md-8 col-md-offset-2 ring">
                   <!-- <img src="img/lovushka.png" alt="lovushka" class="protocol"> -->
                   <div class="protocol">
                     <svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -160,6 +160,18 @@
                     </svg>
                   </div>
                 </div>
+                <?php if(is_user_logged_in()){ ?>
+                  <?php if(current_user_can('administrator')){ ?>
+                    <div class="col-md-8 col-md-offset-2 col-sm-12 col-xs-12">
+                      <div class="alert alert-warning ">
+                        <span class="instr">Вспомните переживания угрозы вашей жизни - например, как вы захлебывались или не могли вдохнуть, падали или травмировались, попадали в аварию, испытывали физическое насилие над собой или ваши родители грозились отдать вас в детский дом.</span>
+                        <div>
+                          <button type="button" class="btn btn-primary next_instr">Далее <i class="fa fa-chevron-right" aria-hidden="true"></i></button>
+                        </div>
+                      </div>
+                    </div>
+                  <?php } ?>
+                <?php } ?>
                 <div class="col-md-4 col-md-offset-4">
                   <div class="btn-group speed_control">
                     <button type="button" class="btn btn-default btn-lg speed_slover"><i class="fa fa-backward" aria-hidden="true"></i></button>
@@ -181,18 +193,6 @@
                   <?php } ?>
                   </div>
                 </div>
-                <?php if(is_user_logged_in()){ ?>
-                  <?php if(current_user_can('administrator')){ ?>
-                    <div class="col-md-8 col-md-offset-2 col-sm-12 col-xs-12">
-                      <div class="alert alert-warning ">
-                        <span class="instr">Вспомните переживания угрозы вашей жизни - например, как вы захлебывались или не могли вдохнуть, падали или травмировались, попадали в аварию, испытывали физическое насилие над собой или ваши родители грозились отдать вас в детский дом.</span>
-                        <div>
-                          <button type="button" class="btn btn-primary next_instr">Далее <i class="fa fa-chevron-right" aria-hidden="true"></i></button>
-                        </div>
-                      </div>
-                    </div>
-                  <?php } ?>
-                <?php } ?>
               </div>
               <!-- <div class="row">
                 <div class="col-md-4 col-md-offset-4">
