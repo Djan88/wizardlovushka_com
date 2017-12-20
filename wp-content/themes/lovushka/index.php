@@ -265,8 +265,8 @@
   </footer>
   <?php wp_footer(); ?>
   <!-- script tags
-  ============================================================= --><!-- 
-  <script src="<?php //bloginfo('template_url'); ?>/js/jquery-2.1.1.js"></script> -->
+  ============================================================= -->
+  <script src="<?php bloginfo('template_url'); ?>/js/jquery-2.1.1.js"></script>
   <script src="<?php bloginfo('template_url'); ?>/js/bootstrap.min.js"></script>
   <script src="<?php bloginfo('template_url'); ?>/js/script.js"></script>
   <div class="modal fade" id="set" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
@@ -274,7 +274,7 @@
       <div class="modal-content">
         <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-          <h4 class="modal-title" id="myModalLabel">Вопросы для диагностики личной истории:</h4>
+          <h4 class="modal-title" id="myModalLabel">Диагностика личной истории:</h4>
         </div>
         <div class="modal-body text-centered">
           <div class="questions">

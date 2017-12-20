@@ -307,6 +307,11 @@ footer.footer a
     -ms-user-select: none;
     user-select: none;
 }
+.btn-default:active, .open>.dropdown-toggle.btn-default 
+{
+    background: #fff;
+    box-shadow: none;
+}
 @media (max-width: 991px) {
     /*.set, .manual, .set_disabled
     {
