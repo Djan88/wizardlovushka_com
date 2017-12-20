@@ -6,6 +6,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
   <title><?php wp_title(''); ?></title>
+  <link rel="icon" href="<?php echo get_template_directory_uri(); ?>/img/favicon.ico">
   <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/font-awesome.min.css">
   <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/bootstrap.min.css">
   <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/style.css">
