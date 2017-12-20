@@ -329,9 +329,9 @@ footer.footer a
 {
     color: #8a6d3b;
     font-size: 15px;
-    -webkit-transition: all 0.2s linear;
-       -moz-transition: all 0.2s linear;
-            transition: all 0.2s linear;
+    -webkit-transition: all 0.5s linear;
+       -moz-transition: all 0.5s linear;
+            transition: all 0.5s linear;
 }
 .next_instr 
 {

@@ -173,7 +173,7 @@ jQuery('.instruction_block').on('click', function(event) {
   if (cur_instruction = 2 && instruction_two) {
     jQuery('.instr').animate({
       color: 'transparent'
-    }, 200, function() {
+    }, 500, function() {
       jQuery('.instr').text(instruction_two);
     });
     jQuery('.instr').css('color', '#8a6d3b');
