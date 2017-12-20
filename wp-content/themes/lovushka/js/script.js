@@ -46,11 +46,11 @@ jQuery(document).ready(function () {
         jQuery('.clear_prot').removeClass('hidden');
       }
     }
-    console.log('count= 'quest_count);
-    console.log('one= 'instruction_one);
-    console.log('two= 'instruction_two);
-    console.log('three= 'instruction_three);
-    console.log('four= 'instruction_four);
+    console.log('count= '+quest_count);
+    console.log('one= '+instruction_one);
+    console.log('two= '+instruction_two);
+    console.log('three= '+instruction_three);
+    console.log('four= '+instruction_four);
   });
 //Отмена выбора
 jQuery('.clear_prot, .stop_prot, .stop').on('click', function(event) {
