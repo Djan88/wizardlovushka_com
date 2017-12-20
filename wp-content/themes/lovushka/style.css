@@ -194,9 +194,11 @@ header h1.heading
 {
     margin: 5px;
 }
-.question:focus
+.question:focus 
 {
-    outline: none!important
+    outline: none!important;
+    background: #fff;
+    box-shadow: none;
 }
 footer.footer 
 {
@@ -327,7 +329,7 @@ footer.footer a
     color: #8a6d3b;
     font-size: 15px;
 }
-.next_instr, .close_instr 
+.next_instr, .close_instr, .start_prot
 {
     margin-top: 5px;
 }
