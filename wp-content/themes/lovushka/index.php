@@ -291,6 +291,7 @@
           <h4 class="modal-title" id="myModalLabel">Диагностика личной истории:</h4>
         </div>
         <div class="modal-body text-centered">
+          <h4>ВыВыберите из списка актуальные проблемы, но не более 2-х.</h4>
           <div class="questions">
             <button type="button" class="btn btn-default question noactive" data-quest_one = "2" data-quest_two = "5" data-choiced="">Злость на кого-либо, на ситуацию или на себя</button>
             <button type="button" class="btn btn-default question noactive" data-quest_one = "5" data-quest_two = "2" data-choiced="">Сложности в общении и в любых делах</button>
