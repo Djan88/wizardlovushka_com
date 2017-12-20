@@ -5,6 +5,7 @@ jQuery(document).ready(function () {
       rotat_per_sec = 1.5;
       rotateVal = 0,
       quest_count = 0,
+      cur_instruction = 1,
       instruction_one = undefined,
       instruction_two = undefined,
       instruction_three = undefined,
@@ -83,6 +84,8 @@ jQuery('.clear_prot, .stop_prot, .stop').on('click', function(event) {
   instruction_two = undefined;
   instruction_three = undefined;
   instruction_four = undefined;
+  cur_instruction = 1;
+  jQuery('.instruction_block').addClass('hidden');
   jQuery('.question').removeClass('active').addClass('noactive').removeClass('hidden');
   jQuery('.clear_prot').addClass('hidden');
 });
@@ -164,6 +167,18 @@ jQuery('.clear_prot, .stop_prot, .stop').on('click', function(event) {
       } 
     }, 500);
   });
+// Переключение инструкций
+jQuery('.instruction_block').on('click', function(event) {
+  cur_instruction += 1;
+  if (cur_instruction = 2 && instruction_two) {
+    jQuery('.instr').animate({
+      color: 'transparent'
+    }, 200, function() {
+      jQuery('.instr').text(instruction_two);
+    });
+    jQuery('.instr').css('color', '#8a6d3b');
+  }
+});
   // Пауза/Пуск
   jQuery('.play').on('click', function(event) {
     console.log(paused);
@@ -200,12 +215,15 @@ jQuery('.clear_prot, .stop_prot, .stop').on('click', function(event) {
     clearInterval(phaseOne);
     jQuery('.questions').removeClass('hidden');
     jQuery('.runed').addClass('hidden');
+    quest_count = 0;
+    instruction_one = undefined;
+    instruction_two = undefined;
+    instruction_three = undefined;
+    instruction_four = undefined;
+    cur_instruction = 1;
+    jQuery('.instruction_block').addClass('hidden');
   });
-  // Смена цвета
-  // jQuery('.color_item').on('click', function(event) {
-  //   jQuery('.protocol').css('background', jQuery(this).data('color'));
-  // });
-  // Подгон ширины
+
   jQuery('.protocol').css('height', jQuery('.protocol').css('width'));
   jQuery('.protocol svg').css('height', jQuery('.protocol svg').css('width'));
   jQuery('window').on('change', function(event) {
