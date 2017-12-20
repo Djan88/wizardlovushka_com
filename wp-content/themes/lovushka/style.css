@@ -199,6 +199,7 @@ header h1.heading
     outline: none!important;
     background: #fff;
     box-shadow: none;
+    border-color: #ccc;
 }
 footer.footer 
 {

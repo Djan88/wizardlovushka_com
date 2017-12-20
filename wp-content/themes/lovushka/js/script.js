@@ -24,16 +24,16 @@ jQuery(document).ready(function () {
         "11": 'Вспомните перенесённые вами состояния обиды и унижения.',
         "12": 'Вспомните переживания угрозы вашей жизни - например, как вы захлебывались или не могли вдохнуть, падали или травмировались, попадали в аварию, испытывали физическое насилие над собой или ваши родители грозились отдать вас в детский дом.',
        }
-  console.log(instructions);
 // Клик по вопросу
   jQuery('.question').on('click', function(event) {
+    console.log(quest_count);
     // Если клик по уже выбранному пункту
     if (jQuery(this).hasClass('active')) {
       quest_count -= 1;
       jQuery(this).removeClass('active').addClass('noactive');
       jQuery('.noactive').removeClass('hidden');
       jQuery('.clear_prot').removeClass('hidden');
-      if (true) {
+      if (quest_count == 0) {
         jQuery('.clear_prot').addClass('hidden');
         jQuery('.clear_prot').addClass('hidden');
       }
@@ -76,11 +76,6 @@ jQuery(document).ready(function () {
         jQuery('.noactive').addClass('hidden');
       }
     }
-    console.log('count= '+quest_count);
-    console.log('one= '+instruction_one);
-    console.log('two= '+instruction_two);
-    console.log('three= '+instruction_three);
-    console.log('four= '+instruction_four);
   });
 //Отмена выбора
 jQuery('.clear_prot, .stop_prot, .stop').on('click', function(event) {
@@ -117,7 +112,6 @@ jQuery('.clear_prot, .stop_prot, .stop').on('click', function(event) {
           jQuery('.protocol').css('transform', 'rotate('+cur_animation_val+'deg)');
           count_animation += 0.5;
           cur_animation_val -= rotat_per_sec;
-          console.log(rotat_per_sec);
         } else {
             clearInterval(phaseOne);
             jQuery('.protocol').css('transform', 'rotate(0deg)');
@@ -145,7 +139,6 @@ jQuery('.clear_prot, .stop_prot, .stop').on('click', function(event) {
           jQuery('.protocol').css('transform', 'rotate('+cur_animation_val+'deg)');
           count_animation += 0.5;
           cur_animation_val -= rotat_per_sec;
-          console.log(rotat_per_sec);
         } else {
             clearInterval(phaseOne);
         } 
@@ -168,7 +161,6 @@ jQuery('.clear_prot, .stop_prot, .stop').on('click', function(event) {
         jQuery('.protocol').css('transform', 'rotate('+cur_animation_val+'deg)');
         count_animation += 0.5;
         cur_animation_val -= rotat_per_sec;
-        console.log(rotat_per_sec);
       } else {
           clearInterval(phaseOne);
           jQuery('.protocol').css('transform', 'rotate(0deg)');
@@ -178,7 +170,6 @@ jQuery('.clear_prot, .stop_prot, .stop').on('click', function(event) {
 // Переключение инструкций
 jQuery('.instruction_block').on('click', function(event) {
   cur_instruction += 1;
-  console.log(cur_instruction);
   if (cur_instruction == 2 && instruction_two) {
     jQuery('.instr').text(instruction_two);
     if (instruction_three == undefined) {
@@ -209,7 +200,6 @@ jQuery('.instruction_block').on('click', function(event) {
   });
   // Пауза/Пуск
   jQuery('.play').on('click', function(event) {
-    console.log(paused);
     if (paused == false) {
       jQuery('.fa-pause').removeClass('fa-pause').addClass('fa-play');
       paused = true;
@@ -224,7 +214,6 @@ jQuery('.instruction_block').on('click', function(event) {
           jQuery('.protocol').css('transform', 'rotate('+cur_animation_val+'deg)');
           count_animation += 0.5;
           cur_animation_val -= rotat_per_sec;
-          console.log(rotat_per_sec);
         } else {
             clearInterval(phaseOne);
             jQuery('.protocol').css('transform', 'rotate(0deg)');
