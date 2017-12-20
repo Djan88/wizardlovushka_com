@@ -327,7 +327,7 @@ footer.footer a
     color: #8a6d3b;
     font-size: 15px;
 }
-.next_instr 
+.next_instr, .close_instr 
 {
     margin-top: 5px;
 }
