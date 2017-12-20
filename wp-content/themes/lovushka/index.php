@@ -164,11 +164,11 @@
                 <?php if(is_user_logged_in()){ ?>
                   <?php if(current_user_can('administrator')){ ?>
                     <div class="col-md-8 col-md-offset-2 col-sm-12 col-xs-12 ">
-                      <div class="alert alert-warning instruction_block hidden">
+                      <div class="alert alert-warning instruction_block alert-dismissable hidden">
                         <span class="instr"></span>
                         <div>
-                          <button type="button" class="btn btn-primary next_instr">Далее <i class="fa fa-chevron-right" aria-hidden="true"></i></button>
-                          <button type="button" class="btn btn-primary hidden close_instr">Закрыть</button>
+                          <button type="button" class="btn btn-primary next_instr">Далее <i class="fa fa-chevron-right" data-dismiss="alert" aria-hidden="true"></i></button>
+                          <button type="button" class="btn btn-primary hidden close_instr" data-dismiss="alert" aria-hidden="true">Закрыть</button>
                         </div>
                       </div>
                     </div>

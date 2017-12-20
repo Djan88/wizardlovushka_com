@@ -151,6 +151,7 @@ jQuery('.clear_prot, .stop_prot, .stop').on('click', function(event) {
     paused = false;
     jQuery('.instr').text(instruction_one);
     jQuery('.instruction_block').removeClass('hidden');
+    jQuery('.set_acept').addClass('hidden');
     jQuery('.clear_prot').addClass('hidden');
     jQuery('.fa-play').removeClass('fa-play').addClass('fa-pause');
     jQuery('.speed_control').removeClass('hidden');
