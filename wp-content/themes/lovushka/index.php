@@ -186,7 +186,7 @@
                   <div class="btn-group speed_control">
                     <button type="button" class="btn btn-default manual" data-toggle="modal" data-target="#manual"><i class="fa fa-file-text" aria-hidden="true"></i> Правила</button>
                   <?php if(is_user_logged_in()){ ?>
-                    <?php if(current_user_can('administrator')){ ?>
+                    <?php if(current_user_can('administrator') || current_user_can('author')){ ?>
                       <button type="button" class="btn btn-default set" data-toggle="modal" data-target="#set"><i class="fa fa-sliders" aria-hidden="true"></i> Продвинутый режим</button>
                     <?php } else { ?>
                       <!-- <button type="button" class="btn btn-default disabled set_disabled" data-toggle="popover" data-placement="top" data-original-title="Пересмотр личной истории" data-content='«Пересмотр личной истории» доступен в расширенной лицензии'><i class="fa fa-sliders" aria-hidden="true"></i> Продвинутый режим</button> -->
