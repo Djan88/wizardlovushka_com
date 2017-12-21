@@ -82,6 +82,7 @@ jQuery(document).ready(function () {
 jQuery('.clear_prot, .stop_prot, .stop').on('click', function(event) {
   quest_count = 0;
   jQuery('.clear_prot').addClass('hidden');
+  jQuery('.set_acept').addClass('hidden');
   instruction_one = undefined;
   instruction_two = undefined;
   instruction_three = undefined;
