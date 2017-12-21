@@ -359,6 +359,10 @@ footer.footer a
         font-size: 13px;
         margin-top: 4px;
     }*/
+    .question 
+    {
+        white-space: normal;
+    }
 }
 @media (max-width: 500px) {
     .logo img {
