@@ -248,7 +248,7 @@ jQuery('.instruction_block').on('click', function(event) {
 
   jQuery('.protocol').css('height', jQuery('.protocol').css('width'));
   jQuery('.protocol svg').css('height', jQuery('.protocol svg').css('width'));
-  jQuery('window').on('change', function(event) {
+  jQuery('window').on('resize', function(event) {
     jQuery('.protocol').css('height', jQuery('.protocol').css('width'));
     jQuery('.protocol svg').css('height', jQuery('.protocol svg').css('width'));
   });
