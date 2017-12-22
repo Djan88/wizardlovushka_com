@@ -162,7 +162,7 @@
                   </div>
                 </div>
                 <?php if(is_user_logged_in()){ ?>
-                  <?php if(current_user_can('administrator') || current_user_can('autor')){ ?>
+                  <?php if(current_user_can('administrator') || current_user_can('author')){ ?>
                     <div class="col-md-8 col-md-offset-2 col-sm-12 col-xs-12 ">
                       <div class="instruction_block hidden">
                         <span class="instr"></span>
