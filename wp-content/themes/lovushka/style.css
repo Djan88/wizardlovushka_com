@@ -197,6 +197,13 @@ header h1.heading
     -webkit-user-select: none;
     user-select: none;
 }
+.footer
+{
+   -moz-user-select: none;
+   -khtml-user-select: none;
+   -webkit-user-select: none;
+   user-select: none; 
+}
 .text-centered
 {
     text-align: center;
