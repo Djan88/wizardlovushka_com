@@ -197,7 +197,7 @@ header h1.heading
     -webkit-user-select: none;
     user-select: none;
 }
-.footer
+.top-header, .footer
 {
    -moz-user-select: none;
    -khtml-user-select: none;
