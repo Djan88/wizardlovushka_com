@@ -192,6 +192,10 @@ header h1.heading
     margin-bottom: 20px;
     position: relative;
     z-index: 999;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
 }
 .text-centered
 {

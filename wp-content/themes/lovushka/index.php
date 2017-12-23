@@ -190,7 +190,7 @@
                       <button type="button" class="btn btn-default set" data-toggle="modal" data-target="#set"><i class="fa fa-sliders" aria-hidden="true"></i> Продвинутый режим</button>
                     <?php } else { ?>
                       <!-- <button type="button" class="btn btn-default disabled set_disabled" data-toggle="popover" data-placement="top" data-original-title="Пересмотр личной истории" data-content='«Пересмотр личной истории» доступен в расширенной лицензии'><i class="fa fa-sliders" aria-hidden="true"></i> Продвинутый режим</button> -->
-                      <button type="button" class="btn btn-default disabled set_disabled" data-toggle="popover" data-placement="top" data-original-title="Пересмотр личной истории" data-content='Продвинутый режим скоро станет доступен для пользователей расширенной лицензии'><i class="fa fa-sliders" aria-hidden="true"></i> Продвинутый режим</button>
+                      <button type="button" class="btn btn-default disabled set_disabled" data-toggle="popover" data-placement="top" data-original-title="Пересмотр личной истории" data-content='Продвинутый режим доступен для пользователей расширенной лицензии'><i class="fa fa-sliders" aria-hidden="true"></i> Продвинутый режим</button>
                     <?php } ?>
                   <?php } ?>
                   </div>
