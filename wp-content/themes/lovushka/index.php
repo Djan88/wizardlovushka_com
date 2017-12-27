@@ -177,9 +177,11 @@
                 <div class="col-md-4 col-md-offset-4">
                   <div class="btn-group speed_control">
                     <button type="button" class="btn btn-default btn-lg speed_slover"><i class="fa fa-backward" aria-hidden="true"></i></button>
+                    <button type="button" class="btn btn-default btn-lg speed_closed hidden"><i class="fa fa-backward" aria-hidden="true"></i></button>
                     <button type="button" class="btn btn-default btn-lg play"><i class="fa fa-play" aria-hidden="true"></i></button>
                     <button type="button" class="btn btn-default btn-lg stop"><i class="fa fa-stop" aria-hidden="true"></i></button>
                     <button type="button" class="btn btn-default btn-lg speed_faster"><i class="fa fa-forward" aria-hidden="true"></i></button>
+                    <button type="button" class="btn btn-default btn-lg speed_closed hidden"><i class="fa fa-forward" aria-hidden="true"></i></button>
                   </div>
                 </div>
                 <div class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2 col-xs-12">

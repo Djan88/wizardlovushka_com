@@ -216,7 +216,7 @@ jQuery('.clear_prot, .stop_prot, .stop').on('click', function() {
       if (count_animation <= 1200){                                                                         //120
         jQuery('.protocol').css('transform', 'rotate('+cur_animation_val+'deg)');
         count_animation += 0.5;
-        cur_animation_val -= rotat_per_sec;
+        cur_animation_val -= speed_one;
       } else {
           clearInterval(phaseOne);
           jQuery('.protocol').css('transform', 'rotate(0deg)');
@@ -232,14 +232,44 @@ jQuery('.instruction_block').on('click', function() {
       jQuery('.close_instr').removeClass('hidden');
     jQuery('.next_instr').addClass('hidden');
     }
+    phaseOne = setInterval(function(){
+      if (count_animation <= 1200){                                                                         //120
+        jQuery('.protocol').css('transform', 'rotate('+cur_animation_val+'deg)');
+        count_animation += 0.5;
+        cur_animation_val -= speed_two;
+      } else {
+          clearInterval(phaseOne);
+          jQuery('.protocol').css('transform', 'rotate(0deg)');
+      } 
+    }, 500);
   } else if (cur_instruction == 3 && instruction_three) {
     jQuery('.instr').text(instruction_three);
+    phaseOne = setInterval(function(){
+      if (count_animation <= 1200){                                                                         //120
+        jQuery('.protocol').css('transform', 'rotate('+cur_animation_val+'deg)');
+        count_animation += 0.5;
+        cur_animation_val -= speed_three;
+      } else {
+          clearInterval(phaseOne);
+          jQuery('.protocol').css('transform', 'rotate(0deg)');
+      } 
+    }, 500);
     if (instruction_four == undefined) {
       jQuery('.close_instr').removeClass('hidden');
     jQuery('.next_instr').addClass('hidden');
     }
   } else if (cur_instruction == 4 && instruction_four) {
     jQuery('.instr').text(instruction_four);
+    phaseOne = setInterval(function(){
+      if (count_animation <= 1200){                                                                         //120
+        jQuery('.protocol').css('transform', 'rotate('+cur_animation_val+'deg)');
+        count_animation += 0.5;
+        cur_animation_val -= speed_four;
+      } else {
+          clearInterval(phaseOne);
+          jQuery('.protocol').css('transform', 'rotate(0deg)');
+      } 
+    }, 500);
     jQuery('.close_instr').removeClass('hidden');
     jQuery('.next_instr').addClass('hidden');
   } else {
@@ -293,6 +323,11 @@ jQuery('.instruction_block').on('click', function() {
     instruction_two = undefined;
     instruction_three = undefined;
     instruction_four = undefined;
+    speed_from = undefined;
+    speed_one = undefined;
+    speed_two = undefined;
+    speed_three = undefined;
+    speed_four = undefined;
     cur_instruction = 1;
     jQuery('.close_instr').addClass('hidden');
     jQuery('.next_instr').removeClass('hidden');
