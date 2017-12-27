@@ -228,54 +228,37 @@ jQuery('.instruction_block').on('click', function() {
   cur_instruction += 1;
   if (cur_instruction == 2 && instruction_two) {
     jQuery('.instr').text(instruction_two);
+    rotat_per_sec = speed_two;
     if (instruction_three == undefined) {
       jQuery('.close_instr').removeClass('hidden');
-    jQuery('.next_instr').addClass('hidden');
+      jQuery('.next_instr').addClass('hidden');
     }
-    phaseOne = setInterval(function(){
-      if (count_animation <= 1200){                                                                         //120
-        jQuery('.protocol').css('transform', 'rotate('+cur_animation_val+'deg)');
-        count_animation += 0.5;
-        cur_animation_val -= speed_two;
-      } else {
-          clearInterval(phaseOne);
-          jQuery('.protocol').css('transform', 'rotate(0deg)');
-      } 
-    }, 500);
   } else if (cur_instruction == 3 && instruction_three) {
     jQuery('.instr').text(instruction_three);
-    phaseOne = setInterval(function(){
-      if (count_animation <= 1200){                                                                         //120
-        jQuery('.protocol').css('transform', 'rotate('+cur_animation_val+'deg)');
-        count_animation += 0.5;
-        cur_animation_val -= speed_three;
-      } else {
-          clearInterval(phaseOne);
-          jQuery('.protocol').css('transform', 'rotate(0deg)');
-      } 
-    }, 500);
+    rotat_per_sec = speed_three;
     if (instruction_four == undefined) {
       jQuery('.close_instr').removeClass('hidden');
     jQuery('.next_instr').addClass('hidden');
     }
   } else if (cur_instruction == 4 && instruction_four) {
     jQuery('.instr').text(instruction_four);
-    phaseOne = setInterval(function(){
-      if (count_animation <= 1200){                                                                         //120
-        jQuery('.protocol').css('transform', 'rotate('+cur_animation_val+'deg)');
-        count_animation += 0.5;
-        cur_animation_val -= speed_four;
-      } else {
-          clearInterval(phaseOne);
-          jQuery('.protocol').css('transform', 'rotate(0deg)');
-      } 
-    }, 500);
+    rotat_per_sec = speed_four;
     jQuery('.close_instr').removeClass('hidden');
     jQuery('.next_instr').addClass('hidden');
   } else {
     jQuery('.close_instr').removeClass('hidden');
     jQuery('.next_instr').addClass('hidden');
   }
+  phaseOne = setInterval(function(){
+    if (count_animation <= 1200){                                                                         //120
+      jQuery('.protocol').css('transform', 'rotate('+cur_animation_val+'deg)');
+      count_animation += 0.5;
+      cur_animation_val -= rotat_per_sec;
+    } else {
+        clearInterval(phaseOne);
+        jQuery('.protocol').css('transform', 'rotate(0deg)');
+    } 
+  }, 500);
 });
 //Закрытие окна инструкций
   jQuery('.close_instr').on('click', function() {
