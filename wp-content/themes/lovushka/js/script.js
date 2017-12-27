@@ -2,7 +2,7 @@ jQuery(document).ready(function () {
   var cur_animation_val = 0,
       paused = true,
       count_animation = 0,
-      rotat_per_sec = 1.5,
+      rotat_per_sec = 2,
       rotateVal = 0,
       quest_count = 0,
       cur_instruction = 1,
@@ -58,6 +58,7 @@ jQuery(document).ready(function () {
         instruction_three = undefined;
         instruction_four = undefined;
       }
+      // Клик по новому вопросу
     } else { 
       quest_count += 1;
       jQuery(this).addClass('active');
@@ -66,15 +67,57 @@ jQuery(document).ready(function () {
       jQuery('.set_acept').removeClass('hidden');
       if (quest_count == 1) {
         instruction_one = instructions[jQuery(this).data('quest_one')];
+        speed_from = jQuery(this).data('quest_one');
+        if (speed_from == "1" || speed_from == "2" || speed_from == "3" || speed_from == "12") {
+          speed_one = 2
+        } else if (speed_from == "4" || speed_from == "5" || speed_from == "6") {
+          speed_one = 10
+        } else if (speed_from == "7" || speed_from == "9" || speed_from == "10" || speed_from == "11") {
+          speed_one = 20
+        } else if (speed_from == "8") {
+          speed_one = 34
+        }
         instruction_two = instructions[jQuery(this).data('quest_two')];
+        speed_from = jQuery(this).data('quest_two');
+        if (speed_from == "1" || speed_from == "2" || speed_from == "3" || speed_from == "12") {
+          speed_two = 2
+        } else if (speed_from == "4" || speed_from == "5" || speed_from == "6") {
+          speed_two = 10
+        } else if (speed_from == "7" || speed_from == "9" || speed_from == "10" || speed_from == "11") {
+          speed_two = 20
+        } else if (speed_from == "8") {
+          speed_two = 34
+        }
       } else if (quest_count == 2) {
         instruction_three = instructions[jQuery(this).data('quest_one')];
+        speed_from = jQuery(this).data('quest_one');
+        if (speed_from == "1" || speed_from == "2" || speed_from == "3" || speed_from == "12") {
+          speed_three = 2
+        } else if (speed_from == "4" || speed_from == "5" || speed_from == "6") {
+          speed_three = 10
+        } else if (speed_from == "7" || speed_from == "9" || speed_from == "10" || speed_from == "11") {
+          speed_three = 20
+        } else if (speed_from == "8") {
+          speed_three = 34
+        }
         instruction_four = instructions[jQuery(this).data('quest_two')];
+        speed_from = jQuery(this).data('quest_two');
+        if (speed_from == "1" || speed_from == "2" || speed_from == "3" || speed_from == "12") {
+          speed_four = 2
+        } else if (speed_from == "4" || speed_from == "5" || speed_from == "6") {
+          speed_four = 10
+        } else if (speed_from == "7" || speed_from == "9" || speed_from == "10" || speed_from == "11") {
+          speed_four = 20
+        } else if (speed_from == "8") {
+          speed_four = 34
+        }
         if (instruction_three == instruction_one || instruction_three == instruction_two) {
           instruction_three = undefined;
+          speed_three = undefined;
         }
         if (instruction_four == instruction_one || instruction_four == instruction_two) {
           instruction_four = undefined;
+          speed_four = undefined;
         }
       }
       // Если выбрано 2 пункта
@@ -235,7 +278,7 @@ jQuery('.instruction_block').on('click', function(event) {
     jQuery('.question').removeClass('active');
     paused = true;
     jQuery('.protocol').css('transform', 'rotate(0deg)');
-    rotat_per_sec = 1.5;
+    rotat_per_sec = 2;
     cur_animation_val = 0;
     clearInterval(phaseOne);
     jQuery('.questions').removeClass('hidden');
