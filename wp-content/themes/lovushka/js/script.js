@@ -135,7 +135,15 @@ jQuery('.clear_prot, .stop_prot, .stop').on('click', function(event) {
   instruction_two = undefined;
   instruction_three = undefined;
   instruction_four = undefined;
+  speed_from = undefined;
+  speed_one = undefined;
+  speed_two = undefined;
+  speed_three = undefined;
+  speed_four = undefined;
   cur_instruction = 1;
+  jQuery('.speed_slover').removeClass('hidden');
+  jQuery('.speed_faster').removeClass('hidden');
+  jQuery('.speed_closed').addClass('hidden');
   jQuery('.instruction_block').addClass('hidden');
   jQuery('.close_instr').addClass('hidden');
   jQuery('.next_instr').removeClass('hidden');
@@ -199,6 +207,9 @@ jQuery('.clear_prot, .stop_prot, .stop').on('click', function(event) {
   jQuery('.start_prot').on('click', function(event) {
     paused = false;
     jQuery('.instr').text(instruction_one);
+    jQuery('.speed_slover').addClass('hidden');
+    jQuery('.speed_faster').addClass('hidden');
+    jQuery('.speed_closed').removeClass('hidden');
     jQuery('.instruction_block').removeClass('hidden');
     jQuery('.set_acept').addClass('hidden');
     jQuery('.clear_prot').addClass('hidden');
@@ -288,7 +299,15 @@ jQuery('.instruction_block').on('click', function(event) {
     instruction_two = undefined;
     instruction_three = undefined;
     instruction_four = undefined;
+    speed_from = undefined;
+    speed_one = undefined;
+    speed_two = undefined;
+    speed_three = undefined;
+    speed_four = undefined;
     cur_instruction = 1;
+    jQuery('.speed_slover').removeClass('hidden');
+    jQuery('.speed_faster').removeClass('hidden');
+    jQuery('.speed_closed').addClass('hidden');
     jQuery('.close_instr').addClass('hidden');
     jQuery('.next_instr').removeClass('hidden');
     jQuery('.instruction_block').addClass('hidden');
