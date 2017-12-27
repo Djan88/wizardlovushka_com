@@ -218,17 +218,12 @@ jQuery('.clear_prot, .stop_prot, .stop').on('click', function(event) {
     jQuery('#result').modal('hide');
     jQuery('.questions').addClass('hidden');
     jQuery('.runed').removeClass('hidden');
-    console.log('speed_one '+speed_one);
-    console.log('speed_two '+speed_two);
-    console.log('speed_three '+speed_three);
-    console.log('speed_four '+speed_four);
     rotat_per_sec = speed_one;
     phaseOne = setInterval(function(){
       if (count_animation <= 1200){                                                                         //120
         jQuery('.protocol').css('transform', 'rotate('+cur_animation_val+'deg)');
         count_animation += 0.5;
         cur_animation_val -= rotat_per_sec;
-        console.log(rotat_per_sec);
       } else {
           clearInterval(phaseOne);
           jQuery('.protocol').css('transform', 'rotate(0deg)');
@@ -238,7 +233,6 @@ jQuery('.clear_prot, .stop_prot, .stop').on('click', function(event) {
 // Переключение инструкций
 jQuery('.instruction_block').on('click', function(event) {
   cur_instruction += 1;
-  console.log(rotat_per_sec);
   if (cur_instruction == 2 && instruction_two) {
     jQuery('.instr').text(instruction_two);
     rotat_per_sec = speed_two;
@@ -330,4 +324,7 @@ jQuery('.instruction_block').on('click', function(event) {
     jQuery('.protocol svg').css('height', jQuery('.protocol svg').css('width'));
   });
   jQuery('.set_disabled').popover();
+  jQuery('.speed_closed').tooltip({
+    delay: {hide: 2000 }
+  })
 });
