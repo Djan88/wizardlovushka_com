@@ -212,11 +212,12 @@ jQuery('.clear_prot, .stop_prot, .stop').on('click', function() {
     console.log("speed_two "+speed_two);
     console.log("speed_three "+speed_three);
     console.log("speed_four "+speed_four);
+    rotat_per_sec = speed_one
     phaseOne = setInterval(function(){
       if (count_animation <= 1200){                                                                         //120
         jQuery('.protocol').css('transform', 'rotate('+cur_animation_val+'deg)');
         count_animation += 0.5;
-        cur_animation_val -= speed_one;
+        cur_animation_val -= rotat_per_sec;
       } else {
           clearInterval(phaseOne);
           jQuery('.protocol').css('transform', 'rotate(0deg)');
