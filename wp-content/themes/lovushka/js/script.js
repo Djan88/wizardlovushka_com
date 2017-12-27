@@ -218,10 +218,15 @@ jQuery('.clear_prot, .stop_prot, .stop').on('click', function(event) {
     jQuery('#result').modal('hide');
     jQuery('.questions').addClass('hidden');
     jQuery('.runed').removeClass('hidden');
+    console.log('speed_one '+speed_one);
+    console.log('speed_two '+speed_two);
+    console.log('speed_three '+speed_three);
+    console.log('speed_four '+speed_four);
     phaseOne = setInterval(function(){
       if (count_animation <= 1200){                                                                         //120
         jQuery('.protocol').css('transform', 'rotate('+cur_animation_val+'deg)');
         count_animation += 0.5;
+        rotat_per_sec = speed_one;
         cur_animation_val -= rotat_per_sec;
       } else {
           clearInterval(phaseOne);
@@ -234,18 +239,21 @@ jQuery('.instruction_block').on('click', function(event) {
   cur_instruction += 1;
   if (cur_instruction == 2 && instruction_two) {
     jQuery('.instr').text(instruction_two);
+    rotat_per_sec = speed_two;
     if (instruction_three == undefined) {
       jQuery('.close_instr').removeClass('hidden');
     jQuery('.next_instr').addClass('hidden');
     }
   } else if (cur_instruction == 3 && instruction_three) {
     jQuery('.instr').text(instruction_three);
+    rotat_per_sec = speed_three;
     if (instruction_four == undefined) {
       jQuery('.close_instr').removeClass('hidden');
     jQuery('.next_instr').addClass('hidden');
     }
   } else if (cur_instruction == 4 && instruction_four) {
     jQuery('.instr').text(instruction_four);
+    rotat_per_sec = speed_four;
     jQuery('.close_instr').removeClass('hidden');
     jQuery('.next_instr').addClass('hidden');
   } else {
