@@ -2,7 +2,7 @@ jQuery(document).ready(function () {
   var cur_animation_val = 0,
       paused = true,
       count_animation = 0,
-      rotat_per_sec = 1.5;
+      rotat_per_sec = 1.5,
       rotateVal = 0,
       quest_count = 0,
       cur_instruction = 1,
@@ -10,6 +10,11 @@ jQuery(document).ready(function () {
       instruction_two = undefined,
       instruction_three = undefined,
       instruction_four = undefined,
+      speed_from = undefined,
+      speed_one = undefined,
+      speed_two = undefined,
+      speed_three = undefined,
+      speed_four = undefined,
       instructions = {
         "1": 'Вспомните ситуацию в которой вы волновались, суетились, боялись того, что может случиться.',
         "2": 'Вспомните ситуацию, где вы злились.',
