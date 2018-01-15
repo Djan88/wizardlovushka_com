@@ -354,9 +354,14 @@ footer.footer a
 }
 .lovushka_speed 
 {
-    width: 50px;
+    width: 40px;
     margin: auto;
-    height: 50px;
+    height: 40px;
+    font-size: 20px;
+    padding-top: 6px;
+    margin-top: -13px;
+    background: #000;
+    border-radius: 50%;
 }
 @media (max-width: 991px) {
     /*.set, .manual, .set_disabled

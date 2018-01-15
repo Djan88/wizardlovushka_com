@@ -176,6 +176,7 @@ jQuery('.clear_prot, .stop_prot, .stop').on('click', function(event) {
         } 
       }, 500);
     }
+    jQuery('.lovushka_speed').text(rotat_per_sec);
   });
   // Медленнее
   jQuery('.speed_slover').on('click', function(event) {
@@ -202,6 +203,7 @@ jQuery('.clear_prot, .stop_prot, .stop').on('click', function(event) {
         } 
       }, 500);
     }
+    jQuery('.lovushka_speed').text(rotat_per_sec);
   });
 // Запуск расширенного протокола
   jQuery('.start_prot').on('click', function(event) {
