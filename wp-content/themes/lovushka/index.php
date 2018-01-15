@@ -198,7 +198,7 @@
                   </div>
                 </div>
                 <div class="col-md-8 col-md-offset-2 col-xs-12 speed_val">
-                  <div class="lovushka_speed">2</div>
+                  <div class="lovushka_speed">0</div>
                   скорость вращения
                 </div>
               </div>

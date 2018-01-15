@@ -287,6 +287,7 @@ jQuery('.instruction_block').on('click', function(event) {
             jQuery('.protocol').css('transform', 'rotate(0deg)');
         } 
       }, 500);
+      jQuery('.lovushka_speed').text(rotat_per_sec);
     }
   });
   // Остановка протокола
@@ -317,7 +318,7 @@ jQuery('.instruction_block').on('click', function(event) {
     jQuery('.close_instr').addClass('hidden');
     jQuery('.next_instr').removeClass('hidden');
     jQuery('.instruction_block').addClass('hidden');
-    jQuery('.lovushka_speed').text('2');
+    jQuery('.lovushka_speed').text('0');
   });
 
   jQuery('.protocol').css('height', jQuery('.protocol').css('width'));
