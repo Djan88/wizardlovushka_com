@@ -197,6 +197,13 @@
                   <?php } ?>
                   </div>
                 </div>
+                <?php if(is_user_logged_in()){ ?>
+                  <?php if(current_user_can('administrator')){ ?>
+                    <div class="col-md-8 col-md-offset-2 col-xs-12">
+                      <div class="lovushka_speed">2</div>
+                    </div>
+                  <?php } ?>
+                <?php } ?>
               </div>
               <!-- <div class="row">
                 <div class="col-md-4 col-md-offset-4">
