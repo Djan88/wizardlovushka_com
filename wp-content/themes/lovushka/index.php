@@ -200,7 +200,7 @@
                 <?php if(is_user_logged_in()){ ?>
                   <?php if(current_user_can('administrator')){ ?>
                     <div class="col-md-8 col-md-offset-2 col-xs-12">
-                      <div class="lovushka_speed">2</div>
+                      <div class="lovushka_speed"><div class="speed_val">2</div>скорость вращения</div>
                     </div>
                   <?php } ?>
                 <?php } ?>

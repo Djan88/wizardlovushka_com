@@ -352,6 +352,12 @@ footer.footer a
 {
     margin-top: 5px;
 }
+.lovushka_speed 
+{
+    width: 50px;
+    margin: auto;
+    height: 50px;
+}
 @media (max-width: 991px) {
     /*.set, .manual, .set_disabled
     {
