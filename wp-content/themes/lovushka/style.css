@@ -363,6 +363,10 @@ footer.footer a
     background: #000;
     border-radius: 50%;
 }
+.speed_val 
+{
+    color: #fff;
+}
 @media (max-width: 991px) {
     /*.set, .manual, .set_disabled
     {
