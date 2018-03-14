@@ -346,6 +346,11 @@ footer.footer a
 {
     color: #fff;
 }
+.easy_mode_item:focus
+{
+    outline: none;
+}
+
 @media (max-width: 991px) {
     /*.set, .manual, .set_disabled
     {
