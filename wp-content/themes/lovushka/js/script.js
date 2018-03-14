@@ -376,6 +376,12 @@ jQuery('.instruction_block').on('click', function(event) {
     }
   });
 
+  // Переключение языков
+  jQuery('.btn_lang').on('click', function(event) {
+    jQuery('.btn_lang').removeClass('active');
+    jQuery(this).addClass('active');
+  });
+
   jQuery('.protocol').css('height', jQuery('.protocol').css('width'));
   jQuery('.protocol svg').css('height', jQuery('.protocol svg').css('width'));
   jQuery(window).resize(function(event) {

@@ -352,7 +352,16 @@ footer.footer a
 {
     outline: none!important;
 }
-
+.btn-group.lang_block 
+{
+    position: absolute;
+    right: 20px;
+}
+button.btn.active.btn_lang 
+{
+    background: #000;
+    color: #fff;
+}
 @media (max-width: 991px) {
     /*.set, .manual, .set_disabled
     {
