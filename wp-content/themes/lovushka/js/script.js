@@ -327,7 +327,7 @@ jQuery('.instruction_block').on('click', function(event) {
     if (!jQuery(this).hasClass('active')) {
       jQuery(this).addClass('active');
     } else {
-      jQuery(this).removeClass('active');
+      jQuery('.easy_mode_item').removeClass('active');
     }
   });
 
