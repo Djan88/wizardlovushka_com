@@ -184,18 +184,14 @@
                     <button type="button" class="btn btn-default btn-lg speed_faster"><i class="fa fa-forward" aria-hidden="true"></i></button>
                   </div>
                 </div>
-                <?php if(is_user_logged_in()){ ?>
-                  <?php if(current_user_can('administrator')){ ?>
-                    <div class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2 col-xs-12">
-                      <div class="btn-group easy_mode">
-                        <button type="button" data-mode="scare" data-speed="2" class="btn btn-default easy_mode_item easy_mode_item_scare">Боюсь</button>
-                        <button type="button" data-mode="angry" data-speed="4" class="btn btn-default easy_mode_item easy_mode_item_angry">Злюсь</button>
-                        <button type="button" data-mode="resentment" data-speed="6" class="btn btn-default easy_mode_item easy_mode_item_resentment">Обижаюсь</button>
-                        <button type="button" data-mode="doubt" data-speed="8" class="btn btn-default easy_mode_item easy_mode_item_doubt">Сомневаюсь</button>
-                      </div>
-                    </div>
-                  <?php } ?>
-                <?php } ?>
+                <div class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2 col-xs-12">
+                  <div class="btn-group easy_mode">
+                    <button type="button" data-mode="scare" data-speed="2" class="btn btn-default easy_mode_item easy_mode_item_scare">Боюсь</button>
+                    <button type="button" data-mode="angry" data-speed="4" class="btn btn-default easy_mode_item easy_mode_item_angry">Злюсь</button>
+                    <button type="button" data-mode="resentment" data-speed="6" class="btn btn-default easy_mode_item easy_mode_item_resentment">Обижаюсь</button>
+                    <button type="button" data-mode="doubt" data-speed="8" class="btn btn-default easy_mode_item easy_mode_item_doubt">Сомневаюсь</button>
+                  </div>
+                </div>
                 <div class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2 col-xs-12">
                   <div class="btn-group speed_control">
                     <button type="button" class="btn btn-default manual" data-toggle="modal" data-target="#manual"><i class="fa fa-file-text" aria-hidden="true"></i> Правила</button>
