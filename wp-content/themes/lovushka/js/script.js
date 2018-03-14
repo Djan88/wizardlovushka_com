@@ -354,7 +354,6 @@ jQuery('.instruction_block').on('click', function(event) {
         } 
       }, 500);
     }
-    clearInterval(phaseOne);
   });
 
   jQuery('.protocol').css('height', jQuery('.protocol').css('width'));
