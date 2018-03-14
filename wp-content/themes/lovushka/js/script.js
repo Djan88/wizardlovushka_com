@@ -338,7 +338,6 @@ jQuery('.instruction_block').on('click', function(event) {
       jQuery('.easy_mode_item').removeClass('active');
       jQuery(this).addClass('active');
       mode = true;
-      // console.log(jQuery(this).data('speed'))
       mode_speed = parseFloat(jQuery(this).data('speed'));
     }
     if (mode == true) {
@@ -355,6 +354,7 @@ jQuery('.instruction_block').on('click', function(event) {
         } 
       }, 500);
     }
+    clearInterval(phaseOne);
   });
 
   jQuery('.protocol').css('height', jQuery('.protocol').css('width'));
