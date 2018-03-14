@@ -302,6 +302,7 @@ jQuery('.instruction_block').on('click', function(event) {
     jQuery('.protocol').css('transform', 'rotate(0deg)');
     rotat_per_sec = 2;
     cur_animation_val = 0;
+    count_animation = 0;
     mode = false;
     mode_speed = 0;
     clearInterval(phaseOne);
@@ -355,6 +356,7 @@ jQuery('.instruction_block').on('click', function(event) {
             clearInterval(phaseOne);
             jQuery('.lovushka_speed').text(0);
             cur_animation_val = 0;
+            count_animation = 0;
             mode_speed = 0;
             mode = false;
             jQuery('.protocol').css('transform', 'rotate(0deg)');
