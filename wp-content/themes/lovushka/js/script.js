@@ -351,6 +351,7 @@ jQuery('.instruction_block').on('click', function(event) {
           count_animation += 0.5;
           cur_animation_val -= mode_speed;
           jQuery('.lovushka_speed').text(mode_speed);
+          console.log(count_animation);
         } else {
             clearInterval(phaseOne);
             jQuery('.lovushka_speed').text(0);
