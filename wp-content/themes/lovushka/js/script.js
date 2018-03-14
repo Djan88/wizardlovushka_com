@@ -388,6 +388,12 @@ jQuery('.instruction_block').on('click', function(event) {
   if(supportsStorage && localStorage.getItem('lang')){
     lang = localStorage.getItem('lang');
     console.log(lang)
+    jQuery('.btn_lang').removeClass('active');
+    if (lang == 'en') {
+      jQuery('.btn_lang_en').addClass('active')
+    } else {
+      jQuery('.btn_lang_ru').addClass('active')
+    }
   }
 
   jQuery('.btn_lang').on('click', function(event) {
