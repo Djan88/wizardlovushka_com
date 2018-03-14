@@ -6,7 +6,7 @@ jQuery(document).ready(function () {
       rotateVal = 0,
       quest_count = 0,
       mode_speed,
-      // mode,
+      mode = false,
       phaseOne,
       cur_instruction = 1,
       instruction_one = undefined,
@@ -302,6 +302,7 @@ jQuery('.instruction_block').on('click', function(event) {
     jQuery('.protocol').css('transform', 'rotate(0deg)');
     rotat_per_sec = 2;
     cur_animation_val = 0;
+    mode = false;
     clearInterval(phaseOne);
     jQuery('.questions').removeClass('hidden');
     jQuery('.runed').addClass('hidden');
@@ -332,11 +333,15 @@ jQuery('.instruction_block').on('click', function(event) {
       jQuery('.lovushka_speed').text(0);
       jQuery('.protocol').css('transform', 'rotate(0deg)');
       clearInterval(phaseOne);
+      mode = false;
     } else {
       jQuery('.easy_mode_item').removeClass('active');
       jQuery(this).addClass('active');
+      mode = true;
       console.log(jQuery(this).data('speed'))
       mode_speed = parseFloat(jQuery(this).data('speed'));
+    }
+    if (mode == true) {
       phaseOne = setInterval(function(){
         if (count_animation <= 4800){                      //4
           jQuery('.protocol').css('transform', 'rotate('+cur_animation_val+'deg)');
