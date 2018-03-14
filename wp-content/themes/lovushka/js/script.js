@@ -330,6 +330,7 @@ jQuery('.instruction_block').on('click', function(event) {
 
   // Упрощенный протокол
   jQuery('.easy_mode_item').on('click', function(event) {
+    jQuery('.easy_mode_item').removeClass('active');
     if (jQuery(this).hasClass('active')) {
       jQuery('.lovushka_speed').text(0);
       cur_animation_val = 0;
@@ -337,7 +338,6 @@ jQuery('.instruction_block').on('click', function(event) {
       mode_speed = 0;
       mode = false;
       jQuery('.protocol').css('transform', 'rotate(0deg)');
-      jQuery('.easy_mode_item').removeClass('active');
     } else {
       jQuery(this).addClass('active');
       mode = true;
