@@ -341,7 +341,6 @@ jQuery('.instruction_block').on('click', function(event) {
       mode = true;
       mode_speed = parseFloat(jQuery(this).data('speed'));
     }
-    jQuery('.easy_mode_item').removeClass('active');
     clearInterval(phaseOne);
     if (mode == true) {
       console.log(mode);
