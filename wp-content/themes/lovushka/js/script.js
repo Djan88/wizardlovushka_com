@@ -338,10 +338,11 @@ jQuery('.instruction_block').on('click', function(event) {
       jQuery('.easy_mode_item').removeClass('active');
       jQuery(this).addClass('active');
       mode = true;
-      console.log(jQuery(this).data('speed'))
+      // console.log(jQuery(this).data('speed'))
       mode_speed = parseFloat(jQuery(this).data('speed'));
     }
     if (mode == true) {
+      console.log(mode);
       phaseOne = setInterval(function(){
         if (count_animation <= 4800){                      //4
           jQuery('.protocol').css('transform', 'rotate('+cur_animation_val+'deg)');
