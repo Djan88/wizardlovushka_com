@@ -154,12 +154,12 @@ header h1.heading
     padding: 10px;
     font-size: 15px;
 }
-.speed_control
+.speed_control, .easy_mode
 {
     background: #fff;
     border-radius: 7px;
     border: 2px solid #000;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 .instruction_block
 {
