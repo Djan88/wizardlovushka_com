@@ -303,6 +303,7 @@ jQuery('.instruction_block').on('click', function(event) {
     rotat_per_sec = 2;
     cur_animation_val = 0;
     mode = false;
+    mode_speed = 0;
     clearInterval(phaseOne);
     jQuery('.questions').removeClass('hidden');
     jQuery('.runed').addClass('hidden');
@@ -352,6 +353,8 @@ jQuery('.instruction_block').on('click', function(event) {
         } else {
             clearInterval(phaseOne);
             jQuery('.lovushka_speed').text(0);
+            cur_animation_val = 0;
+            mode_speed = 0;
         } 
       }, 500);
     }
