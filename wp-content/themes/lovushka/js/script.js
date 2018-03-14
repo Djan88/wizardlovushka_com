@@ -323,8 +323,11 @@ jQuery('.instruction_block').on('click', function(event) {
 
   // Упрощенный протокол
   jQuery('.easy_mode_item').on('click', function(event) {
+    jQuery('.easy_mode_item').removeClass('active');
     if (!jQuery(this).hasClass('active')) {
       jQuery(this).addClass('active');
+    } else {
+      jQuery(this).removeClass('active');
     }
   });
 
