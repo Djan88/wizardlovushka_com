@@ -180,10 +180,22 @@
                     <button type="button" class="btn btn-default btn-lg disabled speed_closed hidden" data-toggle="tooltip" data-placement="top" title="В расширенном режиме скорость регулируется автоматически"><i class="fa fa-backward" aria-hidden="true"></i></button>
                     <button type="button" class="btn btn-default btn-lg play"><i class="fa fa-play" aria-hidden="true"></i></button>
                     <button type="button" class="btn btn-default btn-lg stop"><i class="fa fa-stop" aria-hidden="true"></i></button>
-                    <button type="button" class="btn btn-default btn-lg speed_faster"><i class="fa fa-forward" aria-hidden="true"></i></button>
                     <button type="button" class="btn btn-default btn-lg disabled speed_closed hidden" data-toggle="tooltip" data-placement="top" title="В расширенном режиме скорость регулируется автоматически"><i class="fa fa-forward" aria-hidden="true"></i></button>
+                    <button type="button" class="btn btn-default btn-lg speed_faster"><i class="fa fa-forward" aria-hidden="true"></i></button>
                   </div>
                 </div>
+                <?php if(is_user_logged_in()){ ?>
+                  <?php if(current_user_can('administrator')){ ?>
+                    <div class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2 col-xs-12">
+                      <div class="btn-group easy_mode">
+                        <button type="button" class="btn btn-default">Боюсь</button>
+                        <button type="button" class="btn btn-default">Злюсь</button>
+                        <button type="button" class="btn btn-default">Обижаюсь</button>
+                        <button type="button" class="btn btn-default">Сомневаюсь</button>
+                      </div>
+                    </div>
+                  <?php } ?>
+                <?php } ?>
                 <div class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2 col-xs-12">
                   <div class="btn-group speed_control">
                     <button type="button" class="btn btn-default manual" data-toggle="modal" data-target="#manual"><i class="fa fa-file-text" aria-hidden="true"></i> Правила</button>
@@ -191,7 +203,6 @@
                     <?php if(current_user_can('administrator') || current_user_can('author')){ ?>
                       <button type="button" class="btn btn-default set" data-toggle="modal" data-target="#set"><i class="fa fa-sliders" aria-hidden="true"></i> Продвинутый режим</button>
                     <?php } else { ?>
-                      <!-- <button type="button" class="btn btn-default disabled set_disabled" data-toggle="popover" data-placement="top" data-original-title="Пересмотр личной истории" data-content='«Пересмотр личной истории» доступен в расширенной лицензии'><i class="fa fa-sliders" aria-hidden="true"></i> Продвинутый режим</button> -->
                       <button type="button" class="btn btn-default disabled set_disabled" data-toggle="popover" data-placement="top" data-original-title="Пересмотр личной истории" data-content='Продвинутый режим доступен для пользователей расширенной лицензии'><i class="fa fa-sliders" aria-hidden="true"></i> Продвинутый режим</button>
                     <?php } ?>
                   <?php } ?>

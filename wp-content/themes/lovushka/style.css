@@ -149,27 +149,6 @@ header h1.heading
     border-radius: 6px;
     padding: 5px;
 }
-/*.set, .manual, .set_disabled
-{
-    background: #FDA009;
-    border-radius: 50%;
-    width: 35px;
-    height: 35px;
-    text-align: center;
-    padding-top: 5px;
-    font-size: 17px;
-    color: #000;
-    margin: auto;
-    margin-top: 10px;
-}
-.set, .manual
-{
-    cursor: pointer;
-}
-.set:hover, .manual:hover
-{
-    background: #DE7E0D;
-}*/
 .modal-text 
 {
     padding: 10px;
