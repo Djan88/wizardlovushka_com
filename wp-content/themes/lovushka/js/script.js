@@ -330,11 +330,9 @@ jQuery('.instruction_block').on('click', function(event) {
       jQuery(this).removeClass('active');
       jQuery('.easy_mode_item').removeClass('active');
       jQuery('.lovushka_speed').text(0);
-      if (phaseOne) {
-        jQuery(this).addClass('active');
-        clearInterval(phaseOne);
-      }
+      clearInterval(phaseOne);
     } else {
+      jQuery(this).addClass('active');
       console.log(jQuery(this).data('speed'))
       mode_speed = parseFloat(jQuery(this).data('speed'));
       phaseOne = setInterval(function(){
