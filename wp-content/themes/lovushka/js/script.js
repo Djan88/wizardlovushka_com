@@ -333,7 +333,6 @@ jQuery('.instruction_block').on('click', function(event) {
       jQuery('.easy_mode_item').removeClass('active');
       jQuery('.lovushka_speed').text(0);
       jQuery('.protocol').css('transform', 'rotate(0deg)');
-      clearInterval(phaseOne);
       mode = false;
       cur_animation_val = 0;
       mode_speed = 0;
@@ -343,6 +342,7 @@ jQuery('.instruction_block').on('click', function(event) {
       mode = true;
       mode_speed = parseFloat(jQuery(this).data('speed'));
     }
+    clearInterval(phaseOne);
     if (mode == true) {
       console.log(mode);
       phaseOne = setInterval(function(){
