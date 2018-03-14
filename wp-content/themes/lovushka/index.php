@@ -65,10 +65,12 @@
       <!-- Если зашел участник или администратор -->
       <?php } elseif(current_user_can('contributor') || current_user_can('administrator') || current_user_can('author')) { ?>
         <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-        <div class="btn-group lang_block">
-          <button type="button" data-lang="ru" class="btn btn-sm btn-default active btn_lang btn_lang_ru">РУС</button>
-          <button type="button" data-lang="en" data-speed="4" class="btn btn-sm btn-default btn_lang btn_lang_en">EN</button>
-        </div>
+        <?php if(current_user_can('subscriber')){ ?>
+          <div class="btn-group lang_block">
+            <button type="button" data-lang="ru" class="btn btn-sm btn-default active btn_lang btn_lang_ru">РУС</button>
+            <button type="button" data-lang="en" data-speed="4" class="btn btn-sm btn-default btn_lang btn_lang_en">EN</button>
+          </div>
+        <?php } ?>
         <div class="reg_block">
           <?php 
             $user = get_current_user_id();
@@ -89,6 +91,10 @@
                 <div class="col-xs-6 col-xs-offset-3 ru_block">
                   <h3>Срок действия лицензии истек</h3>
                   <p>Для продления лицензии напишите на <a href="mailto:info@chikurov.com">info@chikurov.com</a></p>
+                </div>
+                <div class="col-xs-6 col-xs-offset-3 en_block hidden">
+                  <h3>The license has expired</h3>
+                  <p>To renew the license, write to <a href="mailto:info@chikurov.com">info@chikurov.com</a></p>
                 </div>
               </div>
             </div>
@@ -176,6 +182,15 @@
                         </div>
                       </div>
                     </div>
+                    <div class="col-md-8 col-md-offset-2 col-sm-12 col-xs-12 en_block hidden">
+                      <div class="instruction_block hidden">
+                        <span class="instr"></span>
+                        <div>
+                          <button type="button" class="btn btn-primary next_instr">Next <i class="fa fa-chevron-right"></i></button>
+                          <button type="button" class="btn btn-primary hidden close_instr">Close</button>
+                        </div>
+                      </div>
+                    </div>
                   <?php } ?>
                 <?php } ?>
                 <div class="col-md-4 col-md-offset-4 ru_block">
@@ -188,12 +203,30 @@
                     <button type="button" class="btn btn-default btn-lg speed_faster"><i class="fa fa-forward" aria-hidden="true"></i></button>
                   </div>
                 </div>
+                <div class="col-md-4 col-md-offset-4 en_block hidden">
+                  <div class="btn-group speed_control">
+                    <button type="button" class="btn btn-default btn-lg speed_slover"><i class="fa fa-backward" aria-hidden="true"></i></button>
+                    <button type="button" class="btn btn-default btn-lg disabled speed_closed hidden" data-toggle="tooltip" data-placement="top" title="In the current mode, the speed is automatically adjusted"><i class="fa fa-backward" aria-hidden="true"></i></button>
+                    <button type="button" class="btn btn-default btn-lg play"><i class="fa fa-play" aria-hidden="true"></i></button>
+                    <button type="button" class="btn btn-default btn-lg stop"><i class="fa fa-stop" aria-hidden="true"></i></button>
+                    <button type="button" class="btn btn-default btn-lg disabled speed_closed hidden" data-toggle="tooltip" data-placement="top" title="In the current mode, the speed is automatically adjusted"><i class="fa fa-forward" aria-hidden="true"></i></button>
+                    <button type="button" class="btn btn-default btn-lg speed_faster"><i class="fa fa-forward" aria-hidden="true"></i></button>
+                  </div>
+                </div>
                 <div class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2 col-xs-12 ru_block">
                   <div class="btn-group easy_mode">
                     <button type="button" data-mode="scare" data-speed="2" class="btn btn-default easy_mode_item easy_mode_item_scare">Боюсь</button>
                     <button type="button" data-mode="angry" data-speed="4" class="btn btn-default easy_mode_item easy_mode_item_angry">Злюсь</button>
                     <button type="button" data-mode="resentment" data-speed="6" class="btn btn-default easy_mode_item easy_mode_item_resentment">Обижаюсь</button>
                     <button type="button" data-mode="doubt" data-speed="8" class="btn btn-default easy_mode_item easy_mode_item_doubt">Сомневаюсь</button>
+                  </div>
+                </div>
+                <div class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2 col-xs-12 en_block hidden">
+                  <div class="btn-group easy_mode">
+                    <button type="button" data-mode="scare" data-speed="2" class="btn btn-default easy_mode_item easy_mode_item_scare">I'm afraid</button>
+                    <button type="button" data-mode="angry" data-speed="4" class="btn btn-default easy_mode_item easy_mode_item_angry">I'm angry</button>
+                    <button type="button" data-mode="resentment" data-speed="6" class="btn btn-default easy_mode_item easy_mode_item_resentment">I'm offended</button>
+                    <button type="button" data-mode="doubt" data-speed="8" class="btn btn-default easy_mode_item easy_mode_item_doubt">I doubt it</button>
                   </div>
                 </div>
                 <div class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2 col-xs-12 ru_block">
@@ -208,9 +241,25 @@
                   <?php } ?>
                   </div>
                 </div>
+                <div class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2 col-xs-12 en_block hidden">
+                  <div class="btn-group speed_control">
+                    <button type="button" class="btn btn-default manual" data-toggle="modal" data-target="#manual"><i class="fa fa-file-text" aria-hidden="true"></i> Rules</button>
+                  <?php if(is_user_logged_in()){ ?>
+                    <?php if(current_user_can('administrator') || current_user_can('author')){ ?>
+                      <button type="button" class="btn btn-default set" data-toggle="modal" data-target="#set"><i class="fa fa-sliders" aria-hidden="true"></i> Advanced mode</button>
+                    <?php } else { ?>
+                      <button type="button" class="btn btn-default disabled set_disabled" data-toggle="popover" data-placement="top" data-original-title="Revision of personal history" data-content='Advanced mode is available for users of the extended license'><i class="fa fa-sliders" aria-hidden="true"></i> Advanced mode</button>
+                    <?php } ?>
+                  <?php } ?>
+                  </div>
+                </div>
                 <div class="col-md-8 col-md-offset-2 col-xs-12 speed_val ru_block">
                   <div class="lovushka_speed">0</div>
                   скорость вращения
+                </div>
+                <div class="col-md-8 col-md-offset-2 col-xs-12 speed_val en_block hidden">
+                  <div class="lovushka_speed">0</div>
+                  rotational speed
                 </div>
               </div>
             </div>
