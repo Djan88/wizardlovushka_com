@@ -346,9 +346,9 @@ footer.footer a
 {
     color: #fff;
 }
-.easy_mode_item:focus
+.easy_mode_item:focus, .easy_mode_item:active
 {
-    outline: none;
+    outline: none!important;
 }
 
 @media (max-width: 991px) {
