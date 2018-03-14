@@ -67,7 +67,7 @@
         <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
         <div class="btn-group lang_block">
           <button type="button" data-lang="ru" class="btn btn-sm btn-default active btn_lang btn_lang_ru">РУС</button>
-          <button type="button" data-mode="en" data-speed="4" class="btn btn-sm btn-default btn_lang btn_lang_en">EN</button>
+          <button type="button" data-lang="en" data-speed="4" class="btn btn-sm btn-default btn_lang btn_lang_en">EN</button>
         </div>
         <div class="reg_block">
           <?php 
