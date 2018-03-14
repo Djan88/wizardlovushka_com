@@ -329,7 +329,7 @@ jQuery('.instruction_block').on('click', function(event) {
     if (!jQuery(this).hasClass('active')) {
       jQuery(this).addClass('active');
       // mode = jQuery(this).data('mode');
-      mode_speed = parseFloat(jQuery(this).data('mode'));
+      mode_speed = parseFloat(jQuery(this).data('speed'));
     } else {
       jQuery('.easy_mode_item').removeClass('active');
       jQuery('.lovushka_speed').text(0);
