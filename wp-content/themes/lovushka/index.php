@@ -320,11 +320,12 @@
       <div class="row">
         <div class="col-md-12">
           <div class="pull-left" style="padding-top: 7px;">
-            <a href="/">WizardLovushka</a> | v 1.0 | &copy; <a href="http://www.chikurov.com" target="_blank">Юрий Чикуров</a> | 2018
+            <a href="/">WizardLovushka</a> | v 1.1 | &copy; <a class="ru_block" href="http://www.chikurov.com" target="_blank">Юрий Чикуров</a><a class="hidden en_block" href="http://www.chikurov.com" target="_blank">Yuri Chikurov</a> | 2018
           </div>
           <?php if(is_user_logged_in()){ ?>
           <div class="pull-right">
-            <a class="btn btn_sm btn_warning wings_door_closed" href="<?php echo home_url(); ?>/wp-login.php?action=logout&amp;_wpnonce=a6cad512ba">Выйти</a>
+            <a class="btn btn_sm btn_warning wings_door_closed ru_block" href="<?php echo home_url(); ?>/wp-login.php?action=logout&amp;_wpnonce=a6cad512ba">Выйти</a>
+            <a class="btn btn_sm btn_warning wings_door_closed hidden en_block" href="<?php echo home_url(); ?>/wp-login.php?action=logout&amp;_wpnonce=a6cad512ba">Exit</a>
           </div>
           <?php } ?>
           <div class="clearfix"></div>
