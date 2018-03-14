@@ -387,12 +387,15 @@ jQuery('.instruction_block').on('click', function(event) {
   // Переключение языков
   if(supportsStorage && localStorage.getItem('lang')){
     lang = localStorage.getItem('lang');
-    console.log(lang)
     jQuery('.btn_lang').removeClass('active');
     if (lang == 'en') {
       jQuery('.btn_lang_en').addClass('active')
+      jQuery('.en_block').removeClass('hidden');
+      jQuery('.ru_block').addClass('hidden');
     } else {
-      jQuery('.btn_lang_ru').addClass('active')
+      jQuery('.btn_lang_ru').addClass('active');
+      jQuery('.en_block').addClass('hidden');
+      jQuery('.ru_block').removeClass('hidden');
     }
   }
 
@@ -401,7 +404,13 @@ jQuery('.instruction_block').on('click', function(event) {
     jQuery(this).addClass('active');
     lang = jQuery(this).data('lang');
     localStorage.setItem('lang', lang);
-    console.log(lang)
+    if (lang == 'en') {
+      jQuery('.en_block').removeClass('hidden');
+      jQuery('.ru_block').addClass('hidden');
+    } else {
+      jQuery('.en_block').addClass('hidden');
+      jQuery('.ru_block').removeClass('hidden');
+    }
   });
 
   jQuery('.protocol').css('height', jQuery('.protocol').css('width'));
