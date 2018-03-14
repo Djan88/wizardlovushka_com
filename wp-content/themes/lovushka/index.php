@@ -275,12 +275,12 @@
             <div class="login__form">
                 <form name="loginform" id="loginform" action="<?php echo esc_url( site_url( 'wp-login.php', 'login_post' ) ); ?>" method="post">
                     <p>
-                      <label for="user_login"><span class="ru_block">Логин</span><br />
+                      <label for="user_login"><span class="ru_block">Логин</span><span class="hidden en_block">Login</span><br />
                         <input type="text" name="log" id="user_login" class="input" value="<?php echo esc_attr($user_login); ?>" size="20" />
                       </label>
                     </p>
                     <p>
-                      <label for="user_pass"><span class="ru_block">Пароль</span><br />
+                      <label for="user_pass"><span class="ru_block">Пароль</span><span class="hidden en_block">Password</span><br />
                         <input type="password" name="pwd" id="user_pass" class="input" value="" size="20" />
                       </label>
                     </p>
@@ -292,7 +292,7 @@
                      */
                     do_action( 'login_form' );
                     ?>
-                    <p class="forgetmenot"><label for="rememberme"><input name="rememberme" type="checkbox" id="rememberme" value="forever" <?php checked( $rememberme ); ?> /> <?php esc_attr_e('Remember Me'); ?></label></p>
+                    <p class="forgetmenot"><label for="rememberme"><input name="rememberme" type="checkbox" id="rememberme" value="forever" <?php checked( $rememberme ); ?> /> <span class="ru_block">Запомнить меня</span></label></p>
                     <p class="note_small ru_block">Для доступа к программе напишите на <a class="bablosadres" href="mailto:info@chikurov.com" style="color: #fff;">info@chikurov.com</a></p>
                     <p class="submit">
                         <input type="submit" name="wp-submit" id="wp-submit" class="button button-primary button-large" value="<?php esc_attr_e('Log In'); ?>" />
