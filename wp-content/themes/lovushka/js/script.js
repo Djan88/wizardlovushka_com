@@ -297,6 +297,7 @@ jQuery('.instruction_block').on('click', function(event) {
   jQuery('.stop_prot, .stop').on('click', function(event) {
     jQuery('.fa-pause').removeClass('fa-pause').addClass('fa-play');
     jQuery('.question').removeClass('active');
+    jQuery('.easy_mode_item').removeClass('active');
     paused = true;
     jQuery('.protocol').css('transform', 'rotate(0deg)');
     rotat_per_sec = 2;
@@ -327,12 +328,12 @@ jQuery('.instruction_block').on('click', function(event) {
   // Упрощенный протокол
   jQuery('.easy_mode_item').on('click', function(event) {
     if (jQuery(this).hasClass('active')) {
-      jQuery(this).removeClass('active');
       jQuery('.easy_mode_item').removeClass('active');
       jQuery('.lovushka_speed').text(0);
       jQuery('.protocol').css('transform', 'rotate(0deg)');
       clearInterval(phaseOne);
     } else {
+      jQuery('.easy_mode_item').removeClass('active');
       jQuery(this).addClass('active');
       console.log(jQuery(this).data('speed'))
       mode_speed = parseFloat(jQuery(this).data('speed'));
