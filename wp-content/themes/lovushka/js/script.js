@@ -338,10 +338,16 @@ jQuery('.instruction_block').on('click', function(event) {
       mode_speed = 0;
       mode = false;
       jQuery('.protocol').css('transform', 'rotate(0deg)');
+      jQuery('.speed_slover').removeClass('hidden');
+      jQuery('.speed_faster').removeClass('hidden');
+      jQuery('.speed_closed').addClass('hidden');
     } else {
       jQuery(this).addClass('active');
       mode = true;
       mode_speed = parseFloat(jQuery(this).data('speed'));
+      jQuery('.speed_slover').addClass('hidden');
+      jQuery('.speed_faster').addClass('hidden');
+      jQuery('.speed_closed').removeClass('hidden');
     }
     clearInterval(phaseOne);
     if (mode == true) {
@@ -362,6 +368,9 @@ jQuery('.instruction_block').on('click', function(event) {
             mode = false;
             jQuery('.protocol').css('transform', 'rotate(0deg)');
             jQuery('.easy_mode_item').removeClass('active');
+            jQuery('.speed_slover').removeClass('hidden');
+            jQuery('.speed_faster').removeClass('hidden');
+            jQuery('.speed_closed').addClass('hidden');
         } 
       }, 500);
     }
