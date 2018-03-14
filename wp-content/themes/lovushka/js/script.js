@@ -7,6 +7,7 @@ jQuery(document).ready(function () {
       quest_count = 0,
       mode_speed,
       // mode,
+      phaseOne,
       cur_instruction = 1,
       instruction_one = undefined,
       instruction_two = undefined,
