@@ -334,6 +334,7 @@ jQuery('.instruction_block').on('click', function(event) {
       jQuery('.protocol').css('transform', 'rotate(0deg)');
       clearInterval(phaseOne);
       mode = false;
+      cur_animation_val = 0;
     } else {
       jQuery('.easy_mode_item').removeClass('active');
       jQuery(this).addClass('active');
