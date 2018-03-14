@@ -65,7 +65,7 @@
       <!-- Если зашел участник или администратор -->
       <?php } elseif(current_user_can('contributor') || current_user_can('administrator') || current_user_can('author')) { ?>
         <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-        <?php if(current_user_can('subscriber')){ ?>
+        <?php if(current_user_can('administrator')){ ?>
           <div class="btn-group lang_block">
             <button type="button" data-lang="ru" class="btn btn-sm btn-default active btn_lang btn_lang_ru">РУС</button>
             <button type="button" data-lang="en" data-speed="4" class="btn btn-sm btn-default btn_lang btn_lang_en">EN</button>
