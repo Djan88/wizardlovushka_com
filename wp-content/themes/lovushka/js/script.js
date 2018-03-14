@@ -321,6 +321,13 @@ jQuery('.instruction_block').on('click', function(event) {
     jQuery('.lovushka_speed').text('0');
   });
 
+  // Упрощенный протокол
+  jQuery('.easy_mode_item').on('click', function(event) {
+    if (!jQuery(this).hasClass('active')) {
+      jQuery(this).addClass('active');
+    }
+  });
+
   jQuery('.protocol').css('height', jQuery('.protocol').css('width'));
   jQuery('.protocol svg').css('height', jQuery('.protocol svg').css('width'));
   jQuery(window).resize(function(event) {

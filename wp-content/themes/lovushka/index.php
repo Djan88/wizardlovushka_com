@@ -188,10 +188,10 @@
                   <?php if(current_user_can('administrator')){ ?>
                     <div class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2 col-xs-12">
                       <div class="btn-group easy_mode">
-                        <button type="button" class="btn btn-default">Боюсь</button>
-                        <button type="button" class="btn btn-default">Злюсь</button>
-                        <button type="button" class="btn btn-default">Обижаюсь</button>
-                        <button type="button" class="btn btn-default">Сомневаюсь</button>
+                        <button type="button" class="btn btn-default easy_mode_item easy_mode_item_scare">Боюсь</button>
+                        <button type="button" class="btn btn-default easy_mode_item easy_mode_item_angry">Злюсь</button>
+                        <button type="button" class="btn btn-default easy_mode_item easy_mode_item_resentment">Обижаюсь</button>
+                        <button type="button" class="btn btn-default easy_mode_item easy_mode_item_doubt">Сомневаюсь</button>
                       </div>
                     </div>
                   <?php } ?>
