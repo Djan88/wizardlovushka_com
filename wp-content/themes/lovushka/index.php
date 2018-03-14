@@ -292,10 +292,12 @@
                      */
                     do_action( 'login_form' );
                     ?>
-                    <p class="forgetmenot"><label for="rememberme"><input name="rememberme" type="checkbox" id="rememberme" value="forever" <?php checked( $rememberme ); ?> /> <span class="ru_block">Запомнить меня</span></label></p>
+                    <p class="forgetmenot"><label for="rememberme"><input name="rememberme" type="checkbox" id="rememberme" value="forever" <?php checked( $rememberme ); ?> /> <span class="ru_block">Запомнить меня</span><span class="hidden en_block">Remember me</span></label></p>
                     <p class="note_small ru_block">Для доступа к программе напишите на <a class="bablosadres" href="mailto:info@chikurov.com" style="color: #fff;">info@chikurov.com</a></p>
+                    <p class="note_small hidden en_block">To access the program, write to <a class="bablosadres" href="mailto:info@chikurov.com" style="color: #fff;">info@chikurov.com</a></p>
                     <p class="submit">
-                        <input type="submit" name="wp-submit" id="wp-submit" class="button button-primary button-large" value="<?php esc_attr_e('Log In'); ?>" />
+                        <input type="submit" name="wp-submit" id="wp-submit" class="button button-primary button-large ru_block" value="Войти" />
+                        <input type="submit" name="wp-submit" id="wp-submit" class="button button-primary button-large hidden en_block" value="Login" />
                         <?php   if ( $interim_login ) { ?>
                             <input type="hidden" name="interim-login" value="1" />
                         <?php   } else { ?>
