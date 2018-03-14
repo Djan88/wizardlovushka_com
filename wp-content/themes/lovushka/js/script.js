@@ -346,7 +346,7 @@ jQuery('.instruction_block').on('click', function(event) {
     if (mode == true) {
       console.log(mode);
       phaseOne = setInterval(function(){
-        if (count_animation <= 4800){                      //4
+        if (count_animation <= 250){                      //4
           jQuery('.protocol').css('transform', 'rotate('+cur_animation_val+'deg)');
           count_animation += 0.5;
           cur_animation_val -= mode_speed;
