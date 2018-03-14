@@ -348,7 +348,7 @@ footer.footer a
     color: #fff;
     padding-top: 10px;
 }
-.easy_mode_item:focus, .easy_mode_item:active
+.easy_mode_item:focus, .easy_mode_item:active, .btn_lang:focus, .btn_lang:active
 {
     outline: none!important;
 }
@@ -356,11 +356,14 @@ footer.footer a
 {
     position: absolute;
     right: 20px;
+    border-radius: 7px;
+    border: 2px solid #000;
 }
 button.btn.active.btn_lang 
 {
     background: #000;
     color: #fff;
+    border-color: #000;
 }
 @media (max-width: 991px) {
     /*.set, .manual, .set_disabled
