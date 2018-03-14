@@ -345,6 +345,7 @@ footer.footer a
 .speed_val 
 {
     color: #fff;
+    padding-top: 10px;
 }
 .easy_mode_item:focus, .easy_mode_item:active
 {

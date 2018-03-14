@@ -5,6 +5,8 @@ jQuery(document).ready(function () {
       rotat_per_sec = 2,
       rotateVal = 0,
       quest_count = 0,
+      mode_speed,
+      // mode,
       cur_instruction = 1,
       instruction_one = undefined,
       instruction_two = undefined,
@@ -326,9 +328,24 @@ jQuery('.instruction_block').on('click', function(event) {
     jQuery('.easy_mode_item').removeClass('active');
     if (!jQuery(this).hasClass('active')) {
       jQuery(this).addClass('active');
+      // mode = jQuery(this).data('mode');
+      mode_speed = parseFloat(jQuery(this).data('mode'));
     } else {
       jQuery('.easy_mode_item').removeClass('active');
+      jQuery('.lovushka_speed').text(0);
+      clearInterval(phaseOne);
     }
+    phaseOne = setInterval(function(){
+      if (count_animation <= 1200){                                                                         //120
+        jQuery('.protocol').css('transform', 'rotate('+cur_animation_val+'deg)');
+        count_animation += 0.5;
+        cur_animation_val -= mode_speed;
+        jQuery('.lovushka_speed').text(mode_speed);
+      } else {
+          clearInterval(phaseOne);
+          jQuery('.lovushka_speed').text(0);
+      } 
+    }, 500);
   });
 
   jQuery('.protocol').css('height', jQuery('.protocol').css('width'));
