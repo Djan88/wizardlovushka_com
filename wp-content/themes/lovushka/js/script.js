@@ -326,27 +326,27 @@ jQuery('.instruction_block').on('click', function(event) {
   // Упрощенный протокол
   jQuery('.easy_mode_item').on('click', function(event) {
     jQuery('.easy_mode_item').removeClass('active');
-    if (!jQuery(this).hasClass('active')) {
-      jQuery(this).addClass('active');
-      // mode = jQuery(this).data('mode');
-      console.log(jQuery(this).data('speed'))
-      mode_speed = parseFloat(jQuery(this).data('speed'));
-    } else {
+    jQuery(this).toggleClass('active');
+
+    if (jQuery(this).hasClass('active')) {
       jQuery('.easy_mode_item').removeClass('active');
       jQuery('.lovushka_speed').text(0);
       clearInterval(phaseOne);
+    } else {
+      console.log(jQuery(this).data('speed'))
+      mode_speed = parseFloat(jQuery(this).data('speed'));
+      phaseOne = setInterval(function(){
+        if (count_animation <= 4800){                      //4
+          jQuery('.protocol').css('transform', 'rotate('+cur_animation_val+'deg)');
+          count_animation += 0.5;
+          cur_animation_val -= mode_speed;
+          jQuery('.lovushka_speed').text(mode_speed);
+        } else {
+            clearInterval(phaseOne);
+            jQuery('.lovushka_speed').text(0);
+        } 
+      }, 500);
     }
-    phaseOne = setInterval(function(){
-      if (count_animation <= 1200){                                                                         //120
-        jQuery('.protocol').css('transform', 'rotate('+cur_animation_val+'deg)');
-        count_animation += 0.5;
-        cur_animation_val -= mode_speed;
-        jQuery('.lovushka_speed').text(mode_speed);
-      } else {
-          clearInterval(phaseOne);
-          jQuery('.lovushka_speed').text(0);
-      } 
-    }, 500);
   });
 
   jQuery('.protocol').css('height', jQuery('.protocol').css('width'));
