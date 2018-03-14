@@ -326,12 +326,12 @@ jQuery('.instruction_block').on('click', function(event) {
 
   // Упрощенный протокол
   jQuery('.easy_mode_item').on('click', function(event) {
-    jQuery(this).toggleClass('active');
-
     if (jQuery(this).hasClass('active')) {
+      jQuery(this).removeClass('active');
       jQuery('.easy_mode_item').removeClass('active');
       jQuery('.lovushka_speed').text(0);
       if (phaseOne) {
+        jQuery(this).addClass('active');
         clearInterval(phaseOne);
       }
     } else {
