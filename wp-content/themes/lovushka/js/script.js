@@ -8,6 +8,14 @@ jQuery(document).ready(function () {
       mode_speed,
       mode = false,
       phaseOne,
+      lang,
+      supportsStorage = function(){
+          try {
+              return 'localStorage' in window && window['localStorage'] !== null;
+          } catch (e) {
+              return false;
+          }
+      },
       cur_instruction = 1,
       instruction_one = undefined,
       instruction_two = undefined,
@@ -377,9 +385,17 @@ jQuery('.instruction_block').on('click', function(event) {
   });
 
   // Переключение языков
+  if(supportsStorage && localStorage.getItem('lang')){
+    lang = localStorage.getItem('lang');
+    console.log(lang)
+  }
+
   jQuery('.btn_lang').on('click', function(event) {
     jQuery('.btn_lang').removeClass('active');
     jQuery(this).addClass('active');
+    lang = jQuery(this).data('lang');
+    localStorage.setItem('lang', lang);
+    console.log(lang)
   });
 
   jQuery('.protocol').css('height', jQuery('.protocol').css('width'));
