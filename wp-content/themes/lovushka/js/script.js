@@ -326,7 +326,6 @@ jQuery('.instruction_block').on('click', function(event) {
 
   // Упрощенный протокол
   jQuery('.easy_mode_item').on('click', function(event) {
-    jQuery('.easy_mode_item').removeClass('active');
     jQuery(this).toggleClass('active');
 
     if (jQuery(this).hasClass('active')) {
