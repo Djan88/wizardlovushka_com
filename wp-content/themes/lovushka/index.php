@@ -65,6 +65,10 @@
       <!-- Если зашел участник или администратор -->
       <?php } elseif(current_user_can('contributor') || current_user_can('administrator') || current_user_can('author')) { ?>
         <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+        <div class="btn-group lang_block">
+          <button type="button" data-lang="ru" class="btn btn-sm btn-default active btn_lang">рус</button>
+          <button type="button" data-mode="en" data-speed="4" class="btn btn-sm btn-default btn_lang">en</button>
+        </div>
         <div class="reg_block">
           <?php 
             $user = get_current_user_id();
@@ -82,7 +86,7 @@
             <div class="ratioten" data-ratio="<?php echo $ratioten;?>"></div>
             <div class="container">
               <div class="row">
-                <div class="col-xs-6 col-xs-offset-3">
+                <div class="col-xs-6 col-xs-offset-3 ru_block">
                   <h3>Срок действия лицензии истек</h3>
                   <p>Для продления лицензии напишите на <a href="mailto:info@chikurov.com">info@chikurov.com</a></p>
                 </div>
@@ -163,7 +167,7 @@
                 </div>
                 <?php if(is_user_logged_in()){ ?>
                   <?php if(current_user_can('administrator') || current_user_can('author')){ ?>
-                    <div class="col-md-8 col-md-offset-2 col-sm-12 col-xs-12 ">
+                    <div class="col-md-8 col-md-offset-2 col-sm-12 col-xs-12 ru_block">
                       <div class="instruction_block hidden">
                         <span class="instr"></span>
                         <div>
@@ -174,7 +178,7 @@
                     </div>
                   <?php } ?>
                 <?php } ?>
-                <div class="col-md-4 col-md-offset-4">
+                <div class="col-md-4 col-md-offset-4 ru_block">
                   <div class="btn-group speed_control">
                     <button type="button" class="btn btn-default btn-lg speed_slover"><i class="fa fa-backward" aria-hidden="true"></i></button>
                     <button type="button" class="btn btn-default btn-lg disabled speed_closed hidden" data-toggle="tooltip" data-placement="top" title="В текущем режиме скорость регулируется автоматически"><i class="fa fa-backward" aria-hidden="true"></i></button>
@@ -184,7 +188,7 @@
                     <button type="button" class="btn btn-default btn-lg speed_faster"><i class="fa fa-forward" aria-hidden="true"></i></button>
                   </div>
                 </div>
-                <div class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2 col-xs-12">
+                <div class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2 col-xs-12 ru_block">
                   <div class="btn-group easy_mode">
                     <button type="button" data-mode="scare" data-speed="2" class="btn btn-default easy_mode_item easy_mode_item_scare">Боюсь</button>
                     <button type="button" data-mode="angry" data-speed="4" class="btn btn-default easy_mode_item easy_mode_item_angry">Злюсь</button>
@@ -192,7 +196,7 @@
                     <button type="button" data-mode="doubt" data-speed="8" class="btn btn-default easy_mode_item easy_mode_item_doubt">Сомневаюсь</button>
                   </div>
                 </div>
-                <div class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2 col-xs-12">
+                <div class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2 col-xs-12 ru_block">
                   <div class="btn-group speed_control">
                     <button type="button" class="btn btn-default manual" data-toggle="modal" data-target="#manual"><i class="fa fa-file-text" aria-hidden="true"></i> Правила</button>
                   <?php if(is_user_logged_in()){ ?>
@@ -204,26 +208,11 @@
                   <?php } ?>
                   </div>
                 </div>
-                <div class="col-md-8 col-md-offset-2 col-xs-12 speed_val">
+                <div class="col-md-8 col-md-offset-2 col-xs-12 speed_val ru_block">
                   <div class="lovushka_speed">0</div>
                   скорость вращения
                 </div>
               </div>
-              <!-- <div class="row">
-                <div class="col-md-4 col-md-offset-4">
-                  <div class="color_control">
-                    <div class="color_item color_item_yl" data-color="#FDE30A"></div>
-                    <div class="color_item color_item_mg" data-color="#CB006E"></div>
-                    <div class="color_item color_item_cy" data-color="#0D6263"></div>
-                    <div class="color_item color_item_gr" data-color="#828487"></div>
-                    <div class="color_item color_item_br" data-color="#8A5447"></div>
-                    <div class="color_item color_item_dc" data-color="#063670"></div>
-                    <div class="color_item color_item_rd" data-color="#E40025"></div>
-                    <div class="color_item color_item_bl" data-color="#000000"></div>
-                    <div class="color_item color_item_wh" data-color="#ffffff"></div>
-                  </div>
-                </div>
-              </div> -->
             </div>
           <?php } ?>
         </div>
@@ -253,7 +242,7 @@
                     do_action( 'login_form' );
                     ?>
                     <p class="forgetmenot"><label for="rememberme"><input name="rememberme" type="checkbox" id="rememberme" value="forever" <?php checked( $rememberme ); ?> /> <?php esc_attr_e('Remember Me'); ?></label></p>
-                    <p class="note_small">Для доступа к программе напишите на <a class="bablosadres" href="mailto:info@chikurov.com" style="color: #fff;">info@chikurov.com</a></p>
+                    <p class="note_small ru_block">Для доступа к программе напишите на <a class="bablosadres" href="mailto:info@chikurov.com" style="color: #fff;">info@chikurov.com</a></p>
                     <p class="submit">
                         <input type="submit" name="wp-submit" id="wp-submit" class="button button-primary button-large" value="<?php esc_attr_e('Log In'); ?>" />
                         <?php   if ( $interim_login ) { ?>
@@ -273,7 +262,7 @@
       </div>
     <?php } ?>
   </section><!-- end of doctor section -->
-  <footer class="footer clearfix">
+  <footer class="footer clearfix ru_block">
     <div class="container">
       <div class="row">
         <div class="col-md-12">
