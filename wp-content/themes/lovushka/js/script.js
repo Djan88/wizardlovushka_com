@@ -357,6 +357,8 @@ jQuery('.instruction_block').on('click', function(event) {
             jQuery('.lovushka_speed').text(0);
             cur_animation_val = 0;
             mode_speed = 0;
+            mode = false;
+            jQuery('.easy_mode_item').removeClass('active');
         } 
       }, 500);
     }
