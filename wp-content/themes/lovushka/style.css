@@ -358,6 +358,7 @@ footer.footer a
     right: 20px;
     border-radius: 7px;
     border: 2px solid #000;
+    z-index: 999;
 }
 button.btn.active.btn_lang 
 {
