@@ -400,4 +400,9 @@ button.btn.active.btn_lang
         min-width: 200px;
         margin-bottom: 6px;
     }
+    .btn-group.lang_block
+    {
+        right: 5px;
+        top: 5px;
+    }
 }
