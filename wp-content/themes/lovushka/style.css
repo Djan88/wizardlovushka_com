@@ -163,6 +163,10 @@ header h1.heading
     margin-bottom: 10px;
     white-space: nowrap;
 }
+.easy_mode_item 
+{
+    font-size: 12px;
+}
 .instruction_block
 {
     border-radius: 7px;
