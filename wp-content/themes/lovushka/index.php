@@ -315,12 +315,14 @@
       </div>
     <?php } ?>
   </section><!-- end of doctor section -->
-  <footer class="footer clearfix ru_block">
+  <footer class="footer clearfix">
     <div class="container">
       <div class="row">
         <div class="col-md-12">
           <div class="pull-left" style="padding-top: 7px;">
-            <a href="/">WizardLovushka</a> | v 1.1 | &copy; <a class="ru_block" href="http://www.chikurov.com" target="_blank">Юрий Чикуров</a><a class="hidden en_block" href="http://www.chikurov.com" target="_blank">Yuri Chikurov</a> | 2018
+            <a href="/">WizardLovushka</a> | v 1.1 | &copy; 
+            <a class="ru_block" href="http://www.chikurov.com" target="_blank">Юрий Чикуров</a>
+            <a class="hidden en_block" href="http://www.chikurov.com" target="_blank">Yuri Chikurov</a> | 2018
           </div>
           <?php if(is_user_logged_in()){ ?>
           <div class="pull-right">
