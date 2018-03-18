@@ -388,11 +388,17 @@
             <button class="btn btn-primary btn-lg stop_prot hidden en_block">Stop</button>
           </div>
         </div>
-        <div class="modal-footer">
+        <div class="modal-footer ru_block">
           <div class="pull-left">
             <button class="btn btn-warning clear_prot hidden">Отменить выбор</button>
           </div>
           <button class="btn btn-primary set_acept hidden">Применить настройки</button>
+        </div>
+        <div class="modal-footer hidden en_block">
+          <div class="pull-left">
+            <button class="btn btn-warning clear_prot hidden">Deselect</button>
+          </div>
+          <button class="btn btn-primary set_acept hidden">Apply Settings</button>
         </div>
       </div>
     </div>
@@ -402,13 +408,21 @@
       <div class="modal-content">
         <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-          <h4 class="modal-title" id="myModalLabel">Правила пользования</h4>
+          <h4 class="modal-title" id="myModalLabel"><span class="ru_block">Правила пользования</span><span class="hidden en_block">The manual</span></h4>
         </div>
-        <div class="modal-text">
+        <div class="modal-text ru_block">
           Включите ловушку и поставьте средний палец правой руки в центр рисунка. Следуя инструкциям вспоминайте из своей жизни предлагаемые ситуации и переживания. Будьте честными перед собой, не фантазируйте. Удерживайте палец в Ловушке не менее 2-х минут на каждое переживание, за тем нажмите кноку "Далее" и снова поставьте палец на ловушку. Повторяйте пока инструкции не закончатся. Рекомендуется повторить процедуру пересмотра не менее 4-х раз в течение месяца. Каждый новый раз вопросы из списка могут быть разные.
           <div class="row text-centered">
             <div class="col-md-12">
               <button class="btn btn-primary start_prot">Включить ловушку</button>
+            </div>
+          </div>
+        </div>
+        <div class="modal-text hidden en_block">
+          Switch on the device and put you third right finger to the centre of the picture. Follow the instructions and try to recollect the situations from your life that were offered to you. Please be honest to yourself , do not  imagine. Hold your finger at the LOVUSHKA no less than 2min for every issue, then press the button “next” and put you finger to the centre again. Please continue the session until the instructions has been finished. This procedure is recommended to be repeated 4 times per month or more. Next time you can choose another issues from the list.
+          <div class="row text-centered">
+            <div class="col-md-12">
+              <button class="btn btn-primary start_prot">Enable LOVUSHKA</button>
             </div>
           </div>
         </div>
@@ -420,16 +434,22 @@
       <div class="modal-content">
         <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-          <h4 class="modal-title" id="myModalLabel">Правила пользования:</h4>
+          <h4 class="modal-title" id="myModalLabel"><span class="ru_block">Правила пользования:</span><span class="hidden en_block">The manual</span></h4>
         </div>
-        <div class="modal-text">
+        <div class="modal-text ru_block">
           <b>Способ 1. Избавление.</b><br>
           Нажмите на кнопку вашего переживания. Поставьте средний палец правой руки в центр ловушки и начните проговаривать свои проблемы. Ловушка выключится автоматически. При необходимости повторите. Количество повторений не ограничено.<br>
           <b>Способ 2. Пересмотр личной истории.</b><br>
           Выберите из списка проблем не более двух, наиболее типичных для вас. Включите ловушку и поставьте средний палец правой руки в центр рисунка. Следуя инструкциям вспоминайте из своей жизни предлагаемые ситуации и переживания. Будьте честными перед собой, не фантазируйте, а четко следуйте инструкциям. Удерживайте палец в Ловушке не менее 2-х минут на каждое переживание. Рекомендуется повторить процедуру пересмотра не менее 4-х раз в течение месяца. Каждый новый раз вопросы из списка могут быть разные.
         </div>
+        <div class="modal-text hidden en_block">
+          <b>Method 1. Releasing.</b><br>
+          Click on the button of your experience. Put the middle finger of the right hand in the center of the LOVUSHKA and start to speak out your problems. The LOVUSHKA will turn off automatically. Repeat if necessary. The number of repetitions is unlimited.<br>
+          <b>Method 2. Revision of personal history.</b><br>
+          Please, choose no more than two problems from the list. Put you third right finger to the centre of the picture and try to recall the situations from your life that are offered by the device. Please don’t imagine. Be honest to yourself. Continue it no less than 2 min for every issue. It is recommended to repeat this procedure 4 times per month or more. Next time you can choose another issues from the list.
+        </div>
         <div class="modal-footer">
-          <button class="btn btn-primary" data-dismiss="modal">Закрыть</button>
+          <button class="btn btn-primary" data-dismiss="modal">Close</button>
         </div>
       </div>
     </div>
