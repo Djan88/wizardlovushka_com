@@ -346,8 +346,7 @@
       <div class="modal-content">
         <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-          <h4 class="modal-title" id="myModalLabel ru_block">Диагностика личной истории:</h4>
-          <h4 class="modal-title" id="myModalLabel hidden en_block">Diagnosis of personal history:</h4>
+          <h4 class="modal-title" id="myModalLabel"><span class="ru_block">Диагностика личной истории:</span><span class="hidden en_block">Diagnosis of personal history:</span></h4>
         </div>
         <div class="modal-body text-centered">
           <h4 class="ru_block">Выберите из списка актуальные проблемы, но не более 2-х.</h4>
