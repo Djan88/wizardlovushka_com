@@ -378,9 +378,10 @@
             <button type="button" class="btn btn-default question noactive" data-quest_one = "11" data-quest_two = "12" data-choiced="">Offences  and humiliations</button>
           </div>
           <div class="runed hidden">
-            <h3>Сессия еще выполняется!</h3>
-            <h4>Перед началом новой сессии необходимо остановить выполнение текущей</h4>
-            <button class="btn btn-primary btn-lg stop_prot">Остановить</button>
+            <h3><span class="ru_block">Сессия еще выполняется!</span><span class="hidden en_block">The session is still running!</span></h3>
+            <h4><span class="ru_block">Перед началом новой сессии необходимо остановить выполнение текущей</span><span class="hidden en_block">Before starting a new session, you must stop the current</span></h4>
+            <button class="btn btn-primary btn-lg stop_prot ru_block">Остановить</button>
+            <button class="btn btn-primary btn-lg stop_prot hidden en_block">Stop</button>
           </div>
         </div>
         <div class="modal-footer">
