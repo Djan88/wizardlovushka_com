@@ -287,6 +287,8 @@ footer.footer a
     padding: 10px;
     border-radius: 6px;
     font-size: 16px;
+    padding-top: 20px;
+    margin-top: 5px;
 }
 .login__form input[type="text"], .login__form input[type="password"]
 {
