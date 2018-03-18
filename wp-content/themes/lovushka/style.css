@@ -367,6 +367,11 @@ footer.footer a
     border: 2px solid #000;
     z-index: 999;
 }
+.login__form .btn-group.lang_block 
+{
+    position: static;
+    margin-top: -65px;
+}
 button.btn.active.btn_lang 
 {
     background: #000;
