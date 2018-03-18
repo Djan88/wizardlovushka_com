@@ -346,11 +346,13 @@
       <div class="modal-content">
         <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-          <h4 class="modal-title" id="myModalLabel">Диагностика личной истории:</h4>
+          <h4 class="modal-title" id="myModalLabel ru_block">Диагностика личной истории:</h4>
+          <h4 class="modal-title" id="myModalLabel hidden en_block">Diagnosis of personal history:</h4>
         </div>
         <div class="modal-body text-centered">
-          <h4>Выберите из списка актуальные проблемы, но не более 2-х.</h4>
-          <div class="questions">
+          <h4 class="ru_block">Выберите из списка актуальные проблемы, но не более 2-х.</h4>
+          <h4 class="hidden en_block">Please choose no more than 2 current issue from the list.</h4>
+          <div class="questions ru_block">
             <button type="button" class="btn btn-default question noactive" data-quest_one = "2" data-quest_two = "5" data-choiced="">Злость на кого-либо, на ситуацию или на себя</button>
             <button type="button" class="btn btn-default question noactive" data-quest_one = "5" data-quest_two = "2" data-choiced="">Сложности в общении и в любых делах</button>
             <button type="button" class="btn btn-default question noactive" data-quest_one = "7" data-quest_two = "12" data-choiced="">Чувство вины</button>
@@ -362,6 +364,19 @@
             <button type="button" class="btn btn-default question noactive" data-quest_one = "9" data-quest_two = "12" data-choiced="">Дилеммы касательно предметов и отношений</button>
             <button type="button" class="btn btn-default question noactive" data-quest_one = "10" data-quest_two = "12" data-choiced="">Неосуществлённые мечты</button>
             <button type="button" class="btn btn-default question noactive" data-quest_one = "11" data-quest_two = "12" data-choiced="">Обиды и унижения</button>
+          </div>
+          <div class="questions hidden en_block">
+            <button type="button" class="btn btn-default question noactive" data-quest_one = "2" data-quest_two = "5" data-choiced="">The anger at someone, situation. Or the anger at yourself</button>
+            <button type="button" class="btn btn-default question noactive" data-quest_one = "5" data-quest_two = "2" data-choiced="">Difficulties in communication or difficulties in any affairs</button>
+            <button type="button" class="btn btn-default question noactive" data-quest_one = "7" data-quest_two = "12" data-choiced="">Feeling guilty</button>
+            <button type="button" class="btn btn-default question noactive" data-quest_one = "3" data-quest_two = "6" data-choiced="">Holding yourself back or lowering self-esteem</button>
+            <button type="button" class="btn btn-default question noactive" data-quest_one = "4" data-quest_two = "1" data-choiced="">The need to follow someone else’s opinion</button>
+            <button type="button" class="btn btn-default question noactive" data-quest_one = "6" data-quest_two = "3" data-choiced="">Something in your life that you cannot accept</button>
+            <button type="button" class="btn btn-default question noactive" data-quest_one = "1" data-quest_two = "4" data-choiced="">Worries, bustling and fears</button>
+            <button type="button" class="btn btn-default question noactive" data-quest_one = "8" data-quest_two = "12" data-choiced="">Wishes and the rules of life</button>
+            <button type="button" class="btn btn-default question noactive" data-quest_one = "9" data-quest_two = "12" data-choiced="">Dilemmas related to subjects or relationships</button>
+            <button type="button" class="btn btn-default question noactive" data-quest_one = "10" data-quest_two = "12" data-choiced="">Not realised life goals and wishes</button>
+            <button type="button" class="btn btn-default question noactive" data-quest_one = "11" data-quest_two = "12" data-choiced="">Offences  and humiliations</button>
           </div>
           <div class="runed hidden">
             <h3>Сессия еще выполняется!</h3>
