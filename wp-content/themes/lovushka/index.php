@@ -65,12 +65,10 @@
       <!-- Если зашел участник или администратор -->
       <?php } elseif(current_user_can('contributor') || current_user_can('administrator') || current_user_can('author')) { ?>
         <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-        <?php if(current_user_can('administrator')){ ?>
-          <div class="btn-group lang_block">
-            <button type="button" data-lang="ru" class="btn btn-sm btn-default active btn_lang btn_lang_ru">РУС</button>
-            <button type="button" data-lang="en" data-speed="4" class="btn btn-sm btn-default btn_lang btn_lang_en">EN</button>
-          </div>
-        <?php } ?>
+        <div class="btn-group lang_block">
+          <button type="button" data-lang="ru" class="btn btn-sm btn-default active btn_lang btn_lang_ru">РУС</button>
+          <button type="button" data-lang="en" data-speed="4" class="btn btn-sm btn-default btn_lang btn_lang_en">EN</button>
+        </div>
         <div class="reg_block">
           <?php 
             $user = get_current_user_id();
@@ -273,12 +271,10 @@
         <div class="row">
           <div class="col-lg-6 col-lg-offset-3">
             <div class="login__form">
-                <?php if(current_user_can('administrator')){ ?>
-                  <div class="btn-group lang_block">
-                    <button type="button" data-lang="ru" class="btn btn-sm btn-default active btn_lang btn_lang_ru">РУС</button>
-                    <button type="button" data-lang="en" data-speed="4" class="btn btn-sm btn-default btn_lang btn_lang_en">EN</button>
-                  </div>
-                <?php } ?>
+                <div class="btn-group lang_block">
+                  <button type="button" data-lang="ru" class="btn btn-sm btn-default active btn_lang btn_lang_ru">РУС</button>
+                  <button type="button" data-lang="en" data-speed="4" class="btn btn-sm btn-default btn_lang btn_lang_en">EN</button>
+                </div>
                 <form name="loginform" id="loginform" action="<?php echo esc_url( site_url( 'wp-login.php', 'login_post' ) ); ?>" method="post">
                     <p>
                       <label for="user_login"><span class="ru_block">Логин</span><span class="hidden en_block">Login</span><br />
