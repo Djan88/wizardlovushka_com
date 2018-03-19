@@ -39,6 +39,20 @@ jQuery(document).ready(function () {
         "10": 'Вспомните свои нереализованные жизненные цели и желания.',
         "11": 'Вспомните свои обиды и унижения.',
         "12": 'Вспомните состояние переживания одиночества.',
+       },
+      instructions_en = {
+        "1": 'Please recall the situation when you worried, fussed and feared what might happen.',
+        "2": 'Please recall the situation when you were angry.',
+        "3": 'Please recall the situation when you held yourself back from something or lowered your self-esteem.',
+        "4": 'Please recall when you were forced to agree with others opinion.',
+        "5": 'Please recall the situation when you were trying to convey the proper point of view to someone or others.',
+        "6": 'Please recall the situation where you experienced deceit and injustice. Inability to accept something.',
+        "7": 'Please recall when you felt guilty.',
+        "8": 'Please recall your obsession with an idea, plans or wealth.',
+        "9": 'Please recall your doubts when choosing any products or doubt in relationship with other people.',
+        "10": 'Please recall your life goals and desires which were not realised.',
+        "11": 'Please recall the situation when you felt offended and humiliated.',
+        "12": 'Please recall when you felt extremely lonely.',
        }
 // Клик по вопросу
   jQuery('.question').on('click', function(event) {
@@ -76,8 +90,13 @@ jQuery(document).ready(function () {
       jQuery(this).removeClass('noactive');
       jQuery('.clear_prot').removeClass('hidden');
       jQuery('.set_acept').removeClass('hidden');
+      lang = localStorage.getItem('lang');
       if (quest_count == 1) {
-        instruction_one = instructions[jQuery(this).data('quest_one')];
+        if (lang == 'en') {
+          instruction_one = instructions_en[jQuery(this).data('quest_one')];
+        } else {
+          instruction_one = instructions[jQuery(this).data('quest_one')];
+        }
         speed_from = jQuery(this).data('quest_one');
         if (speed_from == "1" || speed_from == "2" || speed_from == "3" || speed_from == "12") {
           speed_one = 2
@@ -88,7 +107,11 @@ jQuery(document).ready(function () {
         } else if (speed_from == "8") {
           speed_one = 34
         }
-        instruction_two = instructions[jQuery(this).data('quest_two')];
+        if (lang == 'en') {
+          instruction_two = instructions_en[jQuery(this).data('quest_two')];
+        } else {
+          instruction_two = instructions[jQuery(this).data('quest_two')];
+        }
         speed_from = jQuery(this).data('quest_two');
         if (speed_from == "1" || speed_from == "2" || speed_from == "3" || speed_from == "12") {
           speed_two = 2
@@ -100,7 +123,11 @@ jQuery(document).ready(function () {
           speed_two = 34
         }
       } else if (quest_count == 2) {
-        instruction_three = instructions[jQuery(this).data('quest_one')];
+        if (lang == 'en') {
+          instruction_three = instructions_en[jQuery(this).data('quest_one')];
+        } else {
+          instruction_three = instructions[jQuery(this).data('quest_one')];
+        }
         speed_from = jQuery(this).data('quest_one');
         if (speed_from == "1" || speed_from == "2" || speed_from == "3" || speed_from == "12") {
           speed_three = 2
@@ -111,7 +138,11 @@ jQuery(document).ready(function () {
         } else if (speed_from == "8") {
           speed_three = 34
         }
-        instruction_four = instructions[jQuery(this).data('quest_two')];
+        if (lang == 'en') {
+          instruction_four = instructions_en[jQuery(this).data('quest_two')];
+        } else {
+          instruction_four = instructions[jQuery(this).data('quest_two')];
+        }
         speed_from = jQuery(this).data('quest_two');
         if (speed_from == "1" || speed_from == "2" || speed_from == "3" || speed_from == "12") {
           speed_four = 2
