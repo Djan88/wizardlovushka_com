@@ -479,7 +479,8 @@
           Please, choose no more than two problems from the list. Put you third right finger to the centre of the picture and try to recall the situations from your life that are offered by the device. Please don’t imagine. Be honest to yourself. Continue it no less than 2 min for every issue. It is recommended to repeat this procedure 4 times per month or more. Next time you can choose another issues from the list.
         </div>
         <div class="modal-footer">
-          <button class="btn btn-primary" data-dismiss="modal">Close</button>
+          <button class="btn btn-primary ru_block" data-dismiss="modal">Закрыть</button>
+          <button class="btn btn-primary hidden en_block" data-dismiss="modal">Close</button>
         </div>
       </div>
     </div>
