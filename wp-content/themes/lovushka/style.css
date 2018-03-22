@@ -412,4 +412,12 @@ button.btn.active.btn_lang
         right: 5px;
         top: 5px;
     }
+    .modal-text
+    {
+        font-size: 12px;
+    }
+    .modal-header h4
+    {
+        font-size: 16px;
+    }
 }
