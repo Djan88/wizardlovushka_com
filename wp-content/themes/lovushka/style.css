@@ -420,4 +420,9 @@ button.btn.active.btn_lang
     {
         font-size: 16px;
     }
+    .easy_mode_item
+    {
+        padding-right: 5px;
+        padding-left: 5px;
+    }
 }
