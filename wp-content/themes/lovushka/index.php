@@ -265,7 +265,6 @@
             <?php } ?>
           </div>
         <?php } else { ?>
-          <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
           <div class="container">
             <div class="row">
               <div class="col-md-12">
@@ -279,9 +278,6 @@
               </div>
             </div>
           </div>
-          <?php endwhile; else: ?>
-            <?php _e('Sorry, no posts matched your criteria.'); ?>
-          <?php endif; ?>
         <?php } ?>
         <?php endwhile; ?>
         <?php endif; ?>
