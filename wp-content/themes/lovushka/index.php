@@ -61,7 +61,22 @@
     <?php if(is_user_logged_in()){ ?>
       <!-- Если зашел подписчик -->
       <?php if(current_user_can('subscriber')){ ?>
-        <div>Доступ запрещен</div>
+        <div class="container vitrin_wrap">
+          <div class="col-md-12">
+            <h1>Антистресс Визард Ловушка</h1>
+          </div>
+          <div class="col-md-12">
+            <h2>Мы предлагаем 2 варианта использования программы</h2>
+            <div class="row">
+              <div class="col-sm-6 vitrin">
+                <h3>Базовый вариант</h3>
+              </div>
+              <div class="col-sm-6 vitrin">
+                <h3>Расширенный вариант</h3>
+              </div>
+            </div>
+          </div>
+        </div>
       <!-- Если зашел участник или администратор -->
       <?php } elseif(current_user_can('contributor') || current_user_can('administrator') || current_user_can('author')) { ?>
         <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
@@ -296,8 +311,8 @@
                 do_action( 'login_form' );
                 ?>
                 <p class="forgetmenot"><label for="rememberme"><input name="rememberme" type="checkbox" id="rememberme" value="forever" <?php checked( $rememberme ); ?> /> <span class="ru_block">Запомнить меня</span><span class="hidden en_block">Remember me</span></label></p>
-                <p class="note_small ru_block">Для доступа к программе напишите на <a class="bablosadres" href="mailto:info@chikurov.com" style="color: #fff;">info@chikurov.com</a></p>
-                <p class="note_small hidden en_block">To access the program, write to <a class="bablosadres" href="mailto:info@chikurov.com" style="color: #fff;">info@chikurov.com</a></p>
+                <!-- <p class="note_small ru_block">Для доступа к программе напишите на <a class="bablosadres" href="mailto:info@chikurov.com" style="color: #fff;">info@chikurov.com</a></p>
+                <p class="note_small hidden en_block">To access the program, write to <a class="bablosadres" href="mailto:info@chikurov.com" style="color: #fff;">info@chikurov.com</a></p> -->
                 <p class="submit">
                     <input type="submit" name="wp-submit" id="wp-submit" class="button button-primary button-large ru_block" value="Войти" />
                     <input type="submit" name="wp-submit" id="wp-submit" class="button button-primary button-large hidden en_block" value="Login" />

@@ -384,6 +384,12 @@ button.btn.active.btn_lang
     text-decoration: underline;
     cursor: pointer;
 }
+.vitrin
+{
+    border: 1px solid #fff;
+    padding: 10px;
+    border-radius: 6px;
+}
 
 @media (max-width: 991px) {
     /*.set, .manual, .set_disabled
