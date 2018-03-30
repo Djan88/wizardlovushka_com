@@ -68,10 +68,11 @@
           <div class="col-md-12">
             <h2>Мы предлагаем 2 варианта использования программы</h2>
             <div class="row">
-              <div class="col-sm-6 vitrin">
+              <div class="col-sm-5 vitrin">
                 <h3>Базовый вариант</h3>
               </div>
-              <div class="col-sm-6 vitrin">
+              <div class="col-sm-2"></div>
+              <div class="col-sm-5 vitrin">
                 <h3>Расширенный вариант</h3>
               </div>
             </div>
