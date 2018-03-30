@@ -382,6 +382,7 @@ button.btn.active.btn_lang
 {
     color: #fff;
     text-decoration: underline;
+    cursor: pointer;
 }
 
 @media (max-width: 991px) {
