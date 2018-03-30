@@ -316,7 +316,7 @@
               </form>
 
               <!-- REGISTRATION -->
-              <form id="registerform" class="hidden" action="<?php site_url('wp-login.php?action=register'); ?>" method="post">
+              <form id="registerform" class="hidden" action="<?php echo site_url('wp-login.php?action=register'); ?>" method="post">
                 <p>
                   <label for="user_login">
                     Придумайте логин<br>

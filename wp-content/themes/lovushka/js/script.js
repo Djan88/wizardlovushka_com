@@ -450,7 +450,7 @@ jQuery('.instruction_block').on('click', function(event) {
     jQuery('#registerform').removeClass('hidden');
   });
   jQuery('.toLogin').on('click', function(event) {
-    jQuery('#loginform').romoveClass('hidden');
+    jQuery('#loginform').removeClass('hidden');
     jQuery('#registerform').addClass('hidden');
   });
 
