@@ -378,6 +378,12 @@ button.btn.active.btn_lang
     color: #fff;
     border-color: #000;
 }
+.toRegistration, .toLogin
+{
+    color: #fff;
+    text-decoration: underline;
+}
+
 @media (max-width: 991px) {
     /*.set, .manual, .set_disabled
     {

@@ -444,6 +444,16 @@ jQuery('.instruction_block').on('click', function(event) {
     }
   });
 
+  // Переход к форме регистрации и обратно
+  jQuery('.toRegistration').on('click', function(event) {
+    jQuery('#loginform').addClass('hidden');
+    jQuery('#registerform').removeClass('hidden');
+  });
+  jQuery('.toLogin').on('click', function(event) {
+    jQuery('#loginform').romoveClass('hidden');
+    jQuery('#registerform').addClass('hidden');
+  });
+
   jQuery('.protocol').css('height', jQuery('.protocol').css('width'));
   jQuery('.protocol svg').css('height', jQuery('.protocol svg').css('width'));
   jQuery(window).resize(function(event) {
