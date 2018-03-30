@@ -284,13 +284,13 @@ footer.footer a
 .login__form 
 {
     border: 1px solid #fff;
-    padding: 10px;
+    padding: 15px;
     border-radius: 6px;
     font-size: 16px;
     padding-top: 20px;
     margin-top: 5px;
 }
-.login__form input[type="text"], .login__form input[type="password"]
+.login__form input[type="text"], .login__form input[type="password"], .login__form input[type="email"]
 {
     width: 250px;
     border: 1px solid #000;
