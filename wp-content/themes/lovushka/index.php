@@ -88,6 +88,10 @@
               <div class="col-sm-1"></div>
             </div>
           </div>
+          <div class="col-md-12">
+            <h2>Как приобрести доступ к программе?</h2>
+            <p></p>
+          </div>
         </div>
       <!-- Если зашел участник или администратор -->
       <?php } elseif(current_user_can('contributor') || current_user_can('administrator') || current_user_can('author')) { ?>
