@@ -63,7 +63,7 @@
       <?php if(current_user_can('subscriber')){ ?>
         <div class="container vitrin_wrap">
           <div class="col-md-12">
-            <h1>Антистресс Визард Ловушка</h1>
+            <h1 class="vitrin_heading">Антистресс Визард Ловушка</h1>
           </div>
           <div class="col-md-12">
             <h2>Мы предлагаем 2 варианта использования программы</h2>
