@@ -90,7 +90,17 @@
           </div>
           <div class="col-md-12">
             <h2>Как приобрести доступ к программе?</h2>
-            <p></p>
+            <div class="row">
+              <div class="col-md-12">
+                <div class="vitrin">
+                  Для того чтоб приобрести доступ к программе напишите на <a href="mailto:info@chikurov.com">info@chikurov.com</a> указав в письме какой вариант работы Вы выбираете.
+                  <h4>Юридическая информация:</h4>
+                  <p><a href="mailto:info@chikurov.com">info@chikurov.com</a> / +7 (495) 135-25-48</p>
+                  <p>ОГРНИП: 314910224600336</p>
+                  <p>ИНН: 7706092528</p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       <!-- Если зашел участник или администратор -->
