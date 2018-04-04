@@ -428,6 +428,11 @@ button.btn.active.btn_lang
     font-size: 25px;
     font-weight: 600;
 }
+img.items 
+{
+    max-width: 100%;
+    height: auto;
+}
 @media (max-width: 991px) {
     /*.set, .manual, .set_disabled
     {
