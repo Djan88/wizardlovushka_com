@@ -390,6 +390,7 @@ button.btn.active.btn_lang
     padding: 10px;
     border-radius: 6px;
     background: #fff;
+    font-size: 20px;
 }
 .vitrin_content
 {
@@ -416,7 +417,8 @@ button.btn.active.btn_lang
 }
 .vitrin h4
 {
-    font-weight: 600px;
+    font-weight: 600;
+    font-size: 20px;
 }
 .price 
 {
