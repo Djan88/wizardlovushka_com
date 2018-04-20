@@ -320,7 +320,7 @@
               <form id="registerform" class="hidden" action="<?php echo site_url('wp-login.php?action=register'); ?>" method="post">
                 <p>
                   <label for="user_login">
-                    Придумайте логин<br>
+                    Create a username<br>
                     <input type="text" name="user_login" id="user_login" class="input" value="" size="20" style="">
                   </label>
                 </p>
@@ -331,7 +331,7 @@
                   </label>
                 </p>
 
-                <p id="reg_passmail">Подтверждение регистрации будет отправлено на ваш e-mail.</p>
+                <p id="reg_passmail">Confirmation of registration will be sent to your e-mail.</p>
 
                 <br class="clear">
                 <input type="hidden" name="redirect_to" value="">
