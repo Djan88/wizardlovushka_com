@@ -63,16 +63,16 @@
       <?php if(current_user_can('subscriber')){ ?>
         <div class="container vitrin_wrap">
           <div class="col-md-12">
-            <h1 class="vitrin_heading">Антистресс Визард Ловушка</h1>
+            <h1 class="vitrin_heading">Anti-stress Wizard Lovushka</h1>
             <div class="row">
               <div class="col-md-10 col-md-offset-1">
                 <div class="vitrin">
-                  <p><h3>Добрый день!</h3></p>
+                  <p><h3>Good day!</h3></p>
                   <p>
-                    Для того чтоб избавиться от злости, раздражения и прочих надоедливых мыслей нам часто приходится искать "свободные уши" и изливать в них свои беспокойства. Мы решили сделать программу которая справлялась бы с этой задачей и была под рукой 24 часа в сутки.
+                    In order to get rid of anger, irritation and other annoying thoughts, we often have to look for "free ears" and pour out their concerns in them. We decided to make a program that would cope with this task and was at hand 24 hours a day.
                   </p>
                   <p>
-                    20 декабря 2017г. программа <b>"Антистресс Визард Ловушка"</b> стала доступна пользователям. Мы продумали максимально удобный и простой интерфейс. Им одинаково удобно пользоваться на компьютере, ноутбуке, планшете и даже на смартфоне. Так, в любой момент Вы можете воспользоваться ловушкой прямо с экрана своего смартфона, для этого Вам необходим только интернет и доступ к <b>"Антистресс Визард Ловушка"</b>.
+                    December 20, 2017 program <b>"Anti-stress Wizard Lovushka"</b> became available to users. We thought of the most convenient and simple interface. They are equally convenient to use on a computer, laptop, tablet and even on a smartphone. So, at any time you can use the trap directly from your smartphone's screen, for this you need only the Internet and access to <b>"Anti-stress Wizard Lovushka"</b>.
                   </p>
                   <p>
                     <img src="<?php bloginfo('template_url'); ?>/img/items.png" alt="lovushka_items" class="items">
@@ -82,39 +82,39 @@
             </div>
           </div>
           <div class="col-md-12">
-            <h2>Мы предлагаем 2 варианта использования программы</h2>
+            <h2>We offer 2 options for using the program</h2>
             <div class="row">
               <div class="col-sm-1"></div>
               <div class="col-sm-5">
                 <div class="vitrin">
-                  <h3>Базовый вариант</h3>
-                  <p class="vitrin_content">В базовом режиме программы <b>"Антистресс Визард Ловушка"</b> пользователю доступны быстрые протоколы ("Боюсь", "Злюсь", "Обижаюсь", "Сомневаюсь"). Эти протоколы позволяют в один "клик", за 4 минуты, избавиться от переживаний. В этом режиме, возможно ручное управление скоростью вращения ловушки. Время работы ловушки при ручном управлении осуществляется на усмотрение пользователя.</p>
-                  <h4>Стоимость базовой версии</h4>
-                  <div class="price">5500 руб./год.</div>
+                  <h3>Basic option</h3>
+                  <p class="vitrin_content">In the basic mode of the program <b>"Anti-stress Wizard Lovushka"</b> the user has access to fast protocols ("I'm Afraid", "I'm angry", "I'm offended," "I doubt"). These protocols allow one "click", in 4 minutes, to get rid of the experience. In this mode, it is possible to manually control the speed of rotation of the trap. The time of the trap operation with manual control is at the discretion of the user.</p>
+                  <h4>Cost of the basic version</h4>
+                  <div class="price">5500 rur./year.</div>
                 </div>
               </div>
               <div class="col-sm-5">
                 <div class="vitrin">
-                  <h3>Расширенный вариант</h3>
-                  <p class="vitrin_content">Раширенный режим программы <b>"Антистресс Визард Ловушка"</b> включает в себя все возможности базового режима, а так же механизм для "Пересмотра личной истории". В этом режиме, можно выбрать до 2-х актуальных проблем из списка и следую подсказкам программы провести глубокую проработку личной истории. В этом режиме скоростью вращения лоушки управляет программа. На разных этапах она может меняться</p>
-                  <h4>Стоимость расширенной версии</h4>
-                  <div class="price">10000 руб./год.</div>
+                  <h3>Extended version</h3>
+                  <p class="vitrin_content">Extended program mode <b>"Anti-stress Wizard Lovushka"</b> includes all the features of the basic mode, as well as a mechanism for the "Revision of personal history." In this mode, you can select up to 2 relevant problems from the list and follow the prompts of the program to conduct a deep study of your personal history. In this mode, the speed of rotation of the louver is controlled by the program. At different stages it can vary</p>
+                  <h4>Cost of the expanded version</h4>
+                  <div class="price">10000 rur./year.</div>
                 </div>
               </div>
               <div class="col-sm-1"></div>
             </div>
           </div>
           <div class="col-md-12">
-            <h2>Как приобрести доступ к программе?</h2>
+            <h2>How can I get access to the program?</h2>
             <div class="row">
               <div class="col-md-10 col-md-offset-1">
                 <div class="vitrin">
-                  Для того чтоб приобрести доступ к программе напишите на <a href="mailto:info@chikurov.com">info@chikurov.com</a> указав в письме какой вариант работы Вы выбираете.
+                  In order to gain access to the program, write to <a href="mailto:info@chikurov.com">info@chikurov.com</a> indicating in the letter which variant of the work you choose.
                   <h3></h3>
-                  <h4>Юридическая информация:</h4>
+                  <h4>Legal information:</h4>
                   <p><a href="mailto:info@chikurov.com">info@chikurov.com</a> / +7 (495) 135-25-48</p>
-                  <p>ОГРНИП: 314910224600336</p>
-                  <p>ИНН: 7706092528</p>
+                  <p>OGRNIP: 314910224600336</p>
+                  <p>INN: 7706092528</p>
                 </div>
               </div>
             </div>
@@ -123,10 +123,6 @@
       <!-- Если зашел участник или администратор -->
       <?php } elseif(current_user_can('contributor') || current_user_can('administrator') || current_user_can('author')) { ?>
         <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-        <div class="btn-group lang_block">
-          <button type="button" data-lang="ru" class="btn btn-sm btn-default active btn_lang btn_lang_ru">РУС</button>
-          <button type="button" data-lang="en" data-speed="4" class="btn btn-sm btn-default btn_lang btn_lang_en">EN</button>
-        </div>
         <div class="reg_block">
           <?php 
             $user = get_current_user_id();
@@ -145,10 +141,6 @@
             <div class="container">
               <div class="row">
                 <div class="col-xs-6 col-xs-offset-3 ru_block">
-                  <h3>Срок действия лицензии истек</h3>
-                  <p>Для продления лицензии напишите на <a href="mailto:info@chikurov.com">info@chikurov.com</a></p>
-                </div>
-                <div class="col-xs-6 col-xs-offset-3 en_block hidden">
                   <h3>The license has expired</h3>
                   <p>To renew the license, write to <a href="mailto:info@chikurov.com">info@chikurov.com</a></p>
                 </div>
@@ -233,15 +225,6 @@
                       <div class="instruction_block hidden">
                         <span class="instr"></span>
                         <div>
-                          <button type="button" class="btn btn-primary next_instr">Далее <i class="fa fa-chevron-right"></i></button>
-                          <button type="button" class="btn btn-primary hidden close_instr">Закрыть</button>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-md-8 col-md-offset-2 col-sm-12 col-xs-12 en_block hidden">
-                      <div class="instruction_block hidden">
-                        <span class="instr"></span>
-                        <div>
                           <button type="button" class="btn btn-primary next_instr">Next <i class="fa fa-chevron-right"></i></button>
                           <button type="button" class="btn btn-primary hidden close_instr">Close</button>
                         </div>
@@ -250,16 +233,6 @@
                   <?php } ?>
                 <?php } ?>
                 <div class="col-md-4 col-md-offset-4 ru_block">
-                  <div class="btn-group speed_control">
-                    <button type="button" class="btn btn-default btn-lg speed_slover"><i class="fa fa-backward" aria-hidden="true"></i></button>
-                    <button type="button" class="btn btn-default btn-lg disabled speed_closed hidden" data-toggle="tooltip" data-placement="top" title="В текущем режиме скорость регулируется автоматически"><i class="fa fa-backward" aria-hidden="true"></i></button>
-                    <button type="button" class="btn btn-default btn-lg play"><i class="fa fa-play" aria-hidden="true"></i></button>
-                    <button type="button" class="btn btn-default btn-lg stop"><i class="fa fa-stop" aria-hidden="true"></i></button>
-                    <button type="button" class="btn btn-default btn-lg disabled speed_closed hidden" data-toggle="tooltip" data-placement="top" title="В текущем режиме скорость регулируется автоматически"><i class="fa fa-forward" aria-hidden="true"></i></button>
-                    <button type="button" class="btn btn-default btn-lg speed_faster"><i class="fa fa-forward" aria-hidden="true"></i></button>
-                  </div>
-                </div>
-                <div class="col-md-4 col-md-offset-4 en_block hidden">
                   <div class="btn-group speed_control">
                     <button type="button" class="btn btn-default btn-lg speed_slover"><i class="fa fa-backward" aria-hidden="true"></i></button>
                     <button type="button" class="btn btn-default btn-lg disabled speed_closed hidden" data-toggle="tooltip" data-placement="top" title="In the current mode, the speed is automatically adjusted"><i class="fa fa-backward" aria-hidden="true"></i></button>
@@ -271,14 +244,6 @@
                 </div>
                 <div class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2 col-xs-12 ru_block">
                   <div class="btn-group easy_mode">
-                    <button type="button" data-mode="scare" data-speed="2" class="btn btn-default easy_mode_item easy_mode_item_scare">Боюсь</button>
-                    <button type="button" data-mode="angry" data-speed="4" class="btn btn-default easy_mode_item easy_mode_item_angry">Злюсь</button>
-                    <button type="button" data-mode="resentment" data-speed="6" class="btn btn-default easy_mode_item easy_mode_item_resentment">Обижаюсь</button>
-                    <button type="button" data-mode="doubt" data-speed="8" class="btn btn-default easy_mode_item easy_mode_item_doubt">Сомневаюсь</button>
-                  </div>
-                </div>
-                <div class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2 col-xs-12 en_block hidden">
-                  <div class="btn-group easy_mode">
                     <button type="button" data-mode="scare" data-speed="2" class="btn btn-default easy_mode_item easy_mode_item_scare">I'm afraid</button>
                     <button type="button" data-mode="angry" data-speed="4" class="btn btn-default easy_mode_item easy_mode_item_angry">I'm angry</button>
                     <button type="button" data-mode="resentment" data-speed="6" class="btn btn-default easy_mode_item easy_mode_item_resentment">I'm offended</button>
@@ -286,18 +251,6 @@
                   </div>
                 </div>
                 <div class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2 col-xs-12 ru_block">
-                  <div class="btn-group speed_control">
-                    <button type="button" class="btn btn-default manual" data-toggle="modal" data-target="#manual"><i class="fa fa-file-text" aria-hidden="true"></i> Правила</button>
-                  <?php if(is_user_logged_in()){ ?>
-                    <?php if(current_user_can('administrator') || current_user_can('author')){ ?>
-                      <button type="button" class="btn btn-default set" data-toggle="modal" data-target="#set"><i class="fa fa-sliders" aria-hidden="true"></i> Продвинутый режим</button>
-                    <?php } else { ?>
-                      <button type="button" class="btn btn-default disabled set_disabled" data-toggle="popover" data-placement="top" data-original-title="Пересмотр личной истории" data-content='Продвинутый режим доступен для пользователей расширенной лицензии'><i class="fa fa-sliders" aria-hidden="true"></i> Продвинутый режим</button>
-                    <?php } ?>
-                  <?php } ?>
-                  </div>
-                </div>
-                <div class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2 col-xs-12 en_block hidden">
                   <div class="btn-group speed_control">
                     <button type="button" class="btn btn-default manual" data-toggle="modal" data-target="#manual"><i class="fa fa-file-text" aria-hidden="true"></i> Rules</button>
                   <?php if(is_user_logged_in()){ ?>
@@ -310,10 +263,6 @@
                   </div>
                 </div>
                 <div class="col-md-8 col-md-offset-2 col-xs-12 speed_val ru_block">
-                  <div class="lovushka_speed">0</div>
-                  скорость вращения
-                </div>
-                <div class="col-md-8 col-md-offset-2 col-xs-12 speed_val en_block hidden">
                   <div class="lovushka_speed">0</div>
                   rotational speed
                 </div>
@@ -329,19 +278,15 @@
         <div class="row">
           <div class="col-lg-6 col-lg-offset-3">
             <div class="login__form">
-              <div class="btn-group lang_block">
-                <button type="button" data-lang="ru" class="btn btn-sm btn-default active btn_lang btn_lang_ru">РУС</button>
-                <button type="button" data-lang="en" data-speed="4" class="btn btn-sm btn-default btn_lang btn_lang_en">EN</button>
-              </div>
               <!-- LOGIN -->
               <form name="loginform" id="loginform" action="<?php echo esc_url( site_url( 'wp-login.php', 'login_post' ) ); ?>" method="post">
                 <p>
-                  <label for="user_login"><span class="ru_block">Логин</span><span class="hidden en_block">Login</span><br />
+                  <label for="user_login"><span class="ru_block">Login</span><br />
                     <input type="text" name="log" id="user_login" class="input" value="<?php echo esc_attr($user_login); ?>" size="20" />
                   </label>
                 </p>
                 <p>
-                  <label for="user_pass"><span class="ru_block">Пароль</span><span class="hidden en_block">Password</span><br />
+                  <label for="user_pass"><span class="ru_block">Password</span><br />
                     <input type="password" name="pwd" id="user_pass" class="input" value="" size="20" />
                   </label>
                 </p>
@@ -353,12 +298,11 @@
                  */
                 do_action( 'login_form' );
                 ?>
-                <p class="forgetmenot"><label for="rememberme"><input name="rememberme" type="checkbox" id="rememberme" value="forever" <?php checked( $rememberme ); ?> /> <span class="ru_block">Запомнить меня</span><span class="hidden en_block">Remember me</span></label></p>
+                <p class="forgetmenot"><label for="rememberme"><input name="rememberme" type="checkbox" id="rememberme" value="forever" <?php checked( $rememberme ); ?> /> <span class="ru_block">Remember me</span></label></p>
                 <!-- <p class="note_small ru_block">Для доступа к программе напишите на <a class="bablosadres" href="mailto:info@chikurov.com" style="color: #fff;">info@chikurov.com</a></p>
                 <p class="note_small hidden en_block">To access the program, write to <a class="bablosadres" href="mailto:info@chikurov.com" style="color: #fff;">info@chikurov.com</a></p> -->
                 <p class="submit">
-                    <input type="submit" name="wp-submit" id="wp-submit" class="button button-primary button-large ru_block" value="Войти" />
-                    <input type="submit" name="wp-submit" id="wp-submit" class="button button-primary button-large hidden en_block" value="Login" />
+                    <input type="submit" name="wp-submit" id="wp-submit" class="button button-primary button-large ru_block" value="Login" />
                     <?php   if ( $interim_login ) { ?>
                         <input type="hidden" name="interim-login" value="1" />
                     <?php   } else { ?>
@@ -369,8 +313,7 @@
                     <?php   endif; ?>
                     <input type="hidden" name="testcookie" value="1" />
                 </p>
-                <p class="ru_block">У Вас еще нет учетной записи? <span class="toRegistration">Зарегистрируйтесь</span> в "Wizard Lovuska" и узнайте как получить доступ</p>
-                <p class="hidden en_block">Do not have an account yet? <span class="toRegistration">Register</span> in "Wizard Lovuska" and learn how to get access</p>
+                <p class="ru_block">Do not have an account yet? <span class="toRegistration">Register</span> in "Wizard Lovuska" and learn how to get access</p>
               </form>
 
               <!-- REGISTRATION -->
@@ -394,8 +337,7 @@
                 <input type="hidden" name="redirect_to" value="">
 
                 <p class="submit"><input type="submit" name="wp-submit" id="wp-submit" class="button button-primary button-large" value="Регистрация"></p>
-                <p class="ru_block">У Вас уже есть учетная запись? <span class="toLogin">Войдите</span> в "Wizard Lovuska" используя свои логин и пароль</p>
-                <p class="hidden en_block">Do you already have an account? <span class="toLogin">Enter</span> in "Wizard Lovuska" using your login and password</p>
+                <p class="ru_block">Do you already have an account? <span class="toLogin">Enter</span> in "Wizard Lovuska" using your login and password</p>
               </form>
             </div>
           </div>
@@ -409,13 +351,11 @@
         <div class="col-md-12">
           <div class="pull-left" style="padding-top: 7px;">
             <a href="/">WizardLovushka</a> | v 1.1 | &copy; 
-            <a class="ru_block" href="http://www.chikurov.com" target="_blank">Юрий Чикуров</a>
-            <a class="hidden en_block" href="http://www.chikurov.com" target="_blank">Yuri Chikurov</a> | 2018
+            <a class="ru_block" href="http://www.chikurov.com" target="_blank">Yuri Chikurov</a> | 2018
           </div>
           <?php if(is_user_logged_in()){ ?>
           <div class="pull-right">
-            <a class="btn btn_sm btn_warning wings_door_closed ru_block" href="<?php echo home_url(); ?>/wp-login.php?action=logout&amp;_wpnonce=a6cad512ba">Выйти</a>
-            <a class="btn btn_sm btn_warning wings_door_closed hidden en_block" href="<?php echo home_url(); ?>/wp-login.php?action=logout&amp;_wpnonce=a6cad512ba">Exit</a>
+            <a class="btn btn_sm btn_warning wings_door_closed ru_block" href="<?php echo home_url(); ?>/wp-login.php?action=logout&amp;_wpnonce=a6cad512ba">Exit</a>
           </div>
           <?php } ?>
           <div class="clearfix"></div>
@@ -462,28 +402,12 @@
       <div class="modal-content">
         <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-          <h4 class="modal-title" id="myModalLabel"><span class="ru_block">Диагностика личной истории:</span><span class="hidden en_block">Diagnosis of personal history:</span></h4>
+          <h4 class="modal-title" id="myModalLabel"><span class="ru_block">Diagnosis of personal history:</span></h4>
         </div>
         <div class="modal-body text-centered">
-          <h4 class="ru_block">Выберите из списка актуальные проблемы, но не более 2-х.</h4>
-          <h4 class="hidden en_block">Please choose no more than 2 current issue from the list.</h4>
+          <h4 class="ru_block">Please choose no more than 2 current issue from the list.</h4>
           <div class="questions">
             <div class="ru_block">
-              <button type="button" class="btn btn-default question noactive" data-quest_one = "2" data-quest_two = "5" data-choiced="">Злость на кого-либо, на ситуацию или на себя</button>
-              <button type="button" class="btn btn-default question noactive" data-quest_one = "5" data-quest_two = "2" data-choiced="">Сложности в общении и в любых делах</button>
-              <button type="button" class="btn btn-default question noactive" data-quest_one = "7" data-quest_two = "12" data-choiced="">Чувство вины</button>
-              <button type="button" class="btn btn-default question noactive" data-quest_one = "3" data-quest_two = "6" data-choiced="">Самоограничения и заниженная самооценка</button>
-              <button type="button" class="btn btn-default question noactive" data-quest_one = "4" data-quest_two = "1" data-choiced="">Необходимость прислушиваться к чужому мнению</button>
-              <button type="button" class="btn btn-default question noactive" data-quest_one = "6" data-quest_two = "3" data-choiced="">Наличие в жизни того, с чем сложно смириться</button>
-              <button type="button" class="btn btn-default question noactive" data-quest_one = "1" data-quest_two = "4" data-choiced="">Беспокойство, суета, страхи</button>
-              <button type="button" class="btn btn-default question noactive" data-quest_one = "8" data-quest_two = "12" data-choiced="">Желания и правила жизни</button>
-              <button type="button" class="btn btn-default question noactive" data-quest_one = "9" data-quest_two = "12" data-choiced="">Дилеммы касательно предметов и отношений</button>
-              <button type="button" class="btn btn-default question noactive" data-quest_one = "10" data-quest_two = "12" data-choiced="">Неосуществлённые мечты</button>
-              <button type="button" class="btn btn-default question noactive" data-quest_one = "11" data-quest_two = "12" data-choiced="">Обиды и унижения</button>
-            </div>
-          </div>
-          <div class="questions">
-            <div class="hidden en_block">
               <button type="button" class="btn btn-default question noactive" data-quest_one = "2" data-quest_two = "5" data-choiced="">The anger at someone, situation. Or the anger at yourself</button>
               <button type="button" class="btn btn-default question noactive" data-quest_one = "5" data-quest_two = "2" data-choiced="">Difficulties in communication or difficulties in any affairs</button>
               <button type="button" class="btn btn-default question noactive" data-quest_one = "7" data-quest_two = "12" data-choiced="">Feeling guilty</button>
@@ -498,19 +422,12 @@
             </div>
           </div>
           <div class="runed hidden">
-            <h3><span class="ru_block">Сессия еще выполняется!</span><span class="hidden en_block">The session is still running!</span></h3>
-            <h4><span class="ru_block">Перед началом новой сессии необходимо остановить выполнение текущей</span><span class="hidden en_block">Before starting a new session, you must stop the current</span></h4>
-            <button class="btn btn-primary btn-lg stop_prot ru_block">Остановить</button>
-            <button class="btn btn-primary btn-lg stop_prot hidden en_block">Stop</button>
+            <h3><span class="ru_block">The session is still running!</span></h3>
+            <h4><span class="ru_block">Before starting a new session, you must stop the current</span></h4>
+            <button class="btn btn-primary btn-lg stop_prot ru_block">Stop</button>
           </div>
         </div>
         <div class="modal-footer ru_block">
-          <div class="pull-left">
-            <button class="btn btn-warning clear_prot hidden">Отменить выбор</button>
-          </div>
-          <button class="btn btn-primary set_acept hidden">Применить настройки</button>
-        </div>
-        <div class="modal-footer hidden en_block">
           <div class="pull-left">
             <button class="btn btn-warning clear_prot hidden">Deselect</button>
           </div>
@@ -524,17 +441,9 @@
       <div class="modal-content">
         <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-          <h4 class="modal-title" id="myModalLabel"><span class="ru_block">Правила пользования</span><span class="hidden en_block">The manual</span></h4>
+          <h4 class="modal-title" id="myModalLabel"><span class="ru_block">The manual</span></h4>
         </div>
         <div class="modal-text ru_block">
-          Включите ловушку и поставьте средний палец правой руки в центр рисунка. Следуя инструкциям вспоминайте из своей жизни предлагаемые ситуации и переживания. Будьте честными перед собой, не фантазируйте. Удерживайте палец в Ловушке не менее 2-х минут на каждое переживание, за тем нажмите кноку "Далее" и снова поставьте палец на ловушку. Повторяйте пока инструкции не закончатся. Рекомендуется повторить процедуру пересмотра не менее 4-х раз в течение месяца. Каждый новый раз вопросы из списка могут быть разные.
-          <div class="row text-centered">
-            <div class="col-md-12">
-              <button class="btn btn-primary start_prot">Включить ловушку</button>
-            </div>
-          </div>
-        </div>
-        <div class="modal-text hidden en_block">
           Switch on the device and put you third right finger to the centre of the picture. Follow the instructions and try to recollect the situations from your life that were offered to you. Please be honest to yourself , do not  imagine. Hold your finger at the LOVUSHKA no less than 2min for every issue, then press the button “next” and put you finger to the centre again. Please continue the session until the instructions has been finished. This procedure is recommended to be repeated 4 times per month or more. Next time you can choose another issues from the list.
           <div class="row text-centered">
             <div class="col-md-12">
@@ -550,23 +459,16 @@
       <div class="modal-content">
         <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-          <h4 class="modal-title" id="myModalLabel"><span class="ru_block">Правила пользования:</span><span class="hidden en_block">The manual</span></h4>
+          <h4 class="modal-title" id="myModalLabel"><span class="ru_block">The manual</span></h4>
         </div>
         <div class="modal-text ru_block">
-          <b>Способ 1. Избавление.</b><br>
-          Нажмите на кнопку вашего переживания. Поставьте средний палец правой руки в центр ловушки и начните проговаривать свои проблемы. Ловушка выключится автоматически. При необходимости повторите. Количество повторений не ограничено.<br>
-          <b>Способ 2. Пересмотр личной истории.</b><br>
-          Выберите из списка проблем не более двух, наиболее типичных для вас. Включите ловушку и поставьте средний палец правой руки в центр рисунка. Следуя инструкциям вспоминайте из своей жизни предлагаемые ситуации и переживания. Будьте честными перед собой, не фантазируйте, а четко следуйте инструкциям. Удерживайте палец в Ловушке не менее 2-х минут на каждое переживание. Рекомендуется повторить процедуру пересмотра не менее 4-х раз в течение месяца. Каждый новый раз вопросы из списка могут быть разные.
-        </div>
-        <div class="modal-text hidden en_block">
           <b>Method 1. Releasing.</b><br>
           Click on the button of your experience. Put the middle finger of the right hand in the center of the LOVUSHKA and start to speak out your problems. The LOVUSHKA will turn off automatically. Repeat if necessary. The number of repetitions is unlimited.<br>
           <b>Method 2. Revision of personal history.</b><br>
           Please, choose no more than two problems from the list. Put you third right finger to the centre of the picture and try to recall the situations from your life that are offered by the device. Please don’t imagine. Be honest to yourself. Continue it no less than 2 min for every issue. It is recommended to repeat this procedure 4 times per month or more. Next time you can choose another issues from the list.
         </div>
         <div class="modal-footer">
-          <button class="btn btn-primary ru_block" data-dismiss="modal">Закрыть</button>
-          <button class="btn btn-primary hidden en_block" data-dismiss="modal">Close</button>
+          <button class="btn btn-primary ru_block" data-dismiss="modal">Close</button>
         </div>
       </div>
     </div>
