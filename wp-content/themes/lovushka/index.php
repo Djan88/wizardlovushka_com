@@ -96,7 +96,7 @@
               <div class="col-sm-5">
                 <div class="vitrin">
                   <h3>Extended version</h3>
-                  <p class="vitrin_content">Extended program mode <b>"Anti-stress Wizard Lovushka"</b> includes all the features of the basic mode, as well as a mechanism for the "Revision of personal history." In this mode, you can select up to 2 relevant problems from the list and follow the prompts of the program to conduct a deep study of your personal history. In this mode, the speed of rotation of the louver is controlled by the program. At different stages it can vary</p>
+                  <p class="vitrin_content">Extended program mode <b>"Anti-stress Wizard Lovushka"</b> includes all the features of the basic mode, as well as a mechanism for the "Revision of personal history." In this mode, you can select up to 2 relevant problems from the list and follow the prompts of the program to conduct a deep study of your personal history. In this mode, the speed of rotation of the louver is controlled by the program.</p>
                   <h4>Cost of the expanded version</h4>
                   <div class="price">10000 rur./year.</div>
                 </div>
